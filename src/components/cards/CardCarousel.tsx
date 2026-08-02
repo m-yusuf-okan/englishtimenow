@@ -40,8 +40,6 @@ const DEPTH = [
  */
 export interface CarouselItem {
   readonly id: string;
-  /** Etkin kartın erişilebilir adı. */
-  readonly label: string;
   readonly front: ReactNode;
   readonly back: ReactNode;
 }
@@ -64,6 +62,12 @@ export function CardCarousel({
   // kaybettirir ve "3 / 15" sayacını anlamsızlaştırır.
   const clamp = (value: number) => Math.min(Math.max(value, 0), count - 1);
 
+  // Liste küçülürse durum aralık dışında kalabilir (seviye filtresi 15 kartı
+  // 3'e indirdiğinde index 10'da kalır). Render sırasında kırpılıyor; aksi
+  // halde hiçbir kart görünmez ve sayaç "11 / 3" gösterirdi. Çağıran taraf
+  // ayrıca `key` ile sıfırlıyor, bu ikinci savunma hattı.
+  const activeIndex = clamp(index);
+
   // Güncelleyici biçim şart. `index + 1` yazılsaydı değer render kapanışından
   // okunurdu ve aynı yığında düşen iki olay (tuş tekrarı, hızlı tıklama) aynı
   // eski değeri görüp tek adım ilerlerdi.
@@ -77,6 +81,18 @@ export function CardCarousel({
 
   function handleKeyDown(event: KeyboardEvent<HTMLDivElement>) {
     if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+
+    // Metin girişinde ok tuşları imleci hareket ettirir. Test kartlarındaki
+    // boşluk doldurma alanı carousel'in içinde yaşadığı için, oradan gelen
+    // olaylar gezinmeye çevrilmemeli — kullanıcı yazdığını düzeltmeye
+    // çalışırken kart değişirdi.
+    if (
+      event.target instanceof Element &&
+      event.target.closest("input, textarea, select, [contenteditable='true']")
+    ) {
+      return;
+    }
+
     // Ok tuşlarının sayfayı kaydırmasını engelle.
     event.preventDefault();
     if (event.key === "ArrowLeft") previous();
@@ -106,7 +122,7 @@ export function CardCarousel({
         className="relative h-120 touch-pan-y overflow-hidden"
       >
         {items.map((item, itemIndex) => {
-          const offset = itemIndex - index;
+          const offset = itemIndex - activeIndex;
           const distance = Math.abs(offset);
           if (distance > VISIBLE_RADIUS) return null;
 
@@ -124,12 +140,7 @@ export function CardCarousel({
               }}
               className="absolute top-0 left-1/2 h-full w-[min(22rem,82vw)] transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none"
             >
-              <FlipCard
-                front={item.front}
-                back={item.back}
-                label={item.label}
-                interactive={active}
-              />
+              <FlipCard front={item.front} back={item.back} interactive={active} />
             </div>
           );
         })}
@@ -139,8 +150,8 @@ export function CardCarousel({
         <button
           type="button"
           onClick={previous}
-          disabled={index === 0}
-          className="rounded-full border border-black/15 px-4 py-2 text-sm disabled:opacity-30 focus-visible:ring-2 focus-visible:outline-none dark:border-white/20"
+          disabled={activeIndex === 0}
+          className="inline-flex size-11 items-center justify-center rounded-full border border-black/10 bg-white/70 text-lg shadow-lg ring-1 shadow-black/5 ring-white/50 backdrop-blur-xl transition-transform ring-inset hover:scale-105 disabled:opacity-25 disabled:hover:scale-100 focus-visible:ring-2 focus-visible:outline-none active:scale-95 dark:border-white/10 dark:bg-white/5 dark:ring-white/10"
         >
           <span aria-hidden="true">←</span>
           <span className="sr-only">Önceki kart</span>
@@ -149,16 +160,16 @@ export function CardCarousel({
         {/* Kart değişimini ekran okuyucuya bildirir. */}
         <p
           aria-live="polite"
-          className="text-sm tabular-nums text-black/60 dark:text-white/60"
+          className="min-w-16 text-center text-sm font-semibold tabular-nums text-black/55 dark:text-white/50"
         >
-          {index + 1} / {count}
+          {activeIndex + 1} / {count}
         </p>
 
         <button
           type="button"
           onClick={next}
-          disabled={index === count - 1}
-          className="rounded-full border border-black/15 px-4 py-2 text-sm disabled:opacity-30 focus-visible:ring-2 focus-visible:outline-none dark:border-white/20"
+          disabled={activeIndex === count - 1}
+          className="inline-flex size-11 items-center justify-center rounded-full border border-black/10 bg-white/70 text-lg shadow-lg ring-1 shadow-black/5 ring-white/50 backdrop-blur-xl transition-transform ring-inset hover:scale-105 disabled:opacity-25 disabled:hover:scale-100 focus-visible:ring-2 focus-visible:outline-none active:scale-95 dark:border-white/10 dark:bg-white/5 dark:ring-white/10"
         >
           <span aria-hidden="true">→</span>
           <span className="sr-only">Sonraki kart</span>

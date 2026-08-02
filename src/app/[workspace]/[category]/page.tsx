@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CardCarousel } from "@/components/cards/CardCarousel";
-import { QuizCardBack, QuizCardFront } from "@/components/cards/QuizCardFaces";
-import { VocabCardBack, VocabCardFront } from "@/components/cards/VocabCardFaces";
+import { CategoryCards } from "@/components/cards/CategoryCards";
+import { themeTokens } from "@/domain";
 import { findCategory, findWorkspace, listCategoryRoutes } from "@/lib/catalog";
 
 export const dynamicParams = false;
@@ -39,39 +38,26 @@ export default async function CategoryPage({ params }: { params: Params }) {
 
   if (!workspace || !category) notFound();
 
+  const tokens = themeTokens(category.theme);
+
   return (
-    <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-10">
-      <p className="text-sm text-black/50 dark:text-white/50">{workspace.title}</p>
-      <h1 className="mt-1 text-2xl font-semibold tracking-tight">{category.title}</h1>
-      <p className="mt-2 text-black/60 dark:text-white/60">{category.description}</p>
-
-      <div className="mt-10">
-        <h2 className="text-lg font-semibold">
-          Kelime kartları ({category.vocab.length})
-        </h2>
-        <CardCarousel
-          label="Kelime kartları"
-          items={category.vocab.map((card) => ({
-            id: card.id,
-            label: `${card.term} — kartı çevir`,
-            front: <VocabCardFront card={card} theme={category.theme} />,
-            back: <VocabCardBack card={card} theme={category.theme} />,
-          }))}
+    <main className="relative mx-auto w-full max-w-3xl flex-1 px-6 py-12">
+      {/* Kategori rengiyle ışıma. Kartların cam etkisi ancak arkada düz
+          olmayan bir yüzey varsa okunur. */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div
+          className={`absolute -top-16 left-1/2 h-80 w-136 -translate-x-1/2 rounded-full blur-3xl ${tokens.glow}`}
         />
       </div>
 
-      <div className="mt-14">
-        <h2 className="text-lg font-semibold">Test kartları ({category.quiz.length})</h2>
-        <CardCarousel
-          label="Test kartları"
-          items={category.quiz.map((card) => ({
-            id: card.id,
-            label: "Soruyu çevir ve cevabı gör",
-            front: <QuizCardFront card={card} theme={category.theme} />,
-            back: <QuizCardBack card={card} theme={category.theme} />,
-          }))}
-        />
-      </div>
+      <p className={`text-sm font-medium ${tokens.muted}`}>{workspace.title}</p>
+      <h1 className="mt-1 text-4xl font-bold tracking-tight">{category.title}</h1>
+      <p className="mt-3 max-w-xl leading-relaxed text-black/60 dark:text-white/55">
+        {category.description}
+      </p>
+
+      {/* Kartlar veri olarak geçer: mod ve filtre istemci durumudur. */}
+      <CategoryCards category={category} />
     </main>
   );
 }

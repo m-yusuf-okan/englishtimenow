@@ -2,8 +2,7 @@
 // hem Next tarafından derlenebiliyor hem de Node ile doğrudan çalıştırılıp
 // test edilebiliyor. domain/content katmanları da aynı kuralı izler.
 import { catalog } from "../content/index.ts";
-import { LEVELS } from "../domain/index.ts";
-import type { Card, Category, Level, Workspace } from "@/domain";
+import type { Category, Workspace } from "@/domain";
 
 /**
  * Katalog sorgu katmanı.
@@ -78,30 +77,6 @@ export function listCategoryRoutes(): readonly CategoryRoute[] {
   );
 }
 
-/**
- * Seviye filtresi — PRD 3.C.
- *
- * Boş seçim "filtre yok" demektir; kullanıcı tüm seviyeleri kapattığında ekranı
- * boşaltmak yerine hepsini göstermek doğru davranıştır.
- */
-export function filterByLevel<T extends Card>(
-  cards: readonly T[],
-  levels: readonly Level[],
-): readonly T[] {
-  if (levels.length === 0) return cards;
-  return cards.filter((card) => levels.includes(card.level));
-}
-
-/**
- * Bir kategoride gerçekten bulunan seviyeler — filtre arayüzü için.
- *
- * Sonuç her zaman kanonik CEFR sırasındadır (A1 → B1). Set'in ekleme sırasını
- * döndürmek, kartların diziliş sırasına göre değişen bir filtre üretirdi.
- */
-export function levelsInCategory(category: Category): readonly Level[] {
-  const seen = new Set<Level>();
-  for (const card of [...category.vocab, ...category.quiz]) {
-    seen.add(card.level);
-  }
-  return LEVELS.filter((level) => seen.has(level));
-}
+// Kartlar üzerindeki saf işlemler (`filterByLevel`, `levelsInCategory`)
+// bilinçli olarak `./cards.ts`'te durur: bu modül içerik kaydını import ettiği
+// için buradan tek sembol çeken istemci bileşeni tüm içeriği paketine alırdı.

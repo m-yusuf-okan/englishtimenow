@@ -67,8 +67,10 @@ export function WorkspaceSidebar({ workspaces }: { workspaces: readonly Workspac
                       href={href}
                       aria-current={active ? "page" : undefined}
                       onClick={() => setOpen(false)}
-                      className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm hover:bg-black/5 focus-visible:ring-2 focus-visible:outline-none dark:hover:bg-white/10 ${
-                        active ? `font-medium ${tokens.surface}` : ""
+                      className={`flex items-center gap-2.5 rounded-xl px-3 py-2 text-sm transition-colors hover:bg-black/5 focus-visible:ring-2 focus-visible:outline-none dark:hover:bg-white/10 ${
+                        active
+                          ? `border font-semibold shadow-sm ${tokens.surface} ${tokens.border} ${tokens.text}`
+                          : ""
                       }`}
                     >
                       <span

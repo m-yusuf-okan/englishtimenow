@@ -1,93 +1,95 @@
 "use client";
 
-import { useState, type KeyboardEvent, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 
 /**
  * Kart çevirme davranışı — PRD 3.B.
  *
  * İçerikten bağımsızdır: yüzleri prop olarak alır, ne gösterdiğini bilmez.
- * Kelime ve test kartları aynı mekanizmayı paylaşır.
  *
  * KATMANLAMA — bu bileşen **yalnızca** `rotateY` uygular. Konum, ölçek ve
- * opacity Faz 4'teki carousel'e ait ve onu saran elemana yazılacak. İkisini
- * aynı elemana koymak `transform`'u çakıştırır: carousel kartı yerine
- * taşıdığında flip dönüşü silinir.
+ * opacity carousel'e ait ve onu saran elemana yazılır. İkisini aynı elemana
+ * koymak `transform`'u çakıştırır.
  *
- * ERİŞİLEBİLİRLİK
- * - Kabuk `<button>` değil `role="button"` taşıyan bir `div`. Sebebi HTML
- *   içerik modeli: `<button>` yalnızca ifade içeriği alabilir, kart yüzleri ise
- *   başlık ve liste içeriyor. Bunun bedeli Enter/Space'i elle bağlamaktır.
- * - Görünmeyen yüz `inert` alır. `backface-visibility: hidden` yalnızca görsel
- *   gizler; ekran okuyucu ve klavye o yüzün içeriğine yine ulaşırdı.
- * - `aria-pressed` çevrilme durumunu bildirir.
- * - `motion-reduce` açıkken dönüş animasyonu anında tamamlanır.
+ * NEDEN KABUK BİR BUTON DEĞİL
+ * Önceki tasarımda tüm kart `role="button"` taşıyordu. ARIA'da `button`
+ * rolünün alt öğeleri **sunumsal** sayılır (axe-core rol tablosu:
+ * `childrenPresentational: true`), yani kartın içine konan gerçek bir butona
+ * — telaffuz butonu gibi — ekran okuyucu erişemez; axe bunu
+ * `nested-interactive` olarak işaretler.
+ *
+ * Bu yüzden sorumluluklar ayrıldı:
+ * - Kart yüzeyi yalnızca **işaretçi kolaylığıdır**: tıklayınca/dokununca
+ *   çevirir (PRD 3.B). Erişilebilirlik ağacında bir denetim değildir.
+ * - Çevirme işleminin asıl denetimi yüzlerin içindeki gerçek `<button>`,
+ *   yani `FlipButton`. Klavye desteği ondan doğal olarak gelir.
+ * - Yüzlerin içine başka butonlar (telaffuz) serbestçe konabilir.
+ *
+ * Görünmeyen yüz `inert` alır: `backface-visibility: hidden` yalnızca görsel
+ * gizler, onsuz ekran okuyucu ve Tab sırası gizli yüzün içeriğine ulaşır.
  */
+
+interface FlipState {
+  flipped: boolean;
+  toggle: () => void;
+}
+
+const FlipContext = createContext<FlipState | null>(null);
+
+/** Yüzlerin içindeki denetimler çevirme durumuna buradan erişir. */
+export function useFlip(): FlipState {
+  const state = useContext(FlipContext);
+  if (!state) throw new Error("useFlip yalnızca FlipCard içinde kullanılabilir.");
+  return state;
+}
+
 export function FlipCard({
   front,
   back,
-  label,
   interactive = true,
   className = "",
 }: {
   front: ReactNode;
   back: ReactNode;
-  /** Kabuğun erişilebilir adı, örn. `"give up — kartı çevir"`. */
-  label: string;
   /**
-   * Carousel'de yalnızca merkezdeki kart etkindir. Etkisiz kartlar odak
-   * sırasından ve erişilebilirlik ağacından çıkar, tıklamayı da yutmaz —
-   * aksi halde yandaki yarı saydam kart tıklanıp çevrilebilirdi.
+   * Carousel'de yalnızca merkezdeki kart etkindir. Etkisiz kart tümüyle
+   * `inert` olur: odak sırasından, erişilebilirlik ağacından ve tıklamadan
+   * aynı anda çıkar. `aria-hidden` tek başına yetmezdi — içindeki butonlar
+   * odaklanabilir kalır ve "gizli ama odaklanabilir" ihlali doğardı.
    */
   interactive?: boolean;
   className?: string;
 }) {
   const [flipped, setFlipped] = useState(false);
-
-  const toggle = () => {
-    if (interactive) setFlipped((value) => !value);
-  };
-
-  function handleKeyDown(event: KeyboardEvent<HTMLDivElement>) {
-    if (!interactive) return;
-    if (event.key !== " " && event.key !== "Enter") return;
-    // Space'in sayfayı kaydırmasını engelle — `role="button"` gerçek bir
-    // butonun varsayılan tuş davranışını miras almaz.
-    event.preventDefault();
-    toggle();
-  }
+  const toggle = () => setFlipped((value) => !value);
 
   return (
-    <div
-      role={interactive ? "button" : undefined}
-      tabIndex={interactive ? 0 : -1}
-      aria-pressed={interactive ? flipped : undefined}
-      aria-label={interactive ? label : undefined}
-      aria-hidden={!interactive}
-      onClick={toggle}
-      onKeyDown={handleKeyDown}
-      // `h-full`: kart bir ızgara/carousel hücresini tamamen doldurur, böylece
-      // aynı satırdaki kartlar eşit yükseklikte görünür.
-      className={`h-full rounded-2xl perspective-distant select-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none ${
-        interactive ? "cursor-pointer" : "pointer-events-none"
-      } ${className}`}
-    >
+    <FlipContext.Provider value={{ flipped, toggle }}>
       <div
-        className={`grid h-full transform-3d transition-transform duration-500 ease-out motion-reduce:transition-none ${
-          flipped ? "rotate-y-180" : ""
-        }`}
+        inert={!interactive}
+        onClick={toggle}
+        className={`h-full rounded-2xl perspective-distant select-none ${
+          interactive ? "cursor-pointer" : ""
+        } ${className}`}
       >
-        {/* İki yüz de aynı grid hücresinde: hücre en uzun yüze göre boyutlanır,
-            böylece çevirirken kartın yüksekliği değişmez. */}
-        <div className="col-start-1 row-start-1 backface-hidden" inert={flipped}>
-          {front}
-        </div>
         <div
-          className="col-start-1 row-start-1 rotate-y-180 backface-hidden"
-          inert={!flipped}
+          className={`grid h-full transform-3d transition-transform duration-500 ease-out motion-reduce:transition-none ${
+            flipped ? "rotate-y-180" : ""
+          }`}
         >
-          {back}
+          {/* İki yüz de aynı grid hücresinde: hücre en uzun yüze göre
+              boyutlanır, böylece çevirirken kartın yüksekliği değişmez. */}
+          <div className="col-start-1 row-start-1 backface-hidden" inert={flipped}>
+            {front}
+          </div>
+          <div
+            className="col-start-1 row-start-1 rotate-y-180 backface-hidden"
+            inert={!flipped}
+          >
+            {back}
+          </div>
         </div>
       </div>
-    </div>
+    </FlipContext.Provider>
   );
 }

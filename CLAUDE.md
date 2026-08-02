@@ -113,8 +113,74 @@ zinciri) ve **Faz 1** (alan modeli, içerik katmanı, sorgu API'si, doğrulayıc
 (3D carousel, swipe, klavye) tamamlandı. Üretilen rotalar: `/`,
 `/[workspace]`, `/[workspace]/[category]`.
 
-Sıradaki: **Faz 5** — Web Speech API ile sesli telaffuz. Ardından quiz
-etkileşimi, modlar/filtreler, erişilebilirlik sertleştirmesi.
+**Faz 5** (sesli telaffuz), **Faz 6** (quiz etkileşimi) ve **Faz 7** (tersine
+kart modu, seviye filtresi, kalıcı tercihler) tamamlandı.
+
+Sıradaki: **Faz 8** — erişilebilirlik sertleştirmesi. Ardından içerik ölçekleme.
+
+### Modlar, filtre ve tercihler (Faz 7)
+
+- **`usePersistentState` `useSyncExternalStore` kullanır**, `useState` +
+  `useEffect` değil. localStorage tanım gereği harici bir depodur; efekt içinde
+  senkron `setState` kademeli render doğurur ve React derleyici denetimi bunu
+  hata olarak işaretler.
+- `getServerSnapshot` her zaman varsayılanı döndürür — sunucu HTML'i ile ilk
+  istemci render'ı aynı olur. `useState(() => localStorage.getItem(...))`
+  yazmak statik export'ta hydration uyuşmazlığı üretir.
+- `getSnapshot` ham dizeyi önbelleğe alır. Her çağrıda yeni dizi/nesne
+  döndürmek React'i sonsuz döngüye sokar.
+- Dinleyiciler `storage` olayına da bağlı: tercih değişikliği açık diğer
+  sekmelere kendiliğinden yansır.
+- **`filterByLevel` / `levelsInCategory` `lib/cards.ts`'te durur**, `catalog.ts`
+  içinde değil. `catalog.ts` içerik kaydını import eder; oradan tek sembol çeken
+  bir istemci bileşeni 60 kartın tamamını tarayıcı paketine sürüklerdi.
+- Filtre veya mod değişince carousel `key` ile sıfırlanır; carousel ayrıca
+  `index`'i render sırasında kırpar (liste küçülürse durum aralık dışında
+  kalır ve sayaç "11 / 3" gösterirdi).
+- **Tersine modda ön yüzde telaffuz butonu yoktur.** Buton İngilizce kelimeyi
+  seslendirir ve aktif hatırlamanın istediği cevabı doğrudan ele verirdi;
+  arka yüzde kullanılabilir.
+
+### Quiz etkileşimi (Faz 6)
+
+- **Cevap karşılaştırması `src/lib/quiz.ts`'te.** Baştaki/sondaki boşluk, çoklu
+  boşluk, harf büyüklüğü ve sondaki noktalama elenir.
+- **`toLowerCase()` kullanılır, `toLocaleLowerCase()` DEĞİL.** Arayüz Türkçe
+  olduğu için yerele duyarlı küçültme cazip görünür, ama karşılaştırılan
+  metinler İngilizcedir: Türkçe yerelinde `"I"` → `"ı"` olur ve `I` içeren her
+  cevap yanlış işaretlenirdi.
+- **Doğruluk renkleri temadan bağımsızdır.** Tema rengi kategoriyi ayırt etmek
+  içindir; "doğru" her kategoride aynı yeşildir.
+- **Renk tek başına anlam taşımaz** — her durumda ✓/✗ simgesi ve metin eşlik
+  eder (WCAG 1.4.1).
+- Cevaplanınca şıklar `aria-disabled` ile kilitlenir, `disabled` ile değil:
+  `disabled` odağı gövdeye düşürürdü, bu şekilde odak seçilen şıkta kalır.
+- `QuizInteraction` kapsayıcısı `stopPropagation` çağırır — kart yüzeyi
+  tıklamayla çevirdiği için şık seçmek kartı çevirmemeli.
+- **Carousel ok tuşlarını form alanlarında yok sayar.** Cloze girişi
+  carousel'in içinde yaşıyor; bu kontrol olmadan kullanıcı yazdığını
+  düzeltmeye çalışırken kart değişirdi.
+- Cevap durumu pencereden çıkan kartlarda sıfırlanır (bileşen unmount olur).
+  Bilinçli: ilerleme takibi kapsam dışı.
+
+### Sesli telaffuz (Faz 5)
+
+`useSpeech` tarayıcının yerleşik motorunu kullanır; ses dosyası veya sunucu
+gerekmez. Bu API tutarsızdır ve aşağıdakiler gerçek davranışlardır:
+
+- **`getVoices()` ilk çağrıda çoğu tarayıcıda boş döner.** Sesler asenkron
+  yüklenir; `voiceschanged` olayı dinlenmezse motor varken bile "ses yok"
+  sanılır.
+- **İngilizce ses her cihazda kurulu değildir.** Yoksa buton devre dışı
+  görünür. Sessizce hiçbir şey yapmayan etkin bir buton en kötü seçenektir.
+- **iOS Safari kullanıcı hareketi olmadan konuşmaz** — bu yüzden yalnızca
+  butona basınca çalışır, otomatik okuma yok.
+- **Chrome, `SpeechSynthesisUtterance`'ı bitmeden çöp toplayabilir** ve ses
+  ortada kesilir; nesne bu yüzden ref'te tutulur.
+- Her söyleyişten önce `cancel()` çağrılır, yoksa hızlı basışlar kuyruğa
+  yığılıp üst üste okunur.
+- `supported` `false` başlar: sunucu ile ilk istemci render'ı aynı çıktıyı
+  üretir, hydration uyuşmazlığı olmaz.
 
 ### Bileşen katmanlaması
 
@@ -139,10 +205,22 @@ Flip dönüşü ile carousel konumlandırması **aynı DOM elemanına uygulanama
   konumlandırma yok. Hücre en uzun yüze göre boyutlanır; kart çevrilirken
   yüksekliği değişmez. `FlipCard` ve `CardShell` `h-full` taşır ki aynı satırdaki
   kartlar eşit yükseklikte olsun.
-- Kabuk `<button>` **değil**, `role="button"` taşıyan bir `div`. Sebep HTML
-  içerik modeli: `<button>` yalnızca ifade içeriği alabilir, kart yüzlerinde
-  başlık ve liste var. Bedeli: Enter/Space elle bağlanır ve Space'in sayfayı
-  kaydırmaması için `preventDefault` gerekir.
+- **Kart yüzeyi bir denetim DEĞİLDİR.** Tıklayınca çevirir (PRD 3.B) ama
+  `role`, `tabindex` veya `aria-*` taşımaz — yalnızca işaretçi kolaylığıdır.
+  Çevirmenin asıl denetimi yüzlerin içindeki gerçek `<button>`: `FlipButton`.
+
+  Faz 3'te kabuk `role="button"` taşıyordu; Faz 5'te kaldırıldı. Sebep: ARIA'da
+  `button` rolünün alt öğeleri **sunumsal** sayılır (axe-core rol tablosu:
+  `childrenPresentational: true`) ve axe bunu `nested-interactive` olarak
+  işaretler — yani kartın içine konan telaffuz butonuna ekran okuyucu
+  erişemezdi. **Kabuğa tekrar `role="button"` ekleme.**
+
+- Yüzlerin içindeki denetimler çevirme durumuna `useFlip()` context'i ile
+  erişir. Yüzler sunucuda render edilip prop olarak geçtiği için callback
+  aktarılamaz; context bu sınırı aşar.
+- `FlipButton` ve `PronounceButton` **`stopPropagation` çağırır.** Kart yüzeyi
+  de tıklamayla çeviriyor; olay yukarı bırakılırsa çevirme iki kez tetiklenip
+  iptal olur, telaffuza basmak da kartı çevirir.
 - **Görünmeyen yüz `inert` alır.** `backface-visibility: hidden` yalnızca görsel
   gizler; onsuz ekran okuyucu ve Tab sırası gizli yüzün içeriğine ulaşır. Bu
   satırı silme.
@@ -155,11 +233,26 @@ Flip dönüşü ile carousel konumlandırması **aynı DOM elemanına uygulanama
   tarafından hiç derlenmez. Geometri bu yüzden inline `style`, renkler ise
   sınıf üzerinden verilir.
 - **Yalnızca merkeze en yakın 2 kart DOM'a girer** (`VISIBLE_RADIUS`).
-- **Yalnızca etkin kart etkileşimlidir** (`FlipCard`'ın `interactive` prop'u);
-  yan kartlar `aria-hidden`, `tabindex="-1"` ve `pointer-events-none` alır.
+- **Yalnızca etkin kart etkileşimlidir** (`FlipCard`'ın `interactive` prop'u).
+  Etkisiz kart tümüyle `inert` olur: odak sırasından, erişilebilirlik ağacından
+  ve tıklamadan aynı anda çıkar. `aria-hidden` tek başına yetmez — yüzlerin
+  içindeki butonlar odaklanabilir kalır ve "gizli ama odaklanabilir" ihlali
+  doğar.
 - **Kaydırma sonrası sentetik tıklama yutulur.** Tarayıcı kaydırmanın ardından
   yine `click` üretir; `suppressClickAfterSwipe` yakalama evresinde bunu
   durdurmasa her kaydırma aynı zamanda kartı çevirirdi.
+- **`setPointerCapture` ASLA `pointerdown`'da çağrılmaz.** Bir eleman pointer'ı
+  yakaladığında tarayıcı dizinin sonundaki `click` olayını gerçek hedefe değil
+  yakalayan elemana gönderir. Kapsayıcı basar basmaz yakalarsa kartın içindeki
+  **her buton sessizce ölür** — görünür, etkin, odaklanabilir, ama `onClick`
+  hiç çalışmaz. Yakalama bu yüzden tembeldir: yalnızca `pointermove` sırasında
+  kaydırma eşiği aşılınca alınır, dokunuşlar hiç tetiklemez.
+- **Bu hatayı sentetik tıklama testleri YAKALAYAMAZ.** `element.click()` ve
+  elle `dispatchEvent(new MouseEvent("click"))` pointer capture yeniden
+  hedeflemesini atlar; ikisi de yeşil verirken gerçek kullanıcı hiçbir butona
+  basamaz. İşaretçi davranışını ilgilendiren her değişiklik gerçek girdiyle
+  sınanmalı: CDP `Input.dispatchMouseEvent` (bkz. commit geçmişindeki
+  `real-mouse.mjs` yaklaşımı) ya da elle deneme.
 - **Gezinme güncelleyici biçimde yazılır** (`setIndex(c => …)`). `index + 1`
   yazılırsa değer render kapanışından okunur ve aynı yığında düşen iki olay
   (tuş tekrarı) tek adım ilerletir.
