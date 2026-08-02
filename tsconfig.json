@@ -9,6 +9,10 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    // domain/content katmanları birbirini açık `.ts` uzantısıyla import eder;
+    // böylece aynı dosyalar hem Next tarafından derlenebilir hem de doğrulama
+    // script'i için Node tarafından doğrudan çalıştırılabilir.
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",

@@ -2,8 +2,11 @@
   "name": "englishtimenow",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
+    "validate:content": "node scripts/validate-content.mts",
+    "prebuild": "npm run validate:content",
     "build": "next build",
     "preview": "serve out",
     "lint": "eslint",
