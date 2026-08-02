@@ -109,12 +109,12 @@ Fazlı plan üzerinden ilerleniyor. **Faz 0** (iskelet, statik export, araç
 zinciri) ve **Faz 1** (alan modeli, içerik katmanı, sorgu API'si, doğrulayıcı;
 1 workspace / 2 kategori / 60 kart) tamamlandı.
 
-**Faz 2** (routing, `WorkspaceSidebar`) ve **Faz 3** (flip mekaniği) da
-tamamlandı. Üretilen rotalar: `/`, `/[workspace]`, `/[workspace]/[category]`.
+**Faz 2** (routing, `WorkspaceSidebar`), **Faz 3** (flip) ve **Faz 4**
+(3D carousel, swipe, klavye) tamamlandı. Üretilen rotalar: `/`,
+`/[workspace]`, `/[workspace]/[category]`.
 
-Sıradaki: **Faz 4** — 3D carousel ve swipe. `FlipCard` yalnızca `rotateY`
-uyguluyor; konum/ölçek/opacity onu saran carousel elemanına yazılacak.
-Ardından Web Speech API, quiz etkileşimi, modlar/filtreler, erişilebilirlik.
+Sıradaki: **Faz 5** — Web Speech API ile sesli telaffuz. Ardından quiz
+etkileşimi, modlar/filtreler, erişilebilirlik sertleştirmesi.
 
 ### Bileşen katmanlaması
 
@@ -147,6 +147,33 @@ Flip dönüşü ile carousel konumlandırması **aynı DOM elemanına uygulanama
   gizler; onsuz ekran okuyucu ve Tab sırası gizli yüzün içeriğine ulaşır. Bu
   satırı silme.
 - `motion-reduce:transition-none` ile hareket azaltma tercihi karşılanır.
+
+### Carousel (Faz 4)
+
+- **Konum `style` ile, tema `className` ile.** Kart konumları hesaplanan
+  değerlerdir; `translate-x-[${n}%]` gibi bir şablon literali Tailwind
+  tarafından hiç derlenmez. Geometri bu yüzden inline `style`, renkler ise
+  sınıf üzerinden verilir.
+- **Yalnızca merkeze en yakın 2 kart DOM'a girer** (`VISIBLE_RADIUS`).
+- **Yalnızca etkin kart etkileşimlidir** (`FlipCard`'ın `interactive` prop'u);
+  yan kartlar `aria-hidden`, `tabindex="-1"` ve `pointer-events-none` alır.
+- **Kaydırma sonrası sentetik tıklama yutulur.** Tarayıcı kaydırmanın ardından
+  yine `click` üretir; `suppressClickAfterSwipe` yakalama evresinde bunu
+  durdurmasa her kaydırma aynı zamanda kartı çevirirdi.
+- **Gezinme güncelleyici biçimde yazılır** (`setIndex(c => …)`). `index + 1`
+  yazılırsa değer render kapanışından okunur ve aynı yığında düşen iki olay
+  (tuş tekrarı) tek adım ilerletir.
+- Ok tuşları `preventDefault` ile sayfayı kaydırmaz; kapsayıcıda
+  `touch-action: pan-y` olduğu için dikey kaydırma tarayıcıda kalır.
+
+### Tarayıcıda test ederken
+
+Ekran görüntüsü alırken `--virtual-time-budget` **CSS geçişleriyle
+senkron değildir**: sanal zaman JS zamanlayıcılarını ileri sarar ama geçiş
+yarım kalmış olabilir ve hem görüntü hem `getComputedStyle()` ara değer
+gösterir. Bu, var olmayan bir hata gibi görünür. Yerleşmiş hali ölçmek için
+ya inline `style` niteliğini oku (React'in yazdığı gerçek değer) ya da
+görüntüden önce `*{transition:none !important}` enjekte et.
 
 ### Rota notları
 

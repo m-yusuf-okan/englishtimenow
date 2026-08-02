@@ -26,19 +26,29 @@ export function FlipCard({
   front,
   back,
   label,
+  interactive = true,
   className = "",
 }: {
   front: ReactNode;
   back: ReactNode;
   /** Kabuğun erişilebilir adı, örn. `"give up — kartı çevir"`. */
   label: string;
+  /**
+   * Carousel'de yalnızca merkezdeki kart etkindir. Etkisiz kartlar odak
+   * sırasından ve erişilebilirlik ağacından çıkar, tıklamayı da yutmaz —
+   * aksi halde yandaki yarı saydam kart tıklanıp çevrilebilirdi.
+   */
+  interactive?: boolean;
   className?: string;
 }) {
   const [flipped, setFlipped] = useState(false);
 
-  const toggle = () => setFlipped((value) => !value);
+  const toggle = () => {
+    if (interactive) setFlipped((value) => !value);
+  };
 
   function handleKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+    if (!interactive) return;
     if (event.key !== " " && event.key !== "Enter") return;
     // Space'in sayfayı kaydırmasını engelle — `role="button"` gerçek bir
     // butonun varsayılan tuş davranışını miras almaz.
@@ -48,15 +58,18 @@ export function FlipCard({
 
   return (
     <div
-      role="button"
-      tabIndex={0}
-      aria-pressed={flipped}
-      aria-label={label}
+      role={interactive ? "button" : undefined}
+      tabIndex={interactive ? 0 : -1}
+      aria-pressed={interactive ? flipped : undefined}
+      aria-label={interactive ? label : undefined}
+      aria-hidden={!interactive}
       onClick={toggle}
       onKeyDown={handleKeyDown}
       // `h-full`: kart bir ızgara/carousel hücresini tamamen doldurur, böylece
       // aynı satırdaki kartlar eşit yükseklikte görünür.
-      className={`h-full cursor-pointer rounded-2xl perspective-distant select-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none ${className}`}
+      className={`h-full rounded-2xl perspective-distant select-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none ${
+        interactive ? "cursor-pointer" : "pointer-events-none"
+      } ${className}`}
     >
       <div
         className={`grid h-full transform-3d transition-transform duration-500 ease-out motion-reduce:transition-none ${

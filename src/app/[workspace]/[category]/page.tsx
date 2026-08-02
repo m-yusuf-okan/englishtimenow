@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FlipCard } from "@/components/cards/FlipCard";
+import { CardCarousel } from "@/components/cards/CardCarousel";
 import { QuizCardBack, QuizCardFront } from "@/components/cards/QuizCardFaces";
 import { VocabCardBack, VocabCardFront } from "@/components/cards/VocabCardFaces";
 import { findCategory, findWorkspace, listCategoryRoutes } from "@/lib/catalog";
@@ -45,39 +45,33 @@ export default async function CategoryPage({ params }: { params: Params }) {
       <h1 className="mt-1 text-2xl font-semibold tracking-tight">{category.title}</h1>
       <p className="mt-2 text-black/60 dark:text-white/60">{category.description}</p>
 
-      <section className="mt-10" aria-labelledby="vocab-heading">
-        <h2 id="vocab-heading" className="text-lg font-semibold">
+      <div className="mt-10">
+        <h2 className="text-lg font-semibold">
           Kelime kartları ({category.vocab.length})
         </h2>
-        <ul className="mt-4 grid gap-4 sm:grid-cols-2">
-          {category.vocab.map((card) => (
-            <li key={card.id}>
-              <FlipCard
-                label={`${card.term} — kartı çevir`}
-                front={<VocabCardFront card={card} theme={category.theme} />}
-                back={<VocabCardBack card={card} theme={category.theme} />}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+        <CardCarousel
+          label="Kelime kartları"
+          items={category.vocab.map((card) => ({
+            id: card.id,
+            label: `${card.term} — kartı çevir`,
+            front: <VocabCardFront card={card} theme={category.theme} />,
+            back: <VocabCardBack card={card} theme={category.theme} />,
+          }))}
+        />
+      </div>
 
-      <section className="mt-12" aria-labelledby="quiz-heading">
-        <h2 id="quiz-heading" className="text-lg font-semibold">
-          Test kartları ({category.quiz.length})
-        </h2>
-        <ul className="mt-4 grid gap-4 sm:grid-cols-2">
-          {category.quiz.map((card) => (
-            <li key={card.id}>
-              <FlipCard
-                label="Soruyu çevir ve cevabı gör"
-                front={<QuizCardFront card={card} theme={category.theme} />}
-                back={<QuizCardBack card={card} theme={category.theme} />}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className="mt-14">
+        <h2 className="text-lg font-semibold">Test kartları ({category.quiz.length})</h2>
+        <CardCarousel
+          label="Test kartları"
+          items={category.quiz.map((card) => ({
+            id: card.id,
+            label: "Soruyu çevir ve cevabı gör",
+            front: <QuizCardFront card={card} theme={category.theme} />,
+            back: <QuizCardBack card={card} theme={category.theme} />,
+          }))}
+        />
+      </div>
     </main>
   );
 }
