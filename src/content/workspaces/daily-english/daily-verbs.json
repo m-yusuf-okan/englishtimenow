@@ -1,0 +1,1436 @@
+{
+  "$schema": "../schema.json",
+  "slug": "daily-verbs",
+  "title": "Günlük Hayat ve Temel Fiiller",
+  "description": "Günlük konuşmalarda ve sosyal hayatta en çok kullanılan temel eylemler ve fiiller.",
+  "theme": "sky",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "vrb-go",
+      "level": "A1",
+      "term": "go",
+      "ipa": "/ɡəʊ/",
+      "translation": "gitmek",
+      "example": {
+        "en": "I go to work by bus every day.",
+        "tr": "Her gün işe otobüsle giderim."
+      },
+      "collocations": [
+        "go to work",
+        "go home"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-come",
+      "level": "A1",
+      "term": "come",
+      "ipa": "/kʌm/",
+      "translation": "gelmek",
+      "example": {
+        "en": "Please come here and sit down.",
+        "tr": "Lütfen buraya gel ve otur."
+      },
+      "collocations": [
+        "come here",
+        "come in"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-leave",
+      "level": "A1",
+      "term": "leave",
+      "ipa": "/liːv/",
+      "translation": "ayrılmak",
+      "example": {
+        "en": "What time do you leave the house?",
+        "tr": "Evden saat kaçta ayrılırsın?"
+      },
+      "collocations": [
+        "leave house",
+        "leave work"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-arrive",
+      "level": "A1",
+      "term": "arrive",
+      "ipa": "/əˈraɪv/",
+      "translation": "varmak",
+      "example": {
+        "en": "We will arrive at the hotel soon.",
+        "tr": "Yakında otele varacağız."
+      },
+      "collocations": [
+        "arrive at",
+        "arrive in"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-stay",
+      "level": "A1",
+      "term": "stay",
+      "ipa": "/steɪ/",
+      "translation": "kalmak",
+      "example": {
+        "en": "You can stay at my house tonight.",
+        "tr": "Bu gece benim evimde kalabilirsin."
+      },
+      "collocations": [
+        "stay at",
+        "stay home"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-wait",
+      "level": "A1",
+      "term": "wait",
+      "ipa": "/weɪt/",
+      "translation": "beklemek",
+      "example": {
+        "en": "I will wait for you at the station.",
+        "tr": "İstasyonda seni bekleyeceğim."
+      },
+      "collocations": [
+        "wait for",
+        "wait in line"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-start",
+      "level": "A1",
+      "term": "start",
+      "ipa": "/stɑːt/",
+      "translation": "başlamak",
+      "example": {
+        "en": "Let's start the meeting now.",
+        "tr": "Toplantıyı şimdi başlatalım."
+      },
+      "collocations": [
+        "start a business",
+        "start a project"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-finish",
+      "level": "A1",
+      "term": "finish",
+      "ipa": "/ˈfɪn.ɪʃ/",
+      "translation": "bitirmek",
+      "example": {
+        "en": "I need to finish my homework.",
+        "tr": "Ödevimi bitirmem gerekiyor."
+      },
+      "collocations": [
+        "finish homework",
+        "finish school"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-open",
+      "level": "A1",
+      "term": "open",
+      "ipa": "/ˈəʊ.pən/",
+      "translation": "açmak",
+      "example": {
+        "en": "Could you open the window, please?",
+        "tr": "Pencereyi açabilir misiniz lütfen?"
+      },
+      "collocations": [
+        "open the door",
+        "open an account"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-close",
+      "level": "A1",
+      "term": "close",
+      "ipa": "/kləʊz/",
+      "translation": "kapatmak",
+      "example": {
+        "en": "Please close the book now.",
+        "tr": "Lütfen şimdi kitabı kapatın."
+      },
+      "collocations": [
+        "close the window",
+        "close a deal"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-bring",
+      "level": "A1",
+      "term": "bring",
+      "ipa": "/brɪŋ/",
+      "translation": "getirmek",
+      "example": {
+        "en": "Don't forget to bring some food.",
+        "tr": "Yiyecek bir şeyler getirmeyi unutma."
+      },
+      "collocations": [
+        "bring food",
+        "bring peace"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-take",
+      "level": "A1",
+      "term": "take",
+      "ipa": "/teɪk/",
+      "translation": "almak/götürmek",
+      "example": {
+        "en": "I will take a taxi to the airport.",
+        "tr": "Havalimanına taksiyle gideceğim (taksi alacağım)."
+      },
+      "collocations": [
+        "take a taxi",
+        "take a shower"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-give",
+      "level": "A1",
+      "term": "give",
+      "ipa": "/ɡɪv/",
+      "translation": "vermek",
+      "example": {
+        "en": "Can you give me your phone number?",
+        "tr": "Bana telefon numaranı verebilir misin?"
+      },
+      "collocations": [
+        "give advice",
+        "give a hand"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-send",
+      "level": "A1",
+      "term": "send",
+      "ipa": "/send/",
+      "translation": "göndermek",
+      "example": {
+        "en": "I will send you an email tomorrow.",
+        "tr": "Yarın sana bir e-posta göndereceğim."
+      },
+      "collocations": [
+        "send an email",
+        "send a message"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-receive",
+      "level": "A2",
+      "term": "receive",
+      "ipa": "/rɪˈsiːv/",
+      "translation": "almak (teslim almak)",
+      "example": {
+        "en": "I did not receive your letter.",
+        "tr": "Mektubunuzu teslim almadım."
+      },
+      "collocations": [
+        "receive a package",
+        "receive a call"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-buy",
+      "level": "A1",
+      "term": "buy",
+      "ipa": "/baɪ/",
+      "translation": "satın almak",
+      "example": {
+        "en": "I want to buy a new car.",
+        "tr": "Yeni bir araba satın almak istiyorum."
+      },
+      "collocations": [
+        "buy groceries",
+        "buy tickets"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-sell",
+      "level": "A1",
+      "term": "sell",
+      "ipa": "/sel/",
+      "translation": "satmak",
+      "example": {
+        "en": "They sell fresh bread here.",
+        "tr": "Burada taze ekmek satıyorlar."
+      },
+      "collocations": [
+        "sell products",
+        "sell houses"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-pay",
+      "level": "A1",
+      "term": "pay",
+      "ipa": "/peɪ/",
+      "translation": "ödemek",
+      "example": {
+        "en": "You can pay by credit card.",
+        "tr": "Kredi kartıyla ödeyebilirsiniz."
+      },
+      "collocations": [
+        "pay bills",
+        "pay cash"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-use",
+      "level": "A1",
+      "term": "use",
+      "ipa": "/juːz/",
+      "translation": "kullanmak",
+      "example": {
+        "en": "May I use your phone?",
+        "tr": "Telefonunuzu kullanabilir miyim?"
+      },
+      "collocations": [
+        "use internet",
+        "use a computer"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-need",
+      "level": "A1",
+      "term": "need",
+      "ipa": "/niːd/",
+      "translation": "ihtiyaç duymak",
+      "example": {
+        "en": "I need some help with this box.",
+        "tr": "Bu kutu için biraz yardıma ihtiyacım var."
+      },
+      "collocations": [
+        "need help",
+        "need time"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-want",
+      "level": "A1",
+      "term": "want",
+      "ipa": "/wɒnt/",
+      "translation": "istemek",
+      "example": {
+        "en": "I want to go to the beach.",
+        "tr": "Plaja gitmek istiyorum."
+      },
+      "collocations": [
+        "want money",
+        "want a job"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-choose",
+      "level": "A2",
+      "term": "choose",
+      "ipa": "/tʃuːz/",
+      "translation": "seçmek",
+      "example": {
+        "en": "You have to choose one option.",
+        "tr": "Bir seçeneği seçmek zorundasınız."
+      },
+      "collocations": [
+        "choose a path",
+        "choose a gift"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-help",
+      "level": "A1",
+      "term": "help",
+      "ipa": "/help/",
+      "translation": "yardım etmek",
+      "example": {
+        "en": "I can help you with your baggage.",
+        "tr": "Bagajınız konusunda size yardım edebilirim."
+      },
+      "collocations": [
+        "help someone",
+        "help a lot"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-try",
+      "level": "A1",
+      "term": "try",
+      "ipa": "/traɪ/",
+      "translation": "denemek",
+      "example": {
+        "en": "I will try my best to win.",
+        "tr": "Kazanmak için elimden gelenin en iyisini deneyeceğim."
+      },
+      "collocations": [
+        "try best",
+        "try food"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-change",
+      "level": "A1",
+      "term": "change",
+      "ipa": "/tʃeɪndʒ/",
+      "translation": "değiştirmek",
+      "example": {
+        "en": "I need to change my password.",
+        "tr": "Şifremi değiştirmem gerekiyor."
+      },
+      "collocations": [
+        "change clothes",
+        "change mind"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-move",
+      "level": "A2",
+      "term": "move",
+      "ipa": "/muːv/",
+      "translation": "hareket etmek/taşınmak",
+      "example": {
+        "en": "We will move to a new house next month.",
+        "tr": "Gelecek ay yeni bir eve taşınacağız."
+      },
+      "collocations": [
+        "move house",
+        "move forward"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-carry",
+      "level": "A2",
+      "term": "carry",
+      "ipa": "/ˈkær.i/",
+      "translation": "taşımak",
+      "example": {
+        "en": "Can you carry this bag for me?",
+        "tr": "Bu çantayı benim için taşıyabilir misin?"
+      },
+      "collocations": [
+        "carry luggage",
+        "carry out"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-hold",
+      "level": "A2",
+      "term": "hold",
+      "ipa": "/həʊld/",
+      "translation": "tutmak",
+      "example": {
+        "en": "Please hold my hand while crossing.",
+        "tr": "Karşıya geçerken lütfen elimi tut."
+      },
+      "collocations": [
+        "hold hands",
+        "hold a meeting"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-push",
+      "level": "A2",
+      "term": "push",
+      "ipa": "/pʊʃ/",
+      "translation": "itmek",
+      "example": {
+        "en": "You have to push the door to open it.",
+        "tr": "Kapıyı açmak için itmek zorundasınız."
+      },
+      "collocations": [
+        "push hard",
+        "push limits"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-pull",
+      "level": "A2",
+      "term": "pull",
+      "ipa": "/pʊl/",
+      "translation": "çekmek",
+      "example": {
+        "en": "Pull the handle to open the drawer.",
+        "tr": "Çekmeceyi açmak için kolu çekin."
+      },
+      "collocations": [
+        "pull trigger",
+        "pull together"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-call",
+      "level": "A1",
+      "term": "call",
+      "ipa": "/kɔːl/",
+      "translation": "aramak",
+      "example": {
+        "en": "I will call you when I arrive.",
+        "tr": "Vardığımda seni arayacağım."
+      },
+      "collocations": [
+        "call back",
+        "call name"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-answer",
+      "level": "A1",
+      "term": "answer",
+      "ipa": "/ˈɑːn.sə/",
+      "translation": "cevaplamak",
+      "example": {
+        "en": "She did not answer my question.",
+        "tr": "Soruma cevap vermedi."
+      },
+      "collocations": [
+        "answer phone",
+        "answer questions"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-ask",
+      "level": "A1",
+      "term": "ask",
+      "ipa": "/ɑːsk/",
+      "translation": "sormak",
+      "example": {
+        "en": "If you don't know, ask the teacher.",
+        "tr": "Bilmiyorsan öğretmene sor."
+      },
+      "collocations": [
+        "ask questions",
+        "ask for help"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-explain",
+      "level": "A2",
+      "term": "explain",
+      "ipa": "/ɪkˈspleɪn/",
+      "translation": "açıklamak",
+      "example": {
+        "en": "Can you explain this rule to me?",
+        "tr": "Bu kuralı bana açıklayabilir misiniz?"
+      },
+      "collocations": [
+        "explain details",
+        "explain rules"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-learn",
+      "level": "A1",
+      "term": "learn",
+      "ipa": "/lɜːn/",
+      "translation": "öğrenmek",
+      "example": {
+        "en": "I want to learn Spanish.",
+        "tr": "İspanyolca öğrenmek istiyorum."
+      },
+      "collocations": [
+        "learn language",
+        "learn skills"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-teach",
+      "level": "A1",
+      "term": "teach",
+      "ipa": "/tiːtʃ/",
+      "translation": "öğretmek",
+      "example": {
+        "en": "He will teach us how to swim.",
+        "tr": "Bize nasıl yüzeceğimizi öğretecek."
+      },
+      "collocations": [
+        "teach school",
+        "teach lessons"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-remember",
+      "level": "A1",
+      "term": "remember",
+      "ipa": "/rɪˈmem.bə/",
+      "translation": "hatırlamak",
+      "example": {
+        "en": "I remember meeting her before.",
+        "tr": "Onunla daha önce buluştuğumuzu hatırlıyorum."
+      },
+      "collocations": [
+        "remember name",
+        "remember details"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-forget",
+      "level": "A1",
+      "term": "forget",
+      "ipa": "/fəˈɡet/",
+      "translation": "unutmak",
+      "example": {
+        "en": "Don't forget to lock the door.",
+        "tr": "Kapıyı kilitlemeyi unutma."
+      },
+      "collocations": [
+        "forget password",
+        "forget keys"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-understand",
+      "level": "A1",
+      "term": "understand",
+      "ipa": "/ˌʌn.dəˈstænd/",
+      "translation": "anlamak",
+      "example": {
+        "en": "I understand your concern completely.",
+        "tr": "Endişenizi tamamen anlıyorum."
+      },
+      "collocations": [
+        "understand logic",
+        "make understand"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-improve",
+      "level": "A2",
+      "term": "improve",
+      "ipa": "/ɪmˈpruːv/",
+      "translation": "geliştirmek",
+      "example": {
+        "en": "You should practice to improve your skills.",
+        "tr": "Becerilerinizi geliştirmek için pratik yapmalısınız."
+      },
+      "collocations": [
+        "improve skills",
+        "improve health"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-practice",
+      "level": "A2",
+      "term": "practice",
+      "ipa": "/ˈpræk.tɪs/",
+      "translation": "pratik yapmak",
+      "example": {
+        "en": "I need to practice speaking English.",
+        "tr": "İngilizce konuşma pratiği yapmam gerekiyor."
+      },
+      "collocations": [
+        "practice speaking",
+        "practice sports"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-build",
+      "level": "A2",
+      "term": "build",
+      "ipa": "/bɪld/",
+      "translation": "inşa etmek/geliştirmek",
+      "example": {
+        "en": "They plan to build a new library.",
+        "tr": "Yeni bir kütüphane inşa etmeyi planlıyorlar."
+      },
+      "collocations": [
+        "build relationship",
+        "build houses"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-create",
+      "level": "A2",
+      "term": "create",
+      "ipa": "/kriˈeɪt/",
+      "translation": "oluşturmak",
+      "example": {
+        "en": "We need to create a new folder.",
+        "tr": "Yeni bir klasör oluşturmamız gerekiyor."
+      },
+      "collocations": [
+        "create folders",
+        "create opportunities"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-fix",
+      "level": "A2",
+      "term": "fix",
+      "ipa": "/fɪks/",
+      "translation": "düzeltmek (onararak)",
+      "example": {
+        "en": "Can you fix this broken chair?",
+        "tr": "Bu kırık sandalyeyi tamir edebilir misin?"
+      },
+      "collocations": [
+        "fix bugs",
+        "fix problems"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-break",
+      "level": "A2",
+      "term": "break",
+      "ipa": "/breɪk/",
+      "translation": "kırmak/bozmak",
+      "example": {
+        "en": "Be careful not to break the glass.",
+        "tr": "Bardağı kırmamaya dikkat et."
+      },
+      "collocations": [
+        "break rules",
+        "break records"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-repair",
+      "level": "A2",
+      "term": "repair",
+      "ipa": "/rɪˈpeər/",
+      "translation": "tamir etmek",
+      "example": {
+        "en": "He repairs cars at his garage.",
+        "tr": "Garajında arabaları tamir ediyor."
+      },
+      "collocations": [
+        "repair engine",
+        "repair houses"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-happen",
+      "level": "A2",
+      "term": "happen",
+      "ipa": "/ˈhæp.ən/",
+      "translation": "olmak (meydana gelmek)",
+      "example": {
+        "en": "What will happen next?",
+        "tr": "Sırada ne olacak?"
+      },
+      "collocations": [
+        "happen suddenly",
+        "make happen"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-continue",
+      "level": "A2",
+      "term": "continue",
+      "ipa": "/kənˈtɪn.juː/",
+      "translation": "devam etmek",
+      "example": {
+        "en": "We will continue the project tomorrow.",
+        "tr": "Projeye yarın devam edeceğiz."
+      },
+      "collocations": [
+        "continue study",
+        "continue working"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-stop",
+      "level": "A1",
+      "term": "stop",
+      "ipa": "/stɒp/",
+      "translation": "durmak/durdurmak",
+      "example": {
+        "en": "Please stop the car here.",
+        "tr": "Lütfen arabayı burada durdurun."
+      },
+      "collocations": [
+        "stop smoking",
+        "stop the bus"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-prepare",
+      "level": "A1",
+      "term": "prepare",
+      "ipa": "/prɪˈpeər/",
+      "translation": "hazırlamak",
+      "example": {
+        "en": "I need to prepare dinner now.",
+        "tr": "Şimdi akşam yemeğini hazırlamam gerekiyor."
+      },
+      "collocations": [
+        "prepare meals",
+        "prepare exams"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "vrb-organize",
+      "level": "B1",
+      "term": "organize",
+      "ipa": "/ˈɔː.ɡən.aɪz/",
+      "translation": "organize etmek",
+      "example": {
+        "en": "We will organize a party next week.",
+        "tr": "Gelecek hafta bir parti organize edeceğiz."
+      },
+      "collocations": [
+        "organize event",
+        "organize files"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "vrb-q-go",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I want to ___ home now.",
+      "answer": "go",
+      "explanation": "'go home' = eve gitmek anlamına gelen kalıptır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-come",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Would you like to ___ to my party tonight?",
+      "answer": "come",
+      "explanation": "'come to a party' = partiye gelmek anlamında kullanılır.",
+      "options": [
+        "come",
+        "go",
+        "leave",
+        "stay"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-leave",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I usually ___ for work at 8:00 AM.",
+      "answer": "leave",
+      "explanation": "'leave for work' = işe gitmek üzere evden ayrılmaktır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-arrive",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "They will ___ at the airport in ten minutes.",
+      "answer": "arrive",
+      "explanation": "Havalimanına varmak anlamında 'arrive at' kalıbı kullanılır.",
+      "options": [
+        "arrive",
+        "go",
+        "come",
+        "leave"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-stay",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "We decided to ___ home because of the rain.",
+      "answer": "stay",
+      "explanation": "Evde kalmak ifadesi için 'stay home' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-wait",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Please ___ for me here, I will be back soon.",
+      "answer": "wait",
+      "explanation": "Birini/bir şeyi beklemek her zaman 'wait for' kalıbıyla ifade edilir.",
+      "options": [
+        "wait",
+        "stay",
+        "arrive",
+        "stop"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-start",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "The match will ___ in five minutes.",
+      "answer": "start",
+      "explanation": "Maçın başlaması anlamında 'start' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-finish",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "When will you ___ your final exams?",
+      "answer": "finish",
+      "explanation": "Sınavları bitirmek anlamında 'finish' fiili kullanılır.",
+      "options": [
+        "finish",
+        "start",
+        "prepare",
+        "organize"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-open",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Can you ___ the door for me?",
+      "answer": "open",
+      "explanation": "Kapıyı açmak anlamında 'open the door' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-close",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Don't forget to ___ the windows before leaving.",
+      "answer": "close",
+      "explanation": "Pencereleri kapatmak anlamında 'close the windows' kullanılır.",
+      "options": [
+        "close",
+        "open",
+        "fix",
+        "repair"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-bring",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Can you ___ me the newspaper?",
+      "answer": "bring",
+      "explanation": "Gazeteyi getirmek anlamında 'bring me' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-take",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "I need to ___ a quick shower before we go out.",
+      "answer": "take",
+      "explanation": "Duş almak ifadesi İngilizce'de 'take a shower' olarak söylenir.",
+      "options": [
+        "take",
+        "give",
+        "bring",
+        "pay"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-give",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Please ___ me some advice on this matter.",
+      "answer": "give",
+      "explanation": "Öneri vermek, fikir vermek anlamında 'give advice' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-send",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Did you ___ the invitations to all the guests?",
+      "answer": "send",
+      "explanation": "Davetiye göndermek anlamında 'send invitations' kullanılır.",
+      "options": [
+        "send",
+        "receive",
+        "buy",
+        "pay"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-receive",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Did you ___ my message yesterday?",
+      "answer": "receive",
+      "explanation": "Mesajı almak/teslim almak anlamında 'receive a message' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-buy",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "We need to ___ some tickets for the concert.",
+      "answer": "buy",
+      "explanation": "Bilet satın almak anlamında 'buy tickets' ifadesi uygundur.",
+      "options": [
+        "buy",
+        "sell",
+        "pay",
+        "use"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-sell",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "He wants to ___ his old bicycle.",
+      "answer": "sell",
+      "explanation": "Bisikleti satmak anlamında 'sell' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-pay",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Can I ___ for my coffee in cash?",
+      "answer": "pay",
+      "explanation": "Nakit ödeme yapmak anlamında 'pay in cash' kalıbı kullanılır.",
+      "options": [
+        "pay",
+        "buy",
+        "sell",
+        "receive"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-use",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "We ___ computers to write code.",
+      "answer": "use",
+      "explanation": "Bilgisayar kullanmak anlamında 'use computers' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-need",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "I ___ some time to think about this proposal.",
+      "answer": "need",
+      "explanation": "Zamana ihtiyaç duymak anlamında 'need time' ifadesi kullanılır.",
+      "options": [
+        "need",
+        "want",
+        "choose",
+        "help"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-want",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I ___ to drink some water.",
+      "answer": "want",
+      "explanation": "Su içmek istemek anlamında 'want to drink' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-choose",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "It is difficult to ___ between these two colors.",
+      "answer": "choose",
+      "explanation": "İki şey arasında seçim yapmak anlamında 'choose' kullanılır.",
+      "options": [
+        "choose",
+        "need",
+        "try",
+        "change"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-help",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Please ___ me clean the kitchen.",
+      "answer": "help",
+      "explanation": "Temizliğe yardım etmek için 'help me clean' kalıbı kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-try",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "You should ___ this delicious chocolate cake.",
+      "answer": "try",
+      "explanation": "Bir yiyeceği denemek/tadına bakmak anlamında 'try' kullanılır.",
+      "options": [
+        "try",
+        "help",
+        "change",
+        "move"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-change",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I will not ___ my mind about this decision.",
+      "answer": "change",
+      "explanation": "Karar değiştirmek/fikir değiştirmek anlamında 'change mind' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-move",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "They are planning to ___ to London next year.",
+      "answer": "move",
+      "explanation": "Londra'ya taşınmak anlamında 'move to London' kullanılır.",
+      "options": [
+        "move",
+        "carry",
+        "hold",
+        "stay"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-carry",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The police officers ___ weapons for safety.",
+      "answer": "carry",
+      "explanation": "Silah taşımak/bulundurmak anlamında 'carry weapons' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-hold",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "They will ___ a ceremony in the garden.",
+      "answer": "hold",
+      "explanation": "Tören düzenlemek/gerçekleştirmek anlamında 'hold a ceremony' kullanılır.",
+      "options": [
+        "hold",
+        "carry",
+        "push",
+        "pull"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-push",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Please ___ the green button to start the machine.",
+      "answer": "push",
+      "explanation": "Düğmeye basmak/itmek anlamında 'push the button' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-pull",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Don't push the door, you need to ___ it.",
+      "answer": "pull",
+      "explanation": "İtmenin zıttı olan kapıyı çekme eylemi 'pull' fiili ile belirtilir.",
+      "options": [
+        "pull",
+        "push",
+        "hold",
+        "carry"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-call",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Don't forget to ___ your mother on her birthday.",
+      "answer": "call",
+      "explanation": "Birini telefonla aramak anlamında 'call someone' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-answer",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Can you ___ the phone, please? I am busy.",
+      "answer": "answer",
+      "explanation": "Telefona cevap vermek anlamında 'answer the phone' kalıbı kullanılır.",
+      "options": [
+        "answer",
+        "call",
+        "ask",
+        "explain"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-ask",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I need to ___ you a quick question.",
+      "answer": "ask",
+      "explanation": "Soru sormak anlamında 'ask a question' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-explain",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Let me ___ the situation to you.",
+      "answer": "explain",
+      "explanation": "Durumu açıklamak anlamında 'explain the situation' kullanılır.",
+      "options": [
+        "explain",
+        "ask",
+        "answer",
+        "learn"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-learn",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Children ___ very fast at an early age.",
+      "answer": "learn",
+      "explanation": "Hızlıca öğrenmek anlamında 'learn' fiili kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-teach",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "My mother used to ___ English at a high school.",
+      "answer": "teach",
+      "explanation": "İngilizce öğretmek anlamında 'teach English' kullanılır.",
+      "options": [
+        "teach",
+        "learn",
+        "explain",
+        "practice"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-remember",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Do you ___ where you parked the car?",
+      "answer": "remember",
+      "explanation": "Arabanın nereye park edildiğini hatırlamak anlamında 'remember' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-forget",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "I always ___ my keys at home.",
+      "answer": "forget",
+      "explanation": "Anahtarları evde unutmak anlamında 'forget keys' kullanılır.",
+      "options": [
+        "forget",
+        "remember",
+        "understand",
+        "learn"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-understand",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Do you ___ the lesson?",
+      "answer": "understand",
+      "explanation": "Dersi anlamak anlamında 'understand the lesson' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-improve",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Reading books helps to ___ your vocabulary.",
+      "answer": "improve",
+      "explanation": "Kelime dağarcığını geliştirmek için 'improve vocabulary' kullanılır.",
+      "options": [
+        "improve",
+        "practice",
+        "build",
+        "create"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-practice",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "You need to ___ playing the piano daily.",
+      "answer": "practice",
+      "explanation": "Piyano çalma pratiği yapmak için 'practice playing' kalıbı uygundur."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-build",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "It takes time to ___ a strong business relationship.",
+      "answer": "build",
+      "explanation": "Güçlü bir iş ilişkisi geliştirmek/kurmak anlamında 'build a relationship' kullanılır.",
+      "options": [
+        "build",
+        "create",
+        "fix",
+        "repair"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-create",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The internet will ___ new job opportunities.",
+      "answer": "create",
+      "explanation": "Yeni iş fırsatları yaratmak/oluşturmak anlamında 'create opportunities' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-fix",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "The developer had to ___ a lot of bugs in the code.",
+      "answer": "fix",
+      "explanation": "Yazılımdaki hataları düzeltmek anlamında 'fix bugs' kalıbı kullanılır.",
+      "options": [
+        "fix",
+        "break",
+        "happen",
+        "continue"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-break",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "If you ___ the rules, you will get punished.",
+      "answer": "break",
+      "explanation": "Kuralları çiğnemek/kırmak anlamında 'break rules' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-repair",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "It will cost a lot of money to ___ the car engine.",
+      "answer": "repair",
+      "explanation": "Motoru tamir etmek anlamında 'repair engine' kullanılır.",
+      "options": [
+        "repair",
+        "build",
+        "create",
+        "happen"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-happen",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Accidents can ___ at any time.",
+      "answer": "happen",
+      "explanation": "Kazaların meydana gelmesi anlamında 'happen' fiili kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-continue",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Please ___ working on this task.",
+      "answer": "continue",
+      "explanation": "Çalışmaya devam etmek anlamında 'continue working' kullanılır.",
+      "options": [
+        "continue",
+        "stop",
+        "prepare",
+        "organize"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-stop",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "You must ___ at the red light.",
+      "answer": "stop",
+      "explanation": "Kırmızı ışıkta durmak eylemini belirtmek için 'stop' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-prepare",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "She needs to ___ for her university exams.",
+      "answer": "prepare",
+      "explanation": "Sınavlara hazırlanmak anlamında 'prepare' fiili kullanılır.",
+      "options": [
+        "prepare",
+        "continue",
+        "organize",
+        "improve"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "vrb-q-organize",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "He helped us ___ the files on the computer.",
+      "answer": "organize",
+      "explanation": "Dosyaları düzenlemek/organize etmek anlamında 'organize files' kullanılır."
+    }
+  ]
+}
