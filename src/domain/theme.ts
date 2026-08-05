@@ -45,7 +45,7 @@ export interface ThemeTokens {
 export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   emerald: {
     surface:
-      "bg-gradient-to-br from-emerald-50/90 to-emerald-100/60 dark:from-emerald-400/12 dark:to-emerald-900/25",
+      "bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-zinc-900 dark:to-emerald-950",
     border: "border-emerald-300/60 dark:border-emerald-300/20",
     text: "text-emerald-950 dark:text-emerald-50",
     muted: "text-emerald-800/70 dark:text-emerald-200/65",
@@ -56,7 +56,7 @@ export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   },
   indigo: {
     surface:
-      "bg-gradient-to-br from-indigo-50/90 to-indigo-100/60 dark:from-indigo-400/12 dark:to-indigo-900/25",
+      "bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-zinc-900 dark:to-indigo-950",
     border: "border-indigo-300/60 dark:border-indigo-300/20",
     text: "text-indigo-950 dark:text-indigo-50",
     muted: "text-indigo-800/70 dark:text-indigo-200/65",
@@ -67,7 +67,7 @@ export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   },
   amber: {
     surface:
-      "bg-gradient-to-br from-amber-50/90 to-amber-100/60 dark:from-amber-400/12 dark:to-amber-900/25",
+      "bg-gradient-to-br from-amber-50 to-amber-100 dark:from-zinc-900 dark:to-amber-950",
     border: "border-amber-300/60 dark:border-amber-300/20",
     text: "text-amber-950 dark:text-amber-50",
     muted: "text-amber-800/70 dark:text-amber-200/65",
@@ -78,7 +78,7 @@ export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   },
   rose: {
     surface:
-      "bg-gradient-to-br from-rose-50/90 to-rose-100/60 dark:from-rose-400/12 dark:to-rose-900/25",
+      "bg-gradient-to-br from-rose-50 to-rose-100 dark:from-zinc-900 dark:to-rose-950",
     border: "border-rose-300/60 dark:border-rose-300/20",
     text: "text-rose-950 dark:text-rose-50",
     muted: "text-rose-800/70 dark:text-rose-200/65",
@@ -89,7 +89,7 @@ export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   },
   sky: {
     surface:
-      "bg-gradient-to-br from-sky-50/90 to-sky-100/60 dark:from-sky-400/12 dark:to-sky-900/25",
+      "bg-gradient-to-br from-sky-50 to-sky-100 dark:from-zinc-900 dark:to-sky-950",
     border: "border-sky-300/60 dark:border-sky-300/20",
     text: "text-sky-950 dark:text-sky-50",
     muted: "text-sky-800/70 dark:text-sky-200/65",
@@ -100,7 +100,7 @@ export const THEME_TOKENS: Readonly<Record<ColorTheme, ThemeTokens>> = {
   },
   violet: {
     surface:
-      "bg-gradient-to-br from-violet-50/90 to-violet-100/60 dark:from-violet-400/12 dark:to-violet-900/25",
+      "bg-gradient-to-br from-violet-50 to-violet-100 dark:from-zinc-900 dark:to-violet-950",
     border: "border-violet-300/60 dark:border-violet-300/20",
     text: "text-violet-950 dark:text-violet-50",
     muted: "text-violet-800/70 dark:text-violet-200/65",

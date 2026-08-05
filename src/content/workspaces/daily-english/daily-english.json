@@ -1,0 +1,191 @@
+{
+  "$schema": "../schema.json",
+  "slug": "daily-english",
+  "title": "Daily English",
+  "description": "Günlük konuşmalarda ve sosyal hayatta en çok kullanılan temel öbek fiiller ve pratik kelimeler.",
+  "theme": "violet",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "day-get-along",
+      "level": "A2",
+      "term": "get along",
+      "ipa": "/ɡet əˈlɒŋ/",
+      "translation": "iyi geçinmek, anlaşmak",
+      "example": {
+        "en": "I get along very well with my sister.",
+        "tr": "Kız kardeşimle çok iyi geçinirim."
+      },
+      "collocations": ["get along + with someone", "get along + well"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-hang-out",
+      "level": "A1",
+      "term": "hang out",
+      "ipa": "/hæŋ aʊt/",
+      "translation": "birlikte takılmak, vakit geçirmek",
+      "example": {
+        "en": "We usually hang out at the cafe after school.",
+        "tr": "Genelde okuldan sonra kafede takılırız."
+      },
+      "collocations": ["hang out + with friends", "hang out + at the cafe"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-run-out-of",
+      "level": "A2",
+      "term": "run out of",
+      "ipa": "/rʌn aʊt ɒv/",
+      "translation": "tükenmek, bitmek (bir şeyin)",
+      "example": {
+        "en": "We ran out of coffee this morning.",
+        "tr": "Bu sabah kahvemiz tükendi."
+      },
+      "collocations": ["run out + of money", "run out + of time", "run out + of milk"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-look-forward-to",
+      "level": "A2",
+      "term": "look forward to",
+      "ipa": "/lʊk ˈfɔːwəd tuː/",
+      "translation": "dört gözle beklemek",
+      "example": {
+        "en": "I look forward to meeting you next week.",
+        "tr": "Gelecek hafta sizinle görüşmeyi dört gözle bekliyorum."
+      },
+      "collocations": ["look forward + to the weekend", "look forward + to hearing from you"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-call-off",
+      "level": "B1",
+      "term": "call off",
+      "ipa": "/kɔːl ɒf/",
+      "translation": "iptal etmek",
+      "example": {
+        "en": "They had to call off the football match because of rain.",
+        "tr": "Yağmur yüzünden futbol maçını iptal etmek zorunda kaldılar."
+      },
+      "collocations": ["call off + a meeting", "call off + a game"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-catch-up",
+      "level": "B1",
+      "term": "catch up",
+      "ipa": "/kætʃ ʌp/",
+      "translation": "buluşup konuşmak, arayı kapatmak",
+      "example": {
+        "en": "Let's meet for a coffee to catch up.",
+        "tr": "Arayı kapatmak için bir kahve içmeye buluşalım."
+      },
+      "collocations": ["catch up + with someone", "catch up + on news"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-take-after",
+      "level": "B1",
+      "term": "take after",
+      "ipa": "/teɪk ˈɑːftə/",
+      "translation": "benzemek (aile büyüğüne)",
+      "example": {
+        "en": "He takes after his father in personality.",
+        "tr": "Kişilik olarak babasına benziyor."
+      },
+      "collocations": ["take after + father", "take after + mother"]
+    },
+    {
+      "kind": "vocab",
+      "id": "day-give-up",
+      "level": "A2",
+      "term": "give up",
+      "ipa": "/ɡɪv ʌp/",
+      "translation": "bırakmak, vazgeçmek",
+      "example": {
+        "en": "He gave up smoking last month.",
+        "tr": "Geçen ay sigarayı bıraktı."
+      },
+      "collocations": ["give up + a habit", "never give up"]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "day-q-get-along",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "I don't get ___ with my neighbor.",
+      "answer": "along",
+      "explanation": "`get along with` = biriyle iyi geçinmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-hang-out",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Where do you usually ___ with your friends?",
+      "answer": "hang out",
+      "options": ["hang out", "take after", "call off", "give up"],
+      "explanation": "`hang out` arkadaşlarla vakit geçirmeyi, takılmayı anlatır."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-run-out-of",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "We ran ___ of gas on the highway.",
+      "answer": "out",
+      "explanation": "`run out of` = bir şeyin tükenmesini, bitmesini ifade eder."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-look-forward-to",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "I look forward ___ your response.",
+      "answer": "to",
+      "options": ["to", "for", "with", "at"],
+      "explanation": "`look forward to` kalıbı her zaman `to` edatını alır."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-call-off",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "The boss decided to ___ the meeting.",
+      "answer": "call off",
+      "explanation": "`call off` planlanmış bir etkinliği iptal etmek demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-catch-up",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "We haven't seen each other in years; let's ___.",
+      "answer": "catch up",
+      "options": ["catch up", "give up", "run out", "hang out"],
+      "explanation": "`catch up` uzun süredir görüşmeyen insanların buluşup konuşmasını anlatır."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-take-after",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Does she take ___ her mother or father?",
+      "answer": "after",
+      "explanation": "`take after` fiziksel veya karakteristik olarak aileden birine benzemektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "day-q-give-up",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "She refused to ___ on her dreams.",
+      "answer": "give up",
+      "options": ["give up", "call off", "hang out", "catch up"],
+      "explanation": "`give up on` bir şeyden ümidi kesmek, vazgeçmek anlamına gelir."
+    }
+  ]
+}
