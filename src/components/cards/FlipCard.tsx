@@ -71,19 +71,42 @@ export function FlipCard({
         className={`h-full rounded-2xl perspective-distant select-none ${
           interactive ? "cursor-pointer" : ""
         } ${className}`}
+        style={{
+          perspective: "1000px",
+          WebkitPerspective: "1000px",
+        }}
       >
         <div
           className={`grid h-full transform-3d transition-transform duration-500 ease-out motion-reduce:transition-none ${
             flipped ? "rotate-y-180" : ""
           }`}
+          style={{
+            transformStyle: "preserve-3d",
+            WebkitTransformStyle: "preserve-3d",
+          }}
         >
           {/* İki yüz de aynı grid hücresinde: hücre en uzun yüze göre
               boyutlanır, böylece çevirirken kartın yüksekliği değişmez. */}
-          <div className="col-start-1 row-start-1 backface-hidden" inert={flipped}>
+          <div
+            className="col-start-1 row-start-1 backface-hidden"
+            style={{
+              WebkitBackfaceVisibility: "hidden",
+              backfaceVisibility: "hidden",
+              transform: "translate3d(0, 0, 0)",
+              WebkitTransform: "translate3d(0, 0, 0)",
+            }}
+            inert={flipped}
+          >
             {front}
           </div>
           <div
             className="col-start-1 row-start-1 rotate-y-180 backface-hidden"
+            style={{
+              WebkitBackfaceVisibility: "hidden",
+              backfaceVisibility: "hidden",
+              transform: "rotateY(180deg) translate3d(0, 0, 0)",
+              WebkitTransform: "rotateY(180deg) translate3d(0, 0, 0)",
+            }}
             inert={!flipped}
           >
             {back}
