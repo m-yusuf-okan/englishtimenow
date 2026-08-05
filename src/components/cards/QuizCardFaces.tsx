@@ -11,12 +11,24 @@ import { QuizInteraction } from "./QuizInteraction";
  * kabuk ve cevap yüzü var.
  */
 
-export function QuizCardFront({ card, theme }: { card: QuizCard; theme: ColorTheme }) {
+export function QuizCardFront({
+  card,
+  theme,
+  isStarred = false,
+  onToggleStar,
+}: {
+  card: QuizCard;
+  theme: ColorTheme;
+  isStarred?: boolean;
+  onToggleStar?: () => void;
+}) {
   return (
     <CardShell
       theme={theme}
       level={card.level}
       label="Soru"
+      isStarred={isStarred}
+      onToggleStar={onToggleStar}
       actions={<FlipButton theme={theme} label="Cevabı göster" />}
     >
       <QuizInteraction card={card} theme={theme} />
@@ -24,7 +36,17 @@ export function QuizCardFront({ card, theme }: { card: QuizCard; theme: ColorThe
   );
 }
 
-export function QuizCardBack({ card, theme }: { card: QuizCard; theme: ColorTheme }) {
+export function QuizCardBack({
+  card,
+  theme,
+  isStarred = false,
+  onToggleStar,
+}: {
+  card: QuizCard;
+  theme: ColorTheme;
+  isStarred?: boolean;
+  onToggleStar?: () => void;
+}) {
   const tokens = themeTokens(theme);
 
   return (
@@ -32,6 +54,8 @@ export function QuizCardBack({ card, theme }: { card: QuizCard; theme: ColorThem
       theme={theme}
       level={card.level}
       label="Cevap"
+      isStarred={isStarred}
+      onToggleStar={onToggleStar}
       actions={<FlipButton theme={theme} label="Soruya dön" />}
     >
       <div className="flex flex-1 flex-col justify-center gap-4">

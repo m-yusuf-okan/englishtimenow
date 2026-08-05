@@ -20,11 +20,15 @@ export function VocabCardFront({
   card,
   theme,
   reversed = false,
+  isStarred = false,
+  onToggleStar,
 }: {
   card: VocabCard;
   theme: ColorTheme;
   /** Tersine kart modu — PRD 3.C. Ön yüzde Türkçe karşılık gösterilir. */
   reversed?: boolean;
+  isStarred?: boolean;
+  onToggleStar?: () => void;
 }) {
   const tokens = themeTokens(theme);
 
@@ -33,6 +37,8 @@ export function VocabCardFront({
       theme={theme}
       level={card.level}
       label="Ön yüz"
+      isStarred={isStarred}
+      onToggleStar={onToggleStar}
       actions={
         <>
           <FlipButton
@@ -71,10 +77,14 @@ export function VocabCardBack({
   card,
   theme,
   reversed = false,
+  isStarred = false,
+  onToggleStar,
 }: {
   card: VocabCard;
   theme: ColorTheme;
   reversed?: boolean;
+  isStarred?: boolean;
+  onToggleStar?: () => void;
 }) {
   const tokens = themeTokens(theme);
 
@@ -83,6 +93,8 @@ export function VocabCardBack({
       theme={theme}
       level={card.level}
       label="Arka yüz"
+      isStarred={isStarred}
+      onToggleStar={onToggleStar}
       actions={
         <>
           <FlipButton

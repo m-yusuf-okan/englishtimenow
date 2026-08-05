@@ -23,6 +23,8 @@ export function CardShell({
   actions,
   children,
   className = "",
+  isStarred = false,
+  onToggleStar,
 }: {
   theme: ColorTheme;
   level: Level;
@@ -32,6 +34,8 @@ export function CardShell({
   actions?: React.ReactNode;
   children: React.ReactNode;
   className?: string;
+  isStarred?: boolean;
+  onToggleStar?: () => void;
 }) {
   const tokens = themeTokens(theme);
 
@@ -45,11 +49,41 @@ export function CardShell({
         >
           {label}
         </span>
-        <span
-          className={`rounded-full px-2.5 py-0.5 text-xs font-bold tracking-wide ${tokens.accent} ${tokens.onAccent}`}
-        >
-          {level}
-        </span>
+        <div className="flex items-center gap-2">
+          {onToggleStar && (
+            <button
+              type="button"
+              onClick={(event) => {
+                event.stopPropagation();
+                onToggleStar();
+              }}
+              aria-pressed={isStarred}
+              aria-label={isStarred ? "Yıldızı kaldır" : "Yıldızla"}
+              title={isStarred ? "Yıldızı kaldır" : "Yıldızla"}
+              className={`p-1 transition-transform active:scale-90 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-md cursor-pointer ${
+                isStarred ? "text-amber-500" : "opacity-40 hover:opacity-100"
+              }`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill={isStarred ? "currentColor" : "none"}
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-4.5"
+              >
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </button>
+          )}
+          <span
+            className={`rounded-full px-2.5 py-0.5 text-xs font-bold tracking-wide ${tokens.accent} ${tokens.onAccent}`}
+          >
+            {level}
+          </span>
+        </div>
       </div>
 
       {children}
