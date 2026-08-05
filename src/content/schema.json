@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CategorySchema",
+  "type": "object",
+  "required": ["slug", "title", "description", "theme", "vocab", "quiz"],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string",
+      "enum": ["emerald", "indigo", "amber", "rose", "sky", "violet"]
+    },
+    "vocab": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "id", "level", "term", "ipa", "translation", "example", "collocations"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "const": "vocab"
+          },
+          "id": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": ["A1", "A2", "B1"]
+          },
+          "term": {
+            "type": "string"
+          },
+          "ipa": {
+            "type": "string",
+            "pattern": "^\\/.+\\/$"
+          },
+          "translation": {
+            "type": "string"
+          },
+          "example": {
+            "type": "object",
+            "required": ["en", "tr"],
+            "properties": {
+              "en": { "type": "string" },
+              "tr": { "type": "string" }
+            }
+          },
+          "collocations": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "quiz": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "id", "level", "format", "prompt", "answer", "explanation"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "const": "quiz"
+          },
+          "id": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": ["A1", "A2", "B1"]
+          },
+          "format": {
+            "type": "string",
+            "enum": ["cloze", "multiple-choice"]
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "dependencies": {
+          "format": {
+            "oneOf": [
+              {
+                "properties": {
+                  "format": { "const": "cloze" }
+                }
+              },
+              {
+                "properties": {
+                  "format": { "const": "multiple-choice" }
+                },
+                "required": ["options"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

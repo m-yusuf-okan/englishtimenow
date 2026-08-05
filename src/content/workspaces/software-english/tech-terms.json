@@ -1,0 +1,348 @@
+{
+  "$schema": "../../schema.json",
+  "slug": "tech-terms",
+  "title": "Tech Terms",
+  "description": "Kod, sürüm ve altyapı konuşmalarında geçen temel teknik terimler ve doğru okunuşları.",
+  "theme": "indigo",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "tec-deploy",
+      "level": "B1",
+      "term": "deploy",
+      "ipa": "/dɪˈplɔɪ/",
+      "translation": "yayına almak, dağıtmak",
+      "example": {
+        "en": "We deploy the app every Friday morning.",
+        "tr": "Uygulamayı her cuma sabahı yayına alıyoruz."
+      },
+      "collocations": ["deploy + to production", "deploy + an application"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-repository",
+      "level": "B1",
+      "term": "repository",
+      "ipa": "/rɪˈpɒzɪtri/",
+      "translation": "depo (kod deposu)",
+      "example": {
+        "en": "The code is in a public repository.",
+        "tr": "Kod açık bir depoda duruyor."
+      },
+      "collocations": ["clone + a repository", "push + to a repository"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-branch",
+      "level": "A2",
+      "term": "branch",
+      "ipa": "/brɑːntʃ/",
+      "translation": "dal",
+      "example": {
+        "en": "Please create a new branch for this fix.",
+        "tr": "Bu düzeltme için yeni bir dal oluştur."
+      },
+      "collocations": ["create + a branch", "switch + to a branch"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-merge",
+      "level": "A2",
+      "term": "merge",
+      "ipa": "/mɜːdʒ/",
+      "translation": "birleştirmek",
+      "example": {
+        "en": "Can we merge this branch today?",
+        "tr": "Bu dalı bugün birleştirebilir miyiz?"
+      },
+      "collocations": ["merge + into main", "merge + a branch"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-commit",
+      "level": "A2",
+      "term": "commit",
+      "ipa": "/kəˈmɪt/",
+      "translation": "kayıt, işleme",
+      "example": {
+        "en": "Your last commit broke the build.",
+        "tr": "Son kaydın derlemeyi bozdu."
+      },
+      "collocations": ["make + a commit", "commit + a change"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-bug",
+      "level": "A1",
+      "term": "bug",
+      "ipa": "/bʌɡ/",
+      "translation": "hata, yazılım hatası",
+      "example": {
+        "en": "There is a small bug on the login page.",
+        "tr": "Giriş sayfasında küçük bir hata var."
+      },
+      "collocations": ["fix + a bug", "report + a bug"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-feature",
+      "level": "A1",
+      "term": "feature",
+      "ipa": "/ˈfiːtʃə/",
+      "translation": "özellik",
+      "example": {
+        "en": "This feature is not ready yet.",
+        "tr": "Bu özellik henüz hazır değil."
+      },
+      "collocations": ["add + a feature", "ship + a feature"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-database",
+      "level": "A2",
+      "term": "database",
+      "ipa": "/ˈdeɪtəbeɪs/",
+      "translation": "veritabanı",
+      "example": {
+        "en": "The database is empty at the moment.",
+        "tr": "Veritabanı şu anda boş."
+      },
+      "collocations": ["query + a database", "connect + to a database"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-query",
+      "level": "B1",
+      "term": "query",
+      "ipa": "/ˈkwɪəri/",
+      "translation": "sorgu",
+      "example": {
+        "en": "This query is very slow.",
+        "tr": "Bu sorgu çok yavaş."
+      },
+      "collocations": ["run + a query", "a slow + query"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-cache",
+      "level": "B1",
+      "term": "cache",
+      "ipa": "/kæʃ/",
+      "translation": "önbellek",
+      "example": {
+        "en": "Clear the cache and try again.",
+        "tr": "Önbelleği temizle ve tekrar dene."
+      },
+      "collocations": ["clear + the cache", "cache + a response"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-request",
+      "level": "A2",
+      "term": "request",
+      "ipa": "/rɪˈkwest/",
+      "translation": "istek",
+      "example": {
+        "en": "The server received too many requests.",
+        "tr": "Sunucu çok fazla istek aldı."
+      },
+      "collocations": ["send + a request", "handle + a request"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-response",
+      "level": "A2",
+      "term": "response",
+      "ipa": "/rɪˈspɒns/",
+      "translation": "yanıt",
+      "example": {
+        "en": "The response was empty.",
+        "tr": "Yanıt boştu."
+      },
+      "collocations": ["return + a response", "a slow + response"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-dependency",
+      "level": "B1",
+      "term": "dependency",
+      "ipa": "/dɪˈpendənsi/",
+      "translation": "bağımlılık",
+      "example": {
+        "en": "We should update this dependency.",
+        "tr": "Bu bağımlılığı güncellemeliyiz."
+      },
+      "collocations": ["install + a dependency", "update + a dependency"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-release",
+      "level": "A2",
+      "term": "release",
+      "ipa": "/rɪ\u00adˈli\u00ads/",
+      "translation": "sürüm; yayımlamak",
+      "example": {
+        "en": "The new release is ready for testing.",
+        "tr": "Yeni sürüm test için hazır."
+      },
+      "collocations": ["a new + release", "release + a version"]
+    },
+    {
+      "kind": "vocab",
+      "id": "tec-framework",
+      "level": "B1",
+      "term": "framework",
+      "ipa": "/ˈfreɪmwɜːk/",
+      "translation": "çatı, çerçeve (yazılım altyapısı)",
+      "example": {
+        "en": "We chose a modern framework for the website.",
+        "tr": "Web sitesi için modern bir çatı seçtik."
+      },
+      "collocations": ["use + a framework", "a web + framework"]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "tec-q-deploy",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "We will ___ the new version to production tonight.",
+      "answer": "deploy",
+      "explanation": "`deploy` yazılımı canlı ortama taşımaktır ve genellikle `to` ile kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-repository",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "You can clone the ___ from GitHub.",
+      "answer": "repository",
+      "options": ["repository", "response", "release", "request"],
+      "explanation": "`repository` kodun saklandığı depodur. Konuşma dilinde kısaca `repo` denir."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-branch",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Create a new ___ before you change the code.",
+      "answer": "branch",
+      "explanation": "`branch` ana koddan ayrılan çalışma dalıdır: create / switch to a branch."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-merge",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "After the review, we can ___ the branch into main.",
+      "answer": "merge",
+      "options": ["merge", "deploy", "clear", "report"],
+      "explanation": "`merge` iki dalı birleştirmektir ve hedef dal `into` ile belirtilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-commit",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Write a clear message for every ___.",
+      "answer": "commit",
+      "explanation": "`commit` hem isim hem fiildir: make a commit (isim), commit a change (fiil)."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-bug",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Our team needs to fix this ___ before Friday.",
+      "answer": "bug",
+      "options": ["bug", "branch", "cache", "framework"],
+      "explanation": "`bug` yazılım hatasıdır ve `fix` fiiliyle eşleşir: fix a bug."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-feature",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Users asked for this ___ many times.",
+      "answer": "feature",
+      "explanation": "`feature` üründeki bir özelliktir; `add` ve `ship` fiilleriyle sık kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-database",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "All user names are stored in the ___.",
+      "answer": "database",
+      "options": ["database", "dependency", "repository", "response"],
+      "explanation": "`database` verinin saklandığı yerdir. Tek kelime yazılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-query",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "This ___ takes five seconds to finish.",
+      "answer": "query",
+      "explanation": "`query` veritabanına sorulan sorudur; `run a query` kalıbıyla kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-cache",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "If the page looks old, clear the ___.",
+      "answer": "cache",
+      "options": ["cache", "commit", "branch", "bug"],
+      "explanation": "`cache` /kæʃ/ okunur ve önbellek demektir; `cash` ile karıştırma."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-request",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The browser sends a ___ to the server.",
+      "answer": "request",
+      "explanation": "`request` istektir. Sunucudan dönen karşılığı ise `response`'tur."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-response",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "The server returned an empty ___.",
+      "answer": "response",
+      "options": ["response", "request", "release", "repository"],
+      "explanation": "`response` sunucunun yanıtıdır; `request` ile çifttir: request → response."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-dependency",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "This package is a ___ of our project.",
+      "answer": "dependency",
+      "explanation": "`dependency`, `depend on` fiilinden türer. Çoğulu düzensizdir: dependency → dependencies."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-release",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "The next ___ will include a dark theme.",
+      "answer": "release",
+      "options": ["release", "request", "query", "branch"],
+      "explanation": "`release` yayımlanan sürümdür ve aynı kelime fiil olarak da kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "tec-q-framework",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Next.js is a popular web ___.",
+      "answer": "framework",
+      "explanation": "`framework` hazır yapı taşları sunan altyapıdır; `library`den daha kapsamlıdır."
+    }
+  ]
+}
