@@ -119,7 +119,7 @@ export function CardCarousel({
             "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
         }}
         // `touch-pan-y`: dikey kaydırma tarayıcıda kalır, yatayı biz yönetiriz.
-        className="relative h-120 touch-pan-y overflow-hidden"
+        className="relative h-[500px] sm:h-120 touch-pan-y overflow-hidden"
       >
         {items.map((item, itemIndex) => {
           const offset = itemIndex - activeIndex;

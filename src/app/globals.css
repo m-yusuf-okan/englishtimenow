@@ -78,3 +78,12 @@ body::after {
   animation: match-flash-correct 0.4s ease-in-out;
 }
 
+/* Scrollbar saklama yardımcı sınıfı */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

@@ -30,7 +30,7 @@ export function QuizInteraction({ card, theme }: { card: QuizCard; theme: ColorT
     <div
       // Kart yüzeyine ulaşmasın: seçim yapmak kartı çevirmemeli.
       onClick={(event) => event.stopPropagation()}
-      className="flex flex-1 flex-col justify-center gap-4"
+      className="flex flex-1 flex-col justify-center gap-3 sm:gap-4"
     >
       {card.format === "cloze" ? (
         <ClozeQuestion card={card} answered={answered} onSubmit={setSubmitted} />
@@ -77,7 +77,7 @@ function ClozeQuestion({
 
   return (
     <div className="space-y-3">
-      <p lang="en" className="text-xl leading-relaxed">
+      <p lang="en" className="text-lg sm:text-xl leading-relaxed">
         {before}
         <input
           type="text"
@@ -125,7 +125,7 @@ function MultipleChoiceQuestion({
 
   return (
     <>
-      <p lang="en" className="text-xl leading-relaxed">
+      <p lang="en" className="text-lg sm:text-xl leading-relaxed">
         {card.prompt}
       </p>
 
@@ -156,7 +156,7 @@ function MultipleChoiceQuestion({
               onClick={() => {
                 if (!answered) onSubmit(option);
               }}
-              className={`rounded-xl border px-4 py-3 text-left font-medium transition-all focus-visible:ring-2 focus-visible:outline-none ${STATE_CLASSES[state]} ${
+              className={`rounded-xl border px-3 py-2.5 sm:px-4 sm:py-3 text-left text-sm sm:text-base font-medium transition-all focus-visible:ring-2 focus-visible:outline-none ${STATE_CLASSES[state]} ${
                 state === "muted" ? muted : ""
               } ${answered ? "cursor-default" : "hover:translate-x-0.5 hover:bg-current/10"}`}
             >

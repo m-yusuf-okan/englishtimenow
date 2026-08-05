@@ -58,11 +58,11 @@ export function QuizCardBack({
       onToggleStar={onToggleStar}
       actions={<FlipButton theme={theme} label="Soruya dön" />}
     >
-      <div className="flex flex-1 flex-col justify-center gap-4">
-        <p lang="en" className="text-3xl leading-tight font-bold text-balance">
+      <div className="flex flex-1 flex-col justify-center gap-3 sm:gap-4">
+        <p lang="en" className="text-2xl sm:text-3xl leading-tight font-bold text-balance">
           {card.answer}
         </p>
-        <p className={`text-base leading-relaxed ${tokens.muted}`}>{card.explanation}</p>
+        <p className={`text-sm sm:text-base leading-relaxed ${tokens.muted}`}>{card.explanation}</p>
       </div>
     </CardShell>
   );
