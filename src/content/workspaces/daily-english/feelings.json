@@ -1,0 +1,708 @@
+{
+  "$schema": "../schema.json",
+  "slug": "feelings",
+  "title": "Duygular ve Düşünceler",
+  "description": "Duygu halleri, hisler ve zihinsel süreçlere dair temel İngilizce kelimeler.",
+  "theme": "rose",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "wrd-happy",
+      "level": "A1",
+      "term": "happy",
+      "ipa": "/ˈhæp.i/",
+      "translation": "mutlu",
+      "example": {
+        "en": "She looks very happy today.",
+        "tr": "Bugün çok mutlu görünüyor."
+      },
+      "collocations": [
+        "happy ending",
+        "happy birthday"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-sad",
+      "level": "A1",
+      "term": "sad",
+      "ipa": "/sæd/",
+      "translation": "üzgün",
+      "example": {
+        "en": "It was a very sad movie.",
+        "tr": "Çok üzücü bir filmdi."
+      },
+      "collocations": [
+        "sad song",
+        "feel sad"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-angry",
+      "level": "A1",
+      "term": "angry",
+      "ipa": "/ˈæŋ.ɡri/",
+      "translation": "kızgın",
+      "example": {
+        "en": "My father was angry with me.",
+        "tr": "Babam bana kızgındı."
+      },
+      "collocations": [
+        "angry bird",
+        "get angry"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-nervous",
+      "level": "A2",
+      "term": "nervous",
+      "ipa": "/ˈnɜː.vəs/",
+      "translation": "gergin (heyecanlı/endişeli)",
+      "example": {
+        "en": "I feel nervous before public speaking.",
+        "tr": "Topluluk önünde konuşmadan önce gergin hissederim."
+      },
+      "collocations": [
+        "feel nervous",
+        "nervous system"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-calm",
+      "level": "A2",
+      "term": "calm",
+      "ipa": "/kɑːm/",
+      "translation": "sakin",
+      "example": {
+        "en": "Please try to stay calm.",
+        "tr": "Lütfen sakin kalmaya çalışın."
+      },
+      "collocations": [
+        "stay calm",
+        "calm down"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-confident",
+      "level": "B1",
+      "term": "confident",
+      "ipa": "/ˈkɒn.fɪ.dənt/",
+      "translation": "özgüvenli (emin)",
+      "example": {
+        "en": "He is confident about his success.",
+        "tr": "Başarısı konusunda özgüvenli/emin."
+      },
+      "collocations": [
+        "feel confident",
+        "self-confident"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-afraid",
+      "level": "A1",
+      "term": "afraid",
+      "ipa": "/əˈfreɪd/",
+      "translation": "korkmuş",
+      "example": {
+        "en": "She is afraid of spiders.",
+        "tr": "Örümceklerden korkar."
+      },
+      "collocations": [
+        "afraid of",
+        "afraid not"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-shy",
+      "level": "A2",
+      "term": "shy",
+      "ipa": "/ʃaɪ/",
+      "translation": "utangaç",
+      "example": {
+        "en": "The child was too shy to speak.",
+        "tr": "Çocuk konuşamayacak kadar utangaçtı."
+      },
+      "collocations": [
+        "shy smile",
+        "feel shy"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-curious",
+      "level": "A2",
+      "term": "curious",
+      "ipa": "/ˈkʊə.ri.əs/",
+      "translation": "meraklı",
+      "example": {
+        "en": "Cats are very curious animals.",
+        "tr": "Kediler çok meraklı hayvanlardır."
+      },
+      "collocations": [
+        "curious mind",
+        "just curious"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-proud",
+      "level": "A2",
+      "term": "proud",
+      "ipa": "/praʊd/",
+      "translation": "gururlu",
+      "example": {
+        "en": "I am proud of your achievements.",
+        "tr": "Başarılarınla gurur duyuyorum."
+      },
+      "collocations": [
+        "proud of",
+        "proud moment"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-hope",
+      "level": "A1",
+      "term": "hope",
+      "ipa": "/həʊp/",
+      "translation": "umut etmek (umut)",
+      "example": {
+        "en": "I hope you have a nice trip.",
+        "tr": "Umarım iyi bir yolculuk geçirirsiniz."
+      },
+      "collocations": [
+        "hope so",
+        "ray of hope"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-dream",
+      "level": "A1",
+      "term": "dream",
+      "ipa": "/driːm/",
+      "translation": "hayal (rüya)",
+      "example": {
+        "en": "My dream is to travel around the world.",
+        "tr": "Hayalim dünyayı dolaşmaktır."
+      },
+      "collocations": [
+        "sweet dreams",
+        "follow dream"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-goal",
+      "level": "A1",
+      "term": "goal",
+      "ipa": "/ɡəʊl/",
+      "translation": "hedef (amaç)",
+      "example": {
+        "en": "My main goal is to learn English.",
+        "tr": "Ana hedefim İngilizce öğrenmektir."
+      },
+      "collocations": [
+        "achieve a goal",
+        "set a goal"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-success",
+      "level": "A2",
+      "term": "success",
+      "ipa": "/səkˈses/",
+      "translation": "başarı",
+      "example": {
+        "en": "Hard work is the key to success.",
+        "tr": "Sıkı çalışma başarının anahtarıdır."
+      },
+      "collocations": [
+        "key to success",
+        "huge success"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-failure",
+      "level": "B1",
+      "term": "failure",
+      "ipa": "/ˈfeɪ.ljər/",
+      "translation": "başarısızlık",
+      "example": {
+        "en": "Failure is a chance to learn.",
+        "tr": "Başarısızlık, öğrenmek için bir şanstır."
+      },
+      "collocations": [
+        "engine failure",
+        "fear of failure"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-motivation",
+      "level": "B1",
+      "term": "motivation",
+      "ipa": "/ˌməʊ.tɪˈveɪ.ʃən/",
+      "translation": "motivasyon",
+      "example": {
+        "en": "Good teachers give students motivation.",
+        "tr": "İyi öğretmenler öğrencilere motivasyon verir."
+      },
+      "collocations": [
+        "lack of motivation",
+        "high motivation"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-focus",
+      "level": "A2",
+      "term": "focus",
+      "ipa": "/ˈfəʊ.kəs/",
+      "translation": "odaklanmak",
+      "example": {
+        "en": "You need to focus on your studies.",
+        "tr": "Çalışmalarına odaklanman gerekiyor."
+      },
+      "collocations": [
+        "focus on",
+        "main focus"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-attention",
+      "level": "A2",
+      "term": "attention",
+      "ipa": "/əˈten.ʃən/",
+      "translation": "dikkat (ilgi)",
+      "example": {
+        "en": "Please pay attention to the teacher.",
+        "tr": "Lütfen öğretmene dikkat edin."
+      },
+      "collocations": [
+        "pay attention",
+        "draw attention"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-decision",
+      "level": "A2",
+      "term": "decision",
+      "ipa": "/dɪˈsɪʒ.ən/",
+      "translation": "karar",
+      "example": {
+        "en": "It was a difficult decision to make.",
+        "tr": "Alması zor bir karardı."
+      },
+      "collocations": [
+        "make a decision",
+        "final decision"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-choice",
+      "level": "A1",
+      "term": "choice",
+      "ipa": "/tʃɔɪs/",
+      "translation": "seçim (seçenek)",
+      "example": {
+        "en": "You have no other choice.",
+        "tr": "Başka seçeneğin yok."
+      },
+      "collocations": [
+        "good choice",
+        "make a choice"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-thought",
+      "level": "A1",
+      "term": "thought",
+      "ipa": "/θɔːt/",
+      "translation": "düşünce (fikir)",
+      "example": {
+        "en": "The thought of traveling excited him.",
+        "tr": "Seyahat etme düşüncesi onu heyecanlandırdı."
+      },
+      "collocations": [
+        "deep thought",
+        "first thought"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-memory",
+      "level": "A2",
+      "term": "memory",
+      "ipa": "/ˈmem.ər.i/",
+      "translation": "hafıza / anı",
+      "example": {
+        "en": "He has a very good memory for names.",
+        "tr": "İsimler için çok iyi bir hafızası var."
+      },
+      "collocations": [
+        "good memory",
+        "lost memory"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-feeling",
+      "level": "A1",
+      "term": "feeling",
+      "ipa": "/ˈfiː.lɪŋ/",
+      "translation": "his (duygu)",
+      "example": {
+        "en": "I have a feeling that we are lost.",
+        "tr": "Kaybolduğumuza dair bir hissim var."
+      },
+      "collocations": [
+        "good feeling",
+        "hurt feelings"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-stress",
+      "level": "A2",
+      "term": "stress",
+      "ipa": "/stres/",
+      "translation": "stres",
+      "example": {
+        "en": "Work-related stress is common.",
+        "tr": "İş kaynaklı stres yaygındır."
+      },
+      "collocations": [
+        "under stress",
+        "stress management"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-pressure",
+      "level": "B1",
+      "term": "pressure",
+      "ipa": "/ˈpreʃ.ər/",
+      "translation": "baskı",
+      "example": {
+        "en": "She works well under pressure.",
+        "tr": "Baskı altında iyi çalışır."
+      },
+      "collocations": [
+        "under pressure",
+        "blood pressure"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "wrd-q-happy",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I am so ___ to see you here!",
+      "answer": "happy",
+      "explanation": "Memnuniyet ve mutluluk belirtmek için 'happy' sıfatı kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-sad",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "She felt ___ when her dog died.",
+      "answer": "sad",
+      "explanation": "Üzüntülü hissetmek anlamında 'feel sad' kalıbı uygundur.",
+      "options": [
+        "sad",
+        "happy",
+        "calm",
+        "proud"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-angry",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Don't get ___ with me, I didn't do it.",
+      "answer": "angry",
+      "explanation": "Birine kızmak/sinirlenmek 'get angry with someone' olarak ifade edilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-nervous",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "She was ___ about the job interview.",
+      "answer": "nervous",
+      "explanation": "Sınav veya mülakat öncesi gerginlik 'feel nervous' ile belirtilir.",
+      "options": [
+        "nervous",
+        "calm",
+        "happy",
+        "proud"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-calm",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The sea was very ___ this morning.",
+      "answer": "calm",
+      "explanation": "Durgun deniz veya sakin insan durumu için 'calm' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-confident",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "You need to be ___ during your presentation.",
+      "answer": "confident",
+      "explanation": "Kendinden emin ve özgüvenli durmak 'be confident' ile belirtilir.",
+      "options": [
+        "confident",
+        "shy",
+        "afraid",
+        "sad"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-afraid",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Are you ___ of the dark?",
+      "answer": "afraid",
+      "explanation": "Bir şeyden korkmak kalıbı 'be afraid of' şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-shy",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "He is a ___ boy who doesn't talk much.",
+      "answer": "shy",
+      "explanation": "Sosyal ortamlarda çekingen duran insanlar için 'shy' (utangaç) sıfatı kullanılır.",
+      "options": [
+        "shy",
+        "confident",
+        "proud",
+        "angry"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-curious",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "I am ___ to know what happened.",
+      "answer": "curious",
+      "explanation": "Bir şeyi öğrenmeye istekli ve meraklı olmak 'be curious' ile ifade edilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-proud",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Her parents were extremely ___ of her graduation.",
+      "answer": "proud",
+      "explanation": "Birisiyle gurur duymak kalıbı 'be proud of' şeklindedir.",
+      "options": [
+        "proud",
+        "sad",
+        "shy",
+        "afraid"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-hope",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "We ___ to see you again soon.",
+      "answer": "hope",
+      "explanation": "Bir dilek ve umudu belirtmek için 'hope' fiili kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-dream",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "She had a strange ___ last night.",
+      "answer": "dream",
+      "explanation": "Rüya veya gelecek hayali için 'dream' ismi kullanılır.",
+      "options": [
+        "dream",
+        "goal",
+        "thought",
+        "memory"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-goal",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "You need to set a clear ___ for your career.",
+      "answer": "goal",
+      "explanation": "Hedef belirlemek 'set a goal', hedefe ulaşmak 'achieve a goal' kalıbıdır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-success",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "We celebrated the ___ of our new project.",
+      "answer": "success",
+      "explanation": "İşin olumlu sonuçlanması, başarı durumu 'success' ismiyle ifade edilir.",
+      "options": [
+        "success",
+        "failure",
+        "stress",
+        "pressure"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-failure",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Don't let the fear of ___ stop you.",
+      "answer": "failure",
+      "explanation": "Başarısızlık korkusu 'fear of failure' kalıbıyla söylenir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-motivation",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "I need some ___ to start studying tonight.",
+      "answer": "motivation",
+      "explanation": "Bir işi yapma isteği ve güdüsü 'motivation' kelimesidir.",
+      "options": [
+        "motivation",
+        "stress",
+        "thought",
+        "memory"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-focus",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Try to ___ on the positive side of things.",
+      "answer": "focus",
+      "explanation": "Bir konuya yoğunlaşmak/odaklanmak 'focus on' kalıbı ile kurulur."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-attention",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "You must pay close ___ to the road signs.",
+      "answer": "attention",
+      "explanation": "Dikkatini vermek/dikkat etmek 'pay attention' olarak kullanılır.",
+      "options": [
+        "attention",
+        "focus",
+        "decision",
+        "choice"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-decision",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "We need to make a ___ by tomorrow.",
+      "answer": "decision",
+      "explanation": "Karar vermek fiili 'make a decision' şeklinde söylenir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-choice",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "This restaurant was a great ___.",
+      "answer": "choice",
+      "explanation": "Bir alternatif veya seçim durumu 'choice' ismi ile niteleşir.",
+      "options": [
+        "choice",
+        "decision",
+        "attention",
+        "thought"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-thought",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "What are your ___ on this proposal?",
+      "answer": "thoughts",
+      "explanation": "Fikirler/düşünceler anlamında 'thoughts' ismi kullanılır (soruda çoğul uyumu aranmıştır)."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-memory",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "He has a very good ___ for names.",
+      "answer": "memory",
+      "explanation": "İsimleri akılda tutma yeteneği/hafızası 'good memory' olarak belirtilir.",
+      "options": [
+        "memory",
+        "thought",
+        "feeling",
+        "dream"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-feeling",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I don't want to hurt your ___.",
+      "answer": "feelings",
+      "explanation": "Duyguları incitmek kalıbı 'hurt feelings' (çoğul) şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-stress",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Yoga can help to reduce ___.",
+      "answer": "stress",
+      "explanation": "Gerginlik ve stres yükünü azaltmak için 'reduce stress' kalıbı kullanılır.",
+      "options": [
+        "stress",
+        "success",
+        "motivation",
+        "dream"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-pressure",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "He felt a lot of ___ to pass the exam.",
+      "answer": "pressure",
+      "explanation": "Baskı hissetmek/baskı altında olmak 'feel pressure / under pressure' olarak belirtilir."
+    }
+  ]
+}

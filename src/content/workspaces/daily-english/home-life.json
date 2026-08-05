@@ -1,0 +1,708 @@
+{
+  "$schema": "../schema.json",
+  "slug": "home-life",
+  "title": "Ev ve Günlük Yaşam",
+  "description": "Ev ortamı, ev eşyaları, beslenme ve günlük yaşam alanlarındaki temel kavramlar.",
+  "theme": "emerald",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "wrd-room",
+      "level": "A1",
+      "term": "room",
+      "ipa": "/ruːm/",
+      "translation": "oda",
+      "example": {
+        "en": "My house has four rooms.",
+        "tr": "Evimin dört odası var."
+      },
+      "collocations": [
+        "living room",
+        "room service"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-kitchen",
+      "level": "A2",
+      "term": "kitchen",
+      "ipa": "/ˈkɪtʃ.ən/",
+      "translation": "mutfak",
+      "example": {
+        "en": "She is cooking in the kitchen.",
+        "tr": "Mutfakta yemek pişiriyor."
+      },
+      "collocations": [
+        "kitchen cabinet",
+        "in the kitchen"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-bathroom",
+      "level": "A2",
+      "term": "bathroom",
+      "ipa": "/ˈbɑːθ.ruːm/",
+      "translation": "banyo",
+      "example": {
+        "en": "I need to use the bathroom.",
+        "tr": "Banyoyu kullanmam gerekiyor."
+      },
+      "collocations": [
+        "bathroom mirror",
+        "in the bathroom"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-door",
+      "level": "A1",
+      "term": "door",
+      "ipa": "/dɔː/",
+      "translation": "kapı",
+      "example": {
+        "en": "Please lock the door.",
+        "tr": "Lütfen kapıyı kilitleyin."
+      },
+      "collocations": [
+        "lock the door",
+        "back door"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-window",
+      "level": "A1",
+      "term": "window",
+      "ipa": "/ˈwɪn.dəʊ/",
+      "translation": "pencere",
+      "example": {
+        "en": "Open the window to get fresh air.",
+        "tr": "Temiz hava almak için pencereyi açın."
+      },
+      "collocations": [
+        "window frame",
+        "look out window"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-table",
+      "level": "A1",
+      "term": "table",
+      "ipa": "/ˈteɪ.bəl/",
+      "translation": "masa",
+      "example": {
+        "en": "Put the keys on the table.",
+        "tr": "Anahtarları masanın üzerine koyun."
+      },
+      "collocations": [
+        "dinner table",
+        "coffee table"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-chair",
+      "level": "A1",
+      "term": "chair",
+      "ipa": "/tʃeər/",
+      "translation": "sandalye",
+      "example": {
+        "en": "This chair is very comfortable.",
+        "tr": "Bu sandalye çok rahattır."
+      },
+      "collocations": [
+        "wooden chair",
+        "office chair"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-bed",
+      "level": "A1",
+      "term": "bed",
+      "ipa": "/bed/",
+      "translation": "yatak",
+      "example": {
+        "en": "It is time to go to bed.",
+        "tr": "Yatağa gitme (uyuma) vakti."
+      },
+      "collocations": [
+        "go to bed",
+        "make bed"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-light",
+      "level": "A2",
+      "term": "light",
+      "ipa": "/laɪt/",
+      "translation": "ışık",
+      "example": {
+        "en": "Turn on the light, please.",
+        "tr": "Lütfen ışığı açın."
+      },
+      "collocations": [
+        "turn on light",
+        "traffic light"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-phone",
+      "level": "A1",
+      "term": "phone",
+      "ipa": "/fəʊn/",
+      "translation": "telefon",
+      "example": {
+        "en": "My phone is ringing.",
+        "tr": "Telefonum çalıyor."
+      },
+      "collocations": [
+        "cell phone",
+        "phone call"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-clothes",
+      "level": "A1",
+      "term": "clothes",
+      "ipa": "/kləʊðz/",
+      "translation": "kıyafetler",
+      "example": {
+        "en": "She bought some new clothes for winter.",
+        "tr": "Kış için yeni kıyafetler satın aldı."
+      },
+      "collocations": [
+        "wear clothes",
+        "wash clothes"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-bag",
+      "level": "A1",
+      "term": "bag",
+      "ipa": "/bæɡ/",
+      "translation": "çanta",
+      "example": {
+        "en": "Put your books inside your bag.",
+        "tr": "Kitaplarını çantanının içine koy."
+      },
+      "collocations": [
+        "shopping bag",
+        "hand bag"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-key",
+      "level": "A1",
+      "term": "key",
+      "ipa": "/kiː/",
+      "translation": "anahtar",
+      "example": {
+        "en": "I lost my house keys.",
+        "tr": "Ev anahtarlarımı kaybettim."
+      },
+      "collocations": [
+        "car key",
+        "key factor"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-water",
+      "level": "A1",
+      "term": "water",
+      "ipa": "/ˈwɔː.tər/",
+      "translation": "su",
+      "example": {
+        "en": "I drink a glass of water every hour.",
+        "tr": "Her saat bir bardak su içerim."
+      },
+      "collocations": [
+        "drinking water",
+        "bottle of water"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-food",
+      "level": "A1",
+      "term": "food",
+      "ipa": "/fuːd/",
+      "translation": "yemek (yiyecek)",
+      "example": {
+        "en": "We bought fresh food from the market.",
+        "tr": "Marketten taze yiyecek aldık."
+      },
+      "collocations": [
+        "fast food",
+        "organic food"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-breakfast",
+      "level": "A2",
+      "term": "breakfast",
+      "ipa": "/ˈbrek.fəst/",
+      "translation": "kahvaltı",
+      "example": {
+        "en": "I eat eggs for breakfast.",
+        "tr": "Kahvaltıda yumurta yerim."
+      },
+      "collocations": [
+        "have breakfast",
+        "make breakfast"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-lunch",
+      "level": "A2",
+      "term": "lunch",
+      "ipa": "/lʌntʃ/",
+      "translation": "öğle yemeği",
+      "example": {
+        "en": "Let's meet for lunch at noon.",
+        "tr": "Öğlen öğle yemeği için buluşalım."
+      },
+      "collocations": [
+        "have lunch",
+        "lunch box"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-dinner",
+      "level": "A2",
+      "term": "dinner",
+      "ipa": "/ˈdɪn.ə/",
+      "translation": "akşam yemeği",
+      "example": {
+        "en": "We had chicken for dinner.",
+        "tr": "Akşam yemeğinde tavuk yedik."
+      },
+      "collocations": [
+        "have dinner",
+        "dinner party"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-coffee",
+      "level": "A1",
+      "term": "coffee",
+      "ipa": "/ˈkɒf.i/",
+      "translation": "kahve",
+      "example": {
+        "en": "I need a cup of coffee to wake up.",
+        "tr": "Uyanmak için bir fincan kahveye ihtiyacım var."
+      },
+      "collocations": [
+        "cup of coffee",
+        "black coffee"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-tea",
+      "level": "A1",
+      "term": "tea",
+      "ipa": "/tiː/",
+      "translation": "çay",
+      "example": {
+        "en": "Turkish people drink a lot of tea.",
+        "tr": "Türk insanı çok fazla çay içer."
+      },
+      "collocations": [
+        "herbal tea",
+        "cup of tea"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-market",
+      "level": "A2",
+      "term": "market",
+      "ipa": "/ˈmɑː.kɪt/",
+      "translation": "market",
+      "example": {
+        "en": "I go to the local market on Sundays.",
+        "tr": "Pazar günleri yerel markete giderim."
+      },
+      "collocations": [
+        "supermarket",
+        "street market"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-shop",
+      "level": "A2",
+      "term": "shop",
+      "ipa": "/ʃɒp/",
+      "translation": "mağaza (dükkan)",
+      "example": {
+        "en": "The flower shop is closed today.",
+        "tr": "Çiçekçi dükkanı bugün kapalı."
+      },
+      "collocations": [
+        "gift shop",
+        "online shop"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-street",
+      "level": "A1",
+      "term": "street",
+      "ipa": "/striːt/",
+      "translation": "sokak",
+      "example": {
+        "en": "Children are playing on the street.",
+        "tr": "Çocuklar sokakta oynuyorlar."
+      },
+      "collocations": [
+        "main street",
+        "street art"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-city",
+      "level": "A1",
+      "term": "city",
+      "ipa": "/ˈsɪt.i/",
+      "translation": "şehir",
+      "example": {
+        "en": "Istanbul is a beautiful city.",
+        "tr": "İstanbul güzel bir şehirdir."
+      },
+      "collocations": [
+        "city center",
+        "big city"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-home",
+      "level": "A1",
+      "term": "home",
+      "ipa": "/həʊm/",
+      "translation": "ev (yuva)",
+      "example": {
+        "en": "I want to go home now.",
+        "tr": "Şimdi eve gitmek istiyorum."
+      },
+      "collocations": [
+        "feel at home",
+        "sweet home"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "wrd-q-room",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Please clean your ___ before going out.",
+      "answer": "room",
+      "explanation": "Odayı temizlemek 'clean room' ifadesidir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-kitchen",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "We have a big dining table in the ___.",
+      "answer": "kitchen",
+      "explanation": "Yemek masasının bulunduğu ve yemek pişen yer 'kitchen' (mutfak) dır.",
+      "options": [
+        "kitchen",
+        "bathroom",
+        "street",
+        "city"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-bathroom",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The towel is in the ___.",
+      "answer": "bathroom",
+      "explanation": "Havlu ve temizlik gereçleri banyoda (bathroom) bulunur."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-door",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Knock on the ___ before entering.",
+      "answer": "door",
+      "explanation": "İçeri girmeden önce kapıyı çalmak 'knock on the door' kalıbıdır.",
+      "options": [
+        "door",
+        "window",
+        "light",
+        "street"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-window",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "He looked out of the ___.",
+      "answer": "window",
+      "explanation": "Pencereden dışarı bakmak 'look out of the window' şeklinde söylenir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-table",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "We sat around the dinner ___ to eat.",
+      "answer": "table",
+      "explanation": "Yemek yemek için etrafına oturulan mobilya 'dinner table' dır.",
+      "options": [
+        "table",
+        "chair",
+        "bed",
+        "door"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-chair",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "He sat down on a ___ next to the table.",
+      "answer": "chair",
+      "explanation": "Masanın yanındaki sandalyeye oturmak 'sit on a chair' olarak belirtilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-bed",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Don't forget to make your ___ in the morning.",
+      "answer": "bed",
+      "explanation": "Yatağı düzeltmek/toplamak kalıbı 'make one's bed' olarak söylenir.",
+      "options": [
+        "bed",
+        "table",
+        "room",
+        "key"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-light",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Could you turn off the ___ before sleeping?",
+      "answer": "light",
+      "explanation": "Işığı kapatmak 'turn off the light' ifadesidir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-phone",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "I need to make a quick ___ call.",
+      "answer": "phone",
+      "explanation": "Telefon araması yapmak 'make a phone call' şeklinde söylenir.",
+      "options": [
+        "phone",
+        "light",
+        "key",
+        "bag"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-clothes",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I need to wash my dirty ___.",
+      "answer": "clothes",
+      "explanation": "Kirli kıyafetleri yıkamak anlamında 'wash clothes' ifadesi uygundur."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-bag",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "He carried his laptop in a leather ___.",
+      "answer": "bag",
+      "explanation": "Eşya ve laptop taşımak için 'bag' (çanta) kullanılır.",
+      "options": [
+        "bag",
+        "key",
+        "clothes",
+        "bed"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-key",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Did you lock the safe with the ___?",
+      "answer": "key",
+      "explanation": "Kilidi açmak veya kilitlemek için 'key' (anahtar) gerekir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-water",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Can I have a bottle of ___?",
+      "answer": "water",
+      "explanation": "Şişe su anlamında 'bottle of water' kalıbı yaygındır.",
+      "options": [
+        "water",
+        "coffee",
+        "tea",
+        "food"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-food",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Lions search for ___ in the wild.",
+      "answer": "food",
+      "explanation": "Hayatta kalmak için aranan besinler/yiyecekler 'food' olarak adlandırılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-breakfast",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "What time do you usually have ___?",
+      "answer": "breakfast",
+      "explanation": "Kahvaltı yapmak 'have breakfast' kalıbıyla söylenir.",
+      "options": [
+        "breakfast",
+        "dinner",
+        "coffee",
+        "market"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-lunch",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "I brought a sandwich for ___.",
+      "answer": "lunch",
+      "explanation": "Öğle yemeğinde sandviç yemek 'sandwich for lunch' yapısıyla belirtilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-dinner",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "We invited our neighbors to a ___ party.",
+      "answer": "dinner",
+      "explanation": "Akşam yemeği daveti/partisi 'dinner party' olarak ifade edilir.",
+      "options": [
+        "dinner",
+        "lunch",
+        "breakfast",
+        "market"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-coffee",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Do you prefer tea or ___?",
+      "answer": "coffee",
+      "explanation": "Çay ile birlikte en popüler sıcak içecek 'coffee' (kahve) dir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-tea",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Would you like a cup of green ___?",
+      "answer": "tea",
+      "explanation": "Yeşil çay anlamında 'green tea' ifadesi kullanılır.",
+      "options": [
+        "tea",
+        "coffee",
+        "water",
+        "food"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-market",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "We need to buy vegetables from the ___.",
+      "answer": "market",
+      "explanation": "Sebze ve meyve satın alınan pazar/market 'market' kelimesidir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-shop",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "I bought this mug at the museum gift ___.",
+      "answer": "shop",
+      "explanation": "Müze hediyelik eşya dükkanı 'museum gift shop' şeklinde söylenir.",
+      "options": [
+        "shop",
+        "market",
+        "street",
+        "home"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-street",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "He lives on a very quiet ___.",
+      "answer": "street",
+      "explanation": "Sessiz sokak anlamında 'quiet street' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-city",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Our hotel is located in the ___ center.",
+      "answer": "city",
+      "explanation": "Şehir merkezi anlamındaki kalıp 'city center' şeklindedir.",
+      "options": [
+        "city",
+        "street",
+        "home",
+        "room"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-home",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "After a long day, I finally arrived ___.",
+      "answer": "home",
+      "explanation": "Eve varmak ifadesi 'arrive home' (preposition'sız) olarak kullanılır."
+    }
+  ]
+}
