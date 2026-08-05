@@ -1,24 +1,14 @@
-/**
- * İçerik bütünlük denetimi. `npm run validate:content` (ve `prebuild`).
- *
- * NEDEN AYRI BİR DOĞRULAYICI VAR
- * TypeScript içeriğin *şeklini* zaten derleme anında garanti ediyor: eksik alan
- * veya yanlış tip `tsc` ile yakalanır. Burada denetlenenler tipin ifade
- * edemediği kurallardır — kimlik benzersizliği, çoktan seçmeli cevabın
- * şıklar arasında bulunması, boşluk işaretinin varlığı gibi.
- *
- * Bu yüzden şema kütüphanesi (zod vb.) eklenmedi: içerik derlenen `.ts`
- * dosyalarında yaşıyor, çalışma zamanında ayrıştırılan bir JSON değil. Şemayı
- * ikinci kez tanımlamak, `tsc`'nin yaptığı işi tekrarlayıp tarayıcı paketine
- * gereksiz kod sokardı. İçerik ileride harici JSON'a taşınırsa bu karar
- * yeniden değerlendirilmeli.
- *
- * Node, TypeScript'i yerel olarak çalıştırdığı için ek bir çalıştırıcıya
- * (tsx/ts-node) gerek yok; import'lar bu yüzden açık `.ts` uzantısı taşır.
- */
-import { catalog } from "../src/content/index.ts";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { CLOZE_BLANK, LEVELS } from "../src/domain/index.ts";
-import type { Category, QuizCard, VocabCard, Workspace } from "../src/domain/index.ts";
+import type { Category, QuizCard, VocabCard, Workspace, Catalog } from "../src/domain/index.ts";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const WORKSPACES_DIR = path.resolve(__dirname, "../src/content/workspaces");
+const OUTPUT_FILE = path.resolve(__dirname, "../src/content/generated-catalog.ts");
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const IPA_PATTERN = /^\/.+\/$/;
@@ -30,7 +20,7 @@ function fail(where: string, message: string): void {
 }
 
 function requireText(where: string, field: string, value: string): void {
-  if (value.trim().length === 0) fail(where, `\`${field}\` boş olamaz`);
+  if (!value || value.trim().length === 0) fail(where, `\`${field}\` boş olamaz`);
 }
 
 /** Aynı değerin birden çok kez kullanıldığı yerleri bildirir. */
@@ -55,16 +45,10 @@ function checkVocabCard(where: string, card: VocabCard): void {
   if (!IPA_PATTERN.test(card.ipa)) {
     fail(where, `IPA eğik çizgiler arasında yazılmalı, bulunan: \`${card.ipa}\``);
   }
-  if (card.collocations.length === 0) {
+  if (!card.collocations || card.collocations.length === 0) {
     fail(where, "en az bir kolokasyon gerekli (PRD 2.C)");
   }
-  // Örnek cümlenin kelimeyle ilgisiz olması tipik bir kopyala-yapıştır hatası.
-  //
-  // Ana fiil çekime girdiği için doğrudan aranamaz (run → ran, carry → carried,
-  // come → came). Buna karşılık öbek fiillerin edatları hiç değişmez, o yüzden
-  // çok kelimeli terimlerde ilk kelimeden sonrasını arıyoruz. Tek kelimeli
-  // terimlerde alt dizge araması düzenli ekleri zaten karşılıyor
-  // (deploy → deployed, request → requests).
+
   const sentence = card.example.en.toLowerCase();
   const [head, ...particles] = card.term.toLowerCase().split(" ");
   const required = particles.length > 0 ? particles : [head!];
@@ -92,17 +76,18 @@ function checkQuizCard(where: string, card: QuizCard): void {
     return;
   }
 
-  if (card.options.length < 2) {
+  if (!card.options || card.options.length < 2) {
     fail(where, "çoktan seçmeli soruda en az iki şık olmalı");
+  } else {
+    if (!card.options.includes(card.answer)) {
+      fail(where, `doğru cevap \`${card.answer}\` şıklar arasında yok`);
+    }
+    reportDuplicates(where, "şık", card.options);
   }
-  if (!card.options.includes(card.answer)) {
-    fail(where, `doğru cevap \`${card.answer}\` şıklar arasında yok`);
-  }
-  reportDuplicates(where, "şık", card.options);
 }
 
-function checkCategory(workspace: Workspace, category: Category): void {
-  const where = `${workspace.slug}/${category.slug}`;
+function checkCategory(workspaceSlug: string, category: Category): void {
+  const where = `${workspaceSlug}/${category.slug}`;
 
   if (!SLUG_PATTERN.test(category.slug)) {
     fail(where, `kategori slug'ı kebab-case olmalı: \`${category.slug}\``);
@@ -110,27 +95,39 @@ function checkCategory(workspace: Workspace, category: Category): void {
   requireText(where, "title", category.title);
   requireText(where, "description", category.description);
 
-  if (category.vocab.length === 0)
+  if (!category.vocab || category.vocab.length === 0) {
     fail(where, "kategori en az bir kelime kartı içermeli");
-  if (category.quiz.length === 0) fail(where, "kategori en az bir test kartı içermeli");
+  }
+  if (!category.quiz || category.quiz.length === 0) {
+    fail(where, "kategori en az bir test kartı içermeli");
+  }
+
+  const vocabLength = category.vocab ? category.vocab.length : 0;
+  const quizLength = category.quiz ? category.quiz.length : 0;
 
   // PRD 2.D: test kartı sayısı kelime sayısına yakın olmalı.
-  const ratio = category.quiz.length / Math.max(category.vocab.length, 1);
+  const ratio = quizLength / Math.max(vocabLength, 1);
   if (ratio < 0.5) {
     fail(
       where,
-      `test kartı sayısı (${category.quiz.length}) kelime sayısına (${category.vocab.length}) göre çok düşük`,
+      `test kartı sayısı (${quizLength}) kelime sayısına (${vocabLength}) göre çok düşük`,
     );
   }
 
-  for (const card of category.vocab) checkVocabCard(`${where}#${card.id}`, card);
-  for (const card of category.quiz) checkQuizCard(`${where}#${card.id}`, card);
+  if (category.vocab) {
+    for (const card of category.vocab) checkVocabCard(`${where}#${card.id}`, card);
+  }
+  if (category.quiz) {
+    for (const card of category.quiz) checkQuizCard(`${where}#${card.id}`, card);
+  }
 
-  reportDuplicates(
-    where,
-    "kelime",
-    category.vocab.map((card) => card.term.toLowerCase()),
-  );
+  if (category.vocab) {
+    reportDuplicates(
+      where,
+      "kelime",
+      category.vocab.map((card) => card.term.toLowerCase()),
+    );
+  }
 }
 
 function checkWorkspace(workspace: Workspace): void {
@@ -142,7 +139,7 @@ function checkWorkspace(workspace: Workspace): void {
   requireText(where, "title", workspace.title);
   requireText(where, "description", workspace.description);
 
-  if (workspace.categories.length === 0) {
+  if (!workspace.categories || workspace.categories.length === 0) {
     fail(where, "workspace en az bir kategori içermeli");
   }
 
@@ -152,28 +149,104 @@ function checkWorkspace(workspace: Workspace): void {
     workspace.categories.map((category) => category.slug),
   );
 
-  for (const category of workspace.categories) checkCategory(workspace, category);
+  for (const category of workspace.categories) checkCategory(workspace.slug, category);
 }
 
-// --- çalıştır ------------------------------------------------------------
+// --- Keşif ve Derleme Adımı ---------------------------------------------
 
-if (catalog.length === 0) {
+function compileCatalog(): Catalog {
+  const catalogList: Workspace[] = [];
+
+  if (!fs.existsSync(WORKSPACES_DIR)) {
+    fail("fs", `İçerik dizini bulunamadı: ${WORKSPACES_DIR}`);
+    return [];
+  }
+
+  const workspaceDirs = fs.readdirSync(WORKSPACES_DIR);
+
+  for (const slug of workspaceDirs) {
+    const wsPath = path.join(WORKSPACES_DIR, slug);
+    if (!fs.statSync(wsPath).isDirectory()) continue;
+
+    // workspace.json oku
+    const wsMetaPath = path.join(wsPath, "workspace.json");
+    if (!fs.existsSync(wsMetaPath)) {
+      fail(slug, "workspace.json dosyası bulunamadı");
+      continue;
+    }
+
+    let wsMeta;
+    try {
+      wsMeta = JSON.parse(fs.readFileSync(wsMetaPath, "utf-8"));
+    } catch (e: any) {
+      fail(slug, `workspace.json parse hatası: ${e.message}`);
+      continue;
+    }
+
+    const categories: Category[] = [];
+    const files = fs.readdirSync(wsPath);
+
+    for (const filename of files) {
+      if (filename === "workspace.json" || !filename.endsWith(".json")) continue;
+
+      const catPath = path.join(wsPath, filename);
+      let catData;
+      try {
+        catData = JSON.parse(fs.readFileSync(catPath, "utf-8"));
+      } catch (e: any) {
+        fail(`${slug}/${filename}`, `JSON parse hatası: ${e.message}`);
+        continue;
+      }
+
+      // Dosya adının slug ile eşleştiğini doğrula
+      const expectedSlug = path.basename(filename, ".json");
+      if (catData.slug !== expectedSlug) {
+        fail(
+          `${slug}/${filename}`,
+          `Dosya adı ile slug alanı uyuşmuyor: dosya adı \`${filename}\`, slug \`${catData.slug}\``,
+        );
+      }
+
+      const { $schema, ...cleanCatData } = catData;
+      categories.push(cleanCatData as any);
+    }
+
+    catalogList.push({
+      slug,
+      title: wsMeta.title || "",
+      description: wsMeta.description || "",
+      categories,
+    });
+  }
+
+  return catalogList;
+}
+
+// --- Çalıştır ------------------------------------------------------------
+
+console.log("-> İçerik keşfi ve derlemesi başlatılıyor...");
+const catalogData = compileCatalog();
+
+if (catalogData.length === 0) {
   fail("catalog", "katalog boş");
 }
 
 reportDuplicates(
   "catalog",
   "workspace slug'ı",
-  catalog.map((workspace) => workspace.slug),
+  catalogData.map((workspace) => workspace.slug),
 );
 
-for (const workspace of catalog) checkWorkspace(workspace);
+for (const workspace of catalogData) {
+  checkWorkspace(workspace);
+}
 
-// Kart kimlikleri katalog genelinde benzersiz olmalı: seviye filtresi kartları
-// kategoriler arasında birleştirebilir ve React anahtarları çakışırsa
-// carousel yanlış kartı yeniden kullanır.
-const allCards = catalog.flatMap((workspace) =>
-  workspace.categories.flatMap((category) => [...category.vocab, ...category.quiz]),
+// Kart kimlikleri katalog genelinde benzersiz olmalı
+const allCards = catalogData.flatMap((workspace) =>
+  workspace.categories.flatMap((category) => [
+    ...(category.vocab || []),
+    ...(category.quiz || []),
+  ]),
 );
 reportDuplicates(
   "catalog",
@@ -193,7 +266,24 @@ if (problems.length > 0) {
   process.exit(1);
 }
 
-const categoryCount = catalog.reduce(
+// generated-catalog.ts dosyasına yaz
+const generatedCode = `/**
+ * Bu dosya validate-content.mts tarafından otomatik üretilmiştir.
+ * MANUEL OLARAK DÜZENLEMEYİNİZ.
+ */
+import type { Catalog } from "../domain/index.ts";
+
+export const catalog: Catalog = ${JSON.stringify(catalogData, null, 2)} as const;
+`;
+
+try {
+  fs.writeFileSync(OUTPUT_FILE, generatedCode, "utf-8");
+} catch (e: any) {
+  console.error(`✗ generated-catalog.ts yazılamadı: ${e.message}`);
+  process.exit(1);
+}
+
+const categoryCount = catalogData.reduce(
   (total, workspace) => total + workspace.categories.length,
   0,
 );
@@ -202,5 +292,5 @@ const levelSummary = LEVELS.map(
 ).join("  ");
 
 console.log(
-  `✓ İçerik geçerli — ${catalog.length} workspace, ${categoryCount} kategori, ${allCards.length} kart  (${levelSummary})`,
+  `✓ İçerik başarıyla derlendi ve doğrulandı — ${catalogData.length} workspace, ${categoryCount} kategori, ${allCards.length} kart  (${levelSummary})`,
 );

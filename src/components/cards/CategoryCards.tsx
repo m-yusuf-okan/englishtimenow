@@ -6,19 +6,13 @@ import { filterByLevel, levelsInCategory } from "@/lib/cards";
 import { CardCarousel } from "./CardCarousel";
 import { QuizCardBack, QuizCardFront } from "./QuizCardFaces";
 import { VocabCardBack, VocabCardFront } from "./VocabCardFaces";
+import { MatchGame } from "./MatchGame";
 
 /**
- * Kategori sayfasının etkileşimli gövdesi — PRD 3.C.
+ * Kategori sayfasının sekmeli etkileşimli gövdesi — PRD 3.C + Oyunlaştırma.
  *
- * Tersine kart modu ve seviye filtresi burada yaşar; ikisi de kullanıcı
- * tercihi olduğu için localStorage'da saklanır.
- *
- * Kart içeriği sunucudan **veri** olarak gelir (`category`), önceden render
- * edilmiş eleman olarak değil. Sebebi tersine mod: aynı kart iki farklı yüz
- * düzeniyle gösterilebiliyor ve her iki varyantı sunucuda üretip taşımak
- * yükü iki katına çıkarırdı.
- *
- * PROGRE TAKİBİ KAPSAM DIŞI — burada saklanan tek şey mod ve filtre tercihi.
+ * Sekmeler, seviye filtresi ve tersine mod burada yaşar; hepsi kullanıcı
+ * tercihleri olup localStorage'da saklanır.
  */
 
 const REVERSE_KEY = "englishtimenow:reverse";
@@ -35,10 +29,15 @@ export function CategoryCards({ category }: { category: Category }) {
   const [levels, setLevels] = usePersistentState<readonly Level[]>({
     key: LEVELS_KEY,
     fallback: [],
-    // Bilinmeyen değerler sessizce atılır: içerikten bir seviye kalkarsa
-    // eski tercih uygulamayı bozmamalı.
     parse: (raw) => raw.split(",").filter(isLevel),
     serialize: (value) => value.join(","),
+  });
+
+  const [activeTab, setActiveTab] = usePersistentState<"learn" | "quiz" | "match">({
+    key: `englishtimenow:active-tab:${category.slug}`,
+    fallback: "learn",
+    parse: (raw) => (raw === "learn" || raw === "quiz" || raw === "match" ? raw : null),
+    serialize: (value) => value,
   });
 
   const available = levelsInCategory(category);
@@ -49,19 +48,16 @@ export function CategoryCards({ category }: { category: Category }) {
     const next = levels.includes(level)
       ? levels.filter((candidate) => candidate !== level)
       : [...levels, level];
-    // Kanonik sırada saklanır; böylece aynı seçim her zaman aynı dizeyi üretir.
     setLevels(LEVELS.filter((candidate) => next.includes(candidate)));
   }
 
-  // Filtre veya mod değişince carousel'ler sıfırdan başlar. Kart kümesi
-  // değiştiğinde eski konumu korumak anlamsız olurdu; ayrıca çevrilmiş kart ve
-  // cevaplanmış soru durumları da temizlenir.
   const vocabKey = `${levels.join("-")}|${reversed}`;
   const quizKey = levels.join("-");
 
   return (
     <>
-      <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-black/5 bg-white/50 p-3 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-white/3">
+      {/* Üst Filtre Paneli */}
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-black/5 bg-white/50 p-3 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-white/3">
         <div
           role="group"
           aria-label="Seviye filtresi"
@@ -93,57 +89,118 @@ export function CategoryCards({ category }: { category: Category }) {
           ) : null}
         </div>
 
+        {/* Tersine Mod sadece Öğrenme sekmesinde gösterilir */}
+        {activeTab === "learn" ? (
+          <button
+            type="button"
+            aria-pressed={reversed}
+            onClick={() => setReversed(!reversed)}
+            className={`rounded-full border px-3 py-1 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+              reversed
+                ? "border-transparent bg-black text-white shadow-lg shadow-black/15 dark:bg-white dark:text-black"
+                : "border-black/10 bg-white/60 backdrop-blur-xl hover:bg-white/90 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+            }`}
+          >
+            <span aria-hidden="true" className="mr-1.5">
+              ⇄
+            </span>
+            Tersine kart modu
+          </button>
+        ) : null}
+      </div>
+
+      {/* Sekme Yönlendirme Barı (Sleek Capsule Tabs) */}
+      <div className="mt-8 flex border-b border-black/10 dark:border-white/10" role="tablist" aria-label="Kategori modları">
         <button
+          id="tab-learn"
           type="button"
-          aria-pressed={reversed}
-          onClick={() => setReversed(!reversed)}
-          className={`rounded-full border px-3 py-1 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:outline-none ${
-            reversed
-              ? "border-transparent bg-black text-white shadow-lg shadow-black/15 dark:bg-white dark:text-black"
-              : "border-black/10 bg-white/60 backdrop-blur-xl hover:bg-white/90 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+          role="tab"
+          aria-selected={activeTab === "learn"}
+          aria-controls="panel-learn"
+          onClick={() => setActiveTab("learn")}
+          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg ${
+            activeTab === "learn"
+              ? "border-black text-black dark:border-white dark:text-white"
+              : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
           }`}
         >
-          <span aria-hidden="true" className="mr-1.5">
-            ⇄
-          </span>
-          Tersine kart modu
+          Öğren (Kartlar) <Count shown={vocab.length} total={category.vocab.length} />
+        </button>
+
+        <button
+          id="tab-quiz"
+          type="button"
+          role="tab"
+          aria-selected={activeTab === "quiz"}
+          aria-controls="panel-quiz"
+          onClick={() => setActiveTab("quiz")}
+          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg ${
+            activeTab === "quiz"
+              ? "border-black text-black dark:border-white dark:text-white"
+              : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
+          }`}
+        >
+          Sınav (Test) <Count shown={quiz.length} total={category.quiz.length} />
+        </button>
+
+        <button
+          id="tab-match"
+          type="button"
+          role="tab"
+          aria-selected={activeTab === "match"}
+          aria-controls="panel-match"
+          onClick={() => setActiveTab("match")}
+          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg ${
+            activeTab === "match"
+              ? "border-black text-black dark:border-white dark:text-white"
+              : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
+          }`}
+        >
+          Oyna (Eşleştirme)
         </button>
       </div>
 
-      <div className="mt-8">
-        <h2 className="text-xl font-bold tracking-tight">
-          Kelime kartları <Count shown={vocab.length} total={category.vocab.length} />
-        </h2>
-        <CardCarousel
-          key={vocabKey}
-          label="Kelime kartları"
-          emptyMessage="Seçili seviyede kelime kartı yok."
-          items={vocab.map((card) => ({
-            id: card.id,
-            front: (
-              <VocabCardFront card={card} theme={category.theme} reversed={reversed} />
-            ),
-            back: (
-              <VocabCardBack card={card} theme={category.theme} reversed={reversed} />
-            ),
-          }))}
-        />
-      </div>
+      {/* Aktif Sekme Gövdesi */}
+      <div className="mt-4">
+        {activeTab === "learn" && (
+          <div id="panel-learn" role="tabpanel" aria-labelledby="tab-learn">
+            <CardCarousel
+              key={vocabKey}
+              label="Kelime kartları"
+              emptyMessage="Seçili seviyede kelime kartı yok."
+              items={vocab.map((card) => ({
+                id: card.id,
+                front: (
+                  <VocabCardFront card={card} theme={category.theme} reversed={reversed} />
+                ),
+                back: (
+                  <VocabCardBack card={card} theme={category.theme} reversed={reversed} />
+                ),
+              }))}
+            />
+          </div>
+        )}
 
-      <div className="mt-14">
-        <h2 className="text-xl font-bold tracking-tight">
-          Test kartları <Count shown={quiz.length} total={category.quiz.length} />
-        </h2>
-        <CardCarousel
-          key={quizKey}
-          label="Test kartları"
-          emptyMessage="Seçili seviyede test kartı yok."
-          items={quiz.map((card) => ({
-            id: card.id,
-            front: <QuizCardFront card={card} theme={category.theme} />,
-            back: <QuizCardBack card={card} theme={category.theme} />,
-          }))}
-        />
+        {activeTab === "quiz" && (
+          <div id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz">
+            <CardCarousel
+              key={quizKey}
+              label="Test kartları"
+              emptyMessage="Seçili seviyede test kartı yok."
+              items={quiz.map((card) => ({
+                id: card.id,
+                front: <QuizCardFront card={card} theme={category.theme} />,
+                back: <QuizCardBack card={card} theme={category.theme} />,
+              }))}
+            />
+          </div>
+        )}
+
+        {activeTab === "match" && (
+          <div id="panel-match" role="tabpanel" aria-labelledby="tab-match">
+            <MatchGame category={category} levels={levels} />
+          </div>
+        )}
       </div>
     </>
   );
@@ -152,7 +209,7 @@ export function CategoryCards({ category }: { category: Category }) {
 /** Filtre etkinken "7 / 15", değilken sadece "15". */
 function Count({ shown, total }: { shown: number; total: number }) {
   return (
-    <span className="font-normal">
+    <span className="font-normal text-xs ml-1 opacity-70">
       ({shown === total ? total : `${shown} / ${total}`})
     </span>
   );
