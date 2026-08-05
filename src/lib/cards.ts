@@ -36,3 +36,12 @@ export function levelsInCategory(category: Category): readonly Level[] {
   }
   return LEVELS.filter((level) => seen.has(level));
 }
+
+/**
+ * Test veya eşleştirme kartlarındaki id'yi ana kelime kartı id'sine dönüştürür.
+ * Örn: "phv-q-set-up" -> "phv-set-up", "day-q-hang-out" -> "day-hang-out".
+ */
+export function getBaseId(id: string): string {
+  return id.replace("-q-", "-");
+}
+

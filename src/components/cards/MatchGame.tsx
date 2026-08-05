@@ -16,16 +16,24 @@ interface GameCard {
 export function MatchGame({
   category,
   levels,
+  onlyStarred = false,
+  starredList = [],
 }: {
   category: Category;
   levels: readonly Level[];
+  onlyStarred?: boolean;
+  starredList?: readonly string[];
 }) {
   const tokens = themeTokens(category.theme);
 
   // Filtrelenmiş kelimeler
   const vocabList = useMemo(() => {
-    return filterByLevel(category.vocab, levels);
-  }, [category.vocab, levels]);
+    let filtered = filterByLevel(category.vocab, levels);
+    if (onlyStarred) {
+      filtered = filtered.filter((card) => starredList.includes(card.id));
+    }
+    return filtered;
+  }, [category.vocab, levels, onlyStarred, starredList]);
 
   // Seviye filtresine göre benzersiz depolama anahtarı
   const bestTimeKey = useMemo(() => {
