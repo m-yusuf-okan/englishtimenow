@@ -41,7 +41,7 @@ export function CardShell({
 
   return (
     <div
-      className={`flex h-full flex-col gap-5 rounded-3xl border p-6 shadow-xl ring-1 shadow-black/5 ring-white/40 backdrop-blur-xl ring-inset dark:shadow-black/40 dark:ring-white/10 ${tokens.surface} ${tokens.border} ${tokens.text} ${className}`}
+      className={`flex h-full flex-col gap-4 sm:gap-5 rounded-3xl border p-4 sm:p-6 shadow-xl ring-1 shadow-black/5 ring-white/40 backdrop-blur-xl ring-inset dark:shadow-black/40 dark:ring-white/10 ${tokens.surface} ${tokens.border} ${tokens.text} ${className}`}
     >
       <div className="flex items-center justify-between gap-3">
         <span

@@ -228,7 +228,7 @@ export function CategoryCards({ category }: { category: Category }) {
       </div>
 
       {/* Sekme Yönlendirme Barı (Sleek Capsule Tabs) */}
-      <div className="mt-8 flex border-b border-black/10 dark:border-white/10" role="tablist" aria-label="Kategori modları">
+      <div className="mt-8 flex border-b border-black/10 dark:border-white/10 overflow-x-auto whitespace-nowrap scrollbar-none" role="tablist" aria-label="Kategori modları">
         <button
           id="tab-learn"
           type="button"
@@ -236,7 +236,7 @@ export function CategoryCards({ category }: { category: Category }) {
           aria-selected={activeTab === "learn"}
           aria-controls="panel-learn"
           onClick={() => setActiveTab("learn")}
-          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
+          className={`shrink-0 px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
             activeTab === "learn"
               ? "border-black text-black dark:border-white dark:text-white"
               : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
@@ -252,7 +252,7 @@ export function CategoryCards({ category }: { category: Category }) {
           aria-selected={activeTab === "quiz"}
           aria-controls="panel-quiz"
           onClick={() => setActiveTab("quiz")}
-          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
+          className={`shrink-0 px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
             activeTab === "quiz"
               ? "border-black text-black dark:border-white dark:text-white"
               : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
@@ -268,7 +268,7 @@ export function CategoryCards({ category }: { category: Category }) {
           aria-selected={activeTab === "match"}
           aria-controls="panel-match"
           onClick={() => setActiveTab("match")}
-          className={`px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
+          className={`shrink-0 px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-t-lg cursor-pointer ${
             activeTab === "match"
               ? "border-black text-black dark:border-white dark:text-white"
               : "border-transparent text-black/50 hover:text-black/80 dark:text-white/50 dark:hover:text-white/80"
