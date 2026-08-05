@@ -1,0 +1,1187 @@
+{
+  "$schema": "../schema.json",
+  "slug": "daily-words",
+  "title": "Günlük Konuşma Kelimeleri",
+  "description": "Günlük konuşmalarda ve sosyal hayatta en çok kullanılan temel kelimeler, sıfatlar ve zarflar.",
+  "theme": "amber",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "wrd-maybe",
+      "level": "A1",
+      "term": "maybe",
+      "ipa": "/ˈmeɪ.bi/",
+      "translation": "belki",
+      "example": {
+        "en": "Maybe we can go to the cinema tomorrow.",
+        "tr": "Belki yarın sinemaya gidebiliriz."
+      },
+      "collocations": [
+        "maybe later",
+        "maybe yes"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-probably",
+      "level": "A2",
+      "term": "probably",
+      "ipa": "/ˈprɒb.ə.bli/",
+      "translation": "muhtemelen",
+      "example": {
+        "en": "It will probably rain this afternoon.",
+        "tr": "Bu öğleden sonra muhtemelen yağmur yağacak."
+      },
+      "collocations": [
+        "probably not",
+        "most probably"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-usually",
+      "level": "A1",
+      "term": "usually",
+      "ipa": "/ˈjuː.ʒu.ə.li/",
+      "translation": "genellikle",
+      "example": {
+        "en": "I usually drink tea in the morning.",
+        "tr": "Genellikle sabahları çay içerim."
+      },
+      "collocations": [
+        "usually do",
+        "as usually"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-always",
+      "level": "A1",
+      "term": "always",
+      "ipa": "/ˈɔːl.weɪz/",
+      "translation": "her zaman",
+      "example": {
+        "en": "He always wakes up early.",
+        "tr": "O her zaman erken uyanır."
+      },
+      "collocations": [
+        "always there",
+        "almost always"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-sometimes",
+      "level": "A1",
+      "term": "sometimes",
+      "ipa": "/ˈsʌm.taɪmz/",
+      "translation": "bazen",
+      "example": {
+        "en": "Sometimes I walk to school.",
+        "tr": "Bazen okula yürürüm."
+      },
+      "collocations": [
+        "sometimes like",
+        "sometimes not"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-never",
+      "level": "A1",
+      "term": "never",
+      "ipa": "/ˈnev.ə/",
+      "translation": "asla",
+      "example": {
+        "en": "I have never seen that movie.",
+        "tr": "O filmi asla görmedim."
+      },
+      "collocations": [
+        "never mind",
+        "never again"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-already",
+      "level": "A2",
+      "term": "already",
+      "ipa": "/ɔːlˈred.i/",
+      "translation": "zaten (çoktan)",
+      "example": {
+        "en": "I have already finished my dinner.",
+        "tr": "Akşam yemeğimi zaten bitirdim."
+      },
+      "collocations": [
+        "already done",
+        "already exists"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-still",
+      "level": "A2",
+      "term": "still",
+      "ipa": "/stɪl/",
+      "translation": "hâlâ",
+      "example": {
+        "en": "Are you still working on the report?",
+        "tr": "Hâlâ rapor üzerinde mi çalışıyorsun?"
+      },
+      "collocations": [
+        "still here",
+        "still alive"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-again",
+      "level": "A1",
+      "term": "again",
+      "ipa": "/əˈɡen/",
+      "translation": "tekrar",
+      "example": {
+        "en": "Can you say that again?",
+        "tr": "Onu tekrar söyleyebilir misiniz?"
+      },
+      "collocations": [
+        "once again",
+        "again and again"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-together",
+      "level": "A1",
+      "term": "together",
+      "ipa": "/təˈɡeð.ə/",
+      "translation": "birlikte",
+      "example": {
+        "en": "Let's study English together.",
+        "tr": "Birlikte İngilizce çalışalım."
+      },
+      "collocations": [
+        "together with",
+        "get together"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-alone",
+      "level": "A1",
+      "term": "alone",
+      "ipa": "/əˈləʊn/",
+      "translation": "yalnız",
+      "example": {
+        "en": "She likes to travel alone.",
+        "tr": "Yalnız seyahat etmeyi sever."
+      },
+      "collocations": [
+        "leave alone",
+        "alone time"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-really",
+      "level": "A1",
+      "term": "really",
+      "ipa": "/ˈrɪə.li/",
+      "translation": "gerçekten",
+      "example": {
+        "en": "I really appreciate your help.",
+        "tr": "Yardımınız için gerçekten minnettarım."
+      },
+      "collocations": [
+        "really good",
+        "really want"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-actually",
+      "level": "A2",
+      "term": "actually",
+      "ipa": "/ˈæk.tʃu.ə.li/",
+      "translation": "aslında",
+      "example": {
+        "en": "Actually, I don't like coffee very much.",
+        "tr": "Aslında kahveyi çok fazla sevmem."
+      },
+      "collocations": [
+        "actually happen",
+        "actually mean"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-especially",
+      "level": "A2",
+      "term": "especially",
+      "ipa": "/ɪˈspeʃ.əl.i/",
+      "translation": "özellikle",
+      "example": {
+        "en": "I love sweet things, especially cake.",
+        "tr": "Tatlı şeyleri severim, özellikle keki."
+      },
+      "collocations": [
+        "especially for",
+        "especially designed"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-finally",
+      "level": "A2",
+      "term": "finally",
+      "ipa": "/ˈfaɪ.nəl.i/",
+      "translation": "sonunda",
+      "example": {
+        "en": "Finally, we reached the top of the mountain.",
+        "tr": "Sonunda dağın zirvesine ulaştık."
+      },
+      "collocations": [
+        "finally agree",
+        "finally done"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-luckily",
+      "level": "A2",
+      "term": "luckily",
+      "ipa": "/ˈlʌk.əl.i/",
+      "translation": "şanslı şekilde",
+      "example": {
+        "en": "Luckily, I had my umbrella with me.",
+        "tr": "Şans eseri şemsiyem yanımdaydı."
+      },
+      "collocations": [
+        "luckily survive",
+        "luckily find"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-unfortunately",
+      "level": "A2",
+      "term": "unfortunately",
+      "ipa": "/ʌnˈfɔː.tʃən.ət.li/",
+      "translation": "maalesef",
+      "example": {
+        "en": "Unfortunately, all tickets were sold out.",
+        "tr": "Maalesef tüm biletler tükendi."
+      },
+      "collocations": [
+        "unfortunately lose",
+        "unfortunately cannot"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-quickly",
+      "level": "A1",
+      "term": "quickly",
+      "ipa": "/ˈkwɪk.li/",
+      "translation": "hızlıca",
+      "example": {
+        "en": "Please finish your work quickly.",
+        "tr": "Lütfen işinizi hızlıca bitirin."
+      },
+      "collocations": [
+        "run quickly",
+        "act quickly"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-slowly",
+      "level": "A1",
+      "term": "slowly",
+      "ipa": "/ˈsləʊ.li/",
+      "translation": "yavaşça",
+      "example": {
+        "en": "Walk slowly on the icy street.",
+        "tr": "Buzlu sokakta yavaşça yürüyün."
+      },
+      "collocations": [
+        "speak slowly",
+        "move slowly"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-carefully",
+      "level": "A2",
+      "term": "carefully",
+      "ipa": "/ˈkeə.fəl.i/",
+      "translation": "dikkatlice",
+      "example": {
+        "en": "Listen carefully to the instructions.",
+        "tr": "Talimatları dikkatlice dinleyin."
+      },
+      "collocations": [
+        "read carefully",
+        "drive carefully"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-easily",
+      "level": "A2",
+      "term": "easily",
+      "ipa": "/ˈiː.zɪ.li/",
+      "translation": "kolayca",
+      "example": {
+        "en": "She passed the exam easily.",
+        "tr": "Sınavı kolayca geçti."
+      },
+      "collocations": [
+        "easily win",
+        "easily adapt"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-difficult",
+      "level": "A1",
+      "term": "difficult",
+      "ipa": "/ˈdɪf.ɪ.kəlt/",
+      "translation": "zor",
+      "example": {
+        "en": "This math exam was very difficult.",
+        "tr": "Bu matematik sınavı çok zordu."
+      },
+      "collocations": [
+        "difficult task",
+        "difficult decision"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-challenging",
+      "level": "B1",
+      "term": "challenging",
+      "ipa": "/ˈtʃæl.ɪn.dʒɪŋ/",
+      "translation": "zorlayıcı (rekabetçi/çaba gerektiren)",
+      "example": {
+        "en": "Mountaineering is a challenging sport.",
+        "tr": "Dağcılık zorlayıcı bir spordur."
+      },
+      "collocations": [
+        "challenging work",
+        "challenging environment"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-easy",
+      "level": "A1",
+      "term": "easy",
+      "ipa": "/ˈiː.zi/",
+      "translation": "kolay",
+      "example": {
+        "en": "The instructions were very easy.",
+        "tr": "Talimatlar çok kolaydı."
+      },
+      "collocations": [
+        "easy question",
+        "easy target"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-important",
+      "level": "A1",
+      "term": "important",
+      "ipa": "/ɪmˈpɔː.tənt/",
+      "translation": "önemli",
+      "example": {
+        "en": "Family is very important to me.",
+        "tr": "Aile benim için çok önemlidir."
+      },
+      "collocations": [
+        "important role",
+        "important information"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-useful",
+      "level": "A2",
+      "term": "useful",
+      "ipa": "/ˈjuːs.fəl/",
+      "translation": "faydalı (kullanışlı)",
+      "example": {
+        "en": "This dictionary is very useful.",
+        "tr": "Bu sözlük çok kullanışlı."
+      },
+      "collocations": [
+        "useful tool",
+        "useful tips"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-possible",
+      "level": "A2",
+      "term": "possible",
+      "ipa": "/ˈpɒs.ə.bəl/",
+      "translation": "mümkün",
+      "example": {
+        "en": "It is possible to solve this problem.",
+        "tr": "Bu problemi çözmek mümkündür."
+      },
+      "collocations": [
+        "possible options",
+        "as soon as possible"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-impossible",
+      "level": "A2",
+      "term": "impossible",
+      "ipa": "/ɪmˈpɒs.ə.bəl/",
+      "translation": "imkânsız",
+      "example": {
+        "en": "It is impossible to breathe underwater without gear.",
+        "tr": "Ekipmansız su altında nefes almak imkânsızdır."
+      },
+      "collocations": [
+        "impossible task",
+        "almost impossible"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-different",
+      "level": "A1",
+      "term": "different",
+      "ipa": "/ˈdɪf.ər.ənt/",
+      "translation": "farklı",
+      "example": {
+        "en": "They have different opinions about the topic.",
+        "tr": "Konu hakkında farklı fikirlere sahipler."
+      },
+      "collocations": [
+        "different perspective",
+        "different colors"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-similar",
+      "level": "A2",
+      "term": "similar",
+      "ipa": "/ˈsɪm.ɪ.lər/",
+      "translation": "benzer",
+      "example": {
+        "en": "The two twins look very similar.",
+        "tr": "İki ikiz oldukça benzer görünüyor."
+      },
+      "collocations": [
+        "similar taste",
+        "similar pattern"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-normal",
+      "level": "A1",
+      "term": "normal",
+      "ipa": "/ˈnɔː.məl/",
+      "translation": "normal",
+      "example": {
+        "en": "It is normal to feel nervous before tests.",
+        "tr": "Sınavlardan önce gergin hissetmek normaldir."
+      },
+      "collocations": [
+        "normal life",
+        "normal behavior"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-strange",
+      "level": "A2",
+      "term": "strange",
+      "ipa": "/streɪndʒ/",
+      "translation": "garip",
+      "example": {
+        "en": "I heard a strange noise last night.",
+        "tr": "Dün gece garip bir ses duydum."
+      },
+      "collocations": [
+        "strange behavior",
+        "strange look"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-serious",
+      "level": "A2",
+      "term": "serious",
+      "ipa": "/ˈsɪə.ri.əs/",
+      "translation": "ciddi",
+      "example": {
+        "en": "This is a serious problem, we need to act.",
+        "tr": "Bu ciddi bir sorun, harekete geçmeliyiz."
+      },
+      "collocations": [
+        "serious accident",
+        "serious damage"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-simple",
+      "level": "A1",
+      "term": "simple",
+      "ipa": "/ˈsɪm.pəl/",
+      "translation": "basit",
+      "example": {
+        "en": "The math rule was very simple.",
+        "tr": "Matematik kuralı çok basitti."
+      },
+      "collocations": [
+        "simple layout",
+        "simple tasks"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-basic",
+      "level": "B1",
+      "term": "basic",
+      "ipa": "/ˈbeɪ.sɪk/",
+      "translation": "temel",
+      "example": {
+        "en": "We need to cover the basic concepts first.",
+        "tr": "Önce temel kavramları ele almamız gerekiyor."
+      },
+      "collocations": [
+        "basic needs",
+        "basic skills"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-ready",
+      "level": "A1",
+      "term": "ready",
+      "ipa": "/ˈred.i/",
+      "translation": "hazır",
+      "example": {
+        "en": "Are you ready to order now?",
+        "tr": "Şimdi sipariş vermeye hazır mısınız?"
+      },
+      "collocations": [
+        "ready to go",
+        "get ready"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-busy",
+      "level": "A1",
+      "term": "busy",
+      "ipa": "/ˈbɪz.i/",
+      "translation": "meşgul (dolu)",
+      "example": {
+        "en": "He is too busy to join us today.",
+        "tr": "Bugün bize katılmak için çok meşgul."
+      },
+      "collocations": [
+        "busy street",
+        "busy schedule"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-free",
+      "level": "A1",
+      "term": "free",
+      "ipa": "/friː/",
+      "translation": "boş/müsait (veya bedava)",
+      "example": {
+        "en": "Are you free this afternoon?",
+        "tr": "Bu öğleden sonra müsait misiniz?"
+      },
+      "collocations": [
+        "free time",
+        "free of charge"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-tired",
+      "level": "A1",
+      "term": "tired",
+      "ipa": "/taɪəd/",
+      "translation": "yorgun",
+      "example": {
+        "en": "I am so tired after work.",
+        "tr": "İşten sonra çok yorgunum."
+      },
+      "collocations": [
+        "tired of",
+        "feel tired"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-excited",
+      "level": "A2",
+      "term": "excited",
+      "ipa": "/ɪkˈsaɪ.tɪd/",
+      "translation": "heyecanlı",
+      "example": {
+        "en": "The children are excited about the trip.",
+        "tr": "Çocuklar gezi konusunda heyecanlılar."
+      },
+      "collocations": [
+        "excited about",
+        "get excited"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-worried",
+      "level": "A2",
+      "term": "worried",
+      "ipa": "/ˈwʌr.ɪd/",
+      "translation": "endişeli",
+      "example": {
+        "en": "She was worried about the exam results.",
+        "tr": "Sınav sonuçları konusunda endişeliydi."
+      },
+      "collocations": [
+        "worried about",
+        "look worried"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "wrd-surprised",
+      "level": "A2",
+      "term": "surprised",
+      "ipa": "/səˈpraɪzd/",
+      "translation": "şaşırmış",
+      "example": {
+        "en": "I was surprised to see him at the party.",
+        "tr": "Onu partide gördüğüme şaşırmıştım."
+      },
+      "collocations": [
+        "surprised to see",
+        "get surprised"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "wrd-q-maybe",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "___ I will call you tonight, but I am not sure.",
+      "answer": "Maybe",
+      "explanation": "'Maybe' = ihtimal belirten 'belki' anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-probably",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "He is very tired, so he will ___ stay home.",
+      "answer": "probably",
+      "explanation": "Güçlü ihtimal belirtmek için 'probably' (muhtemelen) kelimesi kullanılır.",
+      "options": [
+        "probably",
+        "never",
+        "always",
+        "together"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-usually",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "We ___ have lunch at 12:30.",
+      "answer": "usually",
+      "explanation": "Sıklık zarfı olan 'usually', 'genellikle' anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-always",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "She ___ keeps her promises.",
+      "answer": "always",
+      "explanation": "Süreklilik/her zaman durumu için 'always' sıklık zarfı kullanılır.",
+      "options": [
+        "always",
+        "never",
+        "sometimes",
+        "maybe"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-sometimes",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I ___ listen to classical music.",
+      "answer": "sometimes",
+      "explanation": "Ara sıra yapılan eylemler için 'sometimes' (bazen) kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-never",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Lions ___ eat plants.",
+      "answer": "never",
+      "explanation": "Hiçbir zaman yapılmayan eylemler için 'never' (asla) kullanılır.",
+      "options": [
+        "never",
+        "always",
+        "usually",
+        "sometimes"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-already",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "The train has ___ left the station.",
+      "answer": "already",
+      "explanation": "Bir eylemin beklenenden önce tamamlandığını belirtmek için 'already' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-still",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "It is midnight, but she is ___ awake.",
+      "answer": "still",
+      "explanation": "Devam eden durumlar için 'still' (hâlâ) zarfı kullanılır.",
+      "options": [
+        "still",
+        "already",
+        "again",
+        "finally"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-again",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Please do not make that mistake ___.",
+      "answer": "again",
+      "explanation": "Yeniden/tekrar anlamında 'again' kelimesi kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-together",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "They decided to travel to Italy ___.",
+      "answer": "together",
+      "explanation": "Beraberce, birlikte anlamında 'together' zarfı kullanılır.",
+      "options": [
+        "together",
+        "alone",
+        "really",
+        "actually"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-alone",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I don't want to go to the party ___.",
+      "answer": "alone",
+      "explanation": "Tek başına, yalnız anlamında 'alone' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-really",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "This chocolate cake is ___ delicious.",
+      "answer": "really",
+      "explanation": "Derecelendirme ve pekiştirme için 'really' (gerçekten) kullanılır.",
+      "options": [
+        "really",
+        "alone",
+        "together",
+        "probably"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-actually",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "___, I think she is right.",
+      "answer": "Actually",
+      "explanation": "Bir gerçeği veya zıt fikri belirtirken 'Actually' (Aslında) ile başlanır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-especially",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "It is cold outside, ___ in the evening.",
+      "answer": "especially",
+      "explanation": "Belirli bir ögeyi vurgulamak için 'especially' (özellikle) kullanılır.",
+      "options": [
+        "especially",
+        "luckily",
+        "finally",
+        "quickly"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-finally",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "After hours of waiting, the bus ___ arrived.",
+      "answer": "finally",
+      "explanation": "Uzun bekleyişler veya aşamalardan sonraki 'nihayet/sonunda' durumu 'finally' ile belirtilir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-luckily",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "___, nobody was injured in the accident.",
+      "answer": "Luckily",
+      "explanation": "Şans eseri, neyse ki anlamında olumlu cümle başlangıcı 'Luckily' olur.",
+      "options": [
+        "Luckily",
+        "Unfortunately",
+        "Slowly",
+        "Difficult"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-unfortunately",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "___, the museum is closed on Mondays.",
+      "answer": "Unfortunately",
+      "explanation": "Ne yazık ki, maalesef anlamında olumsuz durum bildirmek için 'Unfortunately' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-quickly",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "He ran ___ to catch the train.",
+      "answer": "quickly",
+      "explanation": "Hızlı bir eylemi niteleyen zarf 'quickly' (hızlıca) olur.",
+      "options": [
+        "quickly",
+        "slowly",
+        "carefully",
+        "easily"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-slowly",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Could you speak more ___? I don't understand.",
+      "answer": "slowly",
+      "explanation": "Yavaş konuşmak ifadesi 'speak slowly' şeklinde kurulur."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-carefully",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "You must drive ___ when it is raining.",
+      "answer": "carefully",
+      "explanation": "Dikkatli araç kullanmak 'drive carefully' olarak söylenir.",
+      "options": [
+        "carefully",
+        "easily",
+        "slowly",
+        "quickly"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-easily",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "He can solve math problems ___.",
+      "answer": "easily",
+      "explanation": "Kolay bir şekilde yapmak zarfı 'easily' (kolayca) kelimesidir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-difficult",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Learning a new language can be ___ at first.",
+      "answer": "difficult",
+      "explanation": "Zor, zahmetli anlamında 'difficult' sıfatı kullanılır.",
+      "options": [
+        "difficult",
+        "easy",
+        "simple",
+        "useful"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-challenging",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Solving this puzzle is highly ___.",
+      "answer": "challenging",
+      "explanation": "Çaba ve efor gerektiren tatlı zorluklar için 'challenging' sıfatı kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-easy",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Cooking pasta is very ___.",
+      "answer": "easy",
+      "explanation": "Zor olmayan, zahmetsiz anlamında 'easy' sıfatı kullanılır.",
+      "options": [
+        "easy",
+        "difficult",
+        "challenging",
+        "strange"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-important",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "It is ___ to drink water every day.",
+      "answer": "important",
+      "explanation": "Gereklilik ve önem arz eden durumlar için 'important' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-useful",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Maps are ___ tools for travelers.",
+      "answer": "useful",
+      "explanation": "İşe yarayan, faydalı aletler için 'useful tools' denir.",
+      "options": [
+        "useful",
+        "useless",
+        "strange",
+        "tired"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-possible",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Please reply as soon as ___.",
+      "answer": "possible",
+      "explanation": "En kısa sürede anlamındaki kalıp 'as soon as possible' (ASAP) şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-impossible",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Flying like a bird is ___ for humans.",
+      "answer": "impossible",
+      "explanation": "İhtimal dışı olan durumlar için 'impossible' (imkânsız) kullanılır.",
+      "options": [
+        "impossible",
+        "possible",
+        "important",
+        "easy"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-different",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "We visited three ___ cities during our trip.",
+      "answer": "different",
+      "explanation": "Birbirinden başka, farklı anlamında 'different' kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-similar",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "My house is ___ to yours in layout.",
+      "answer": "similar",
+      "explanation": "Benzerlik bildiren 'similar to' yapısı kullanılır.",
+      "options": [
+        "similar",
+        "different",
+        "strange",
+        "basic"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-normal",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Everything is back to ___ now.",
+      "answer": "normal",
+      "explanation": "Normale dönmek kalıbı 'back to normal' şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-strange",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "The empty house had a ___ smell.",
+      "answer": "strange",
+      "explanation": "Alışılmadık, acayip nesneler veya durumlar için 'strange' sıfatı kullanılır.",
+      "options": [
+        "strange",
+        "normal",
+        "important",
+        "ready"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-serious",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Are you ___ about moving to Japan?",
+      "answer": "serious",
+      "explanation": "Ciddi olmak, şaka yapmamak anlamında 'be serious' kalıbı kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-simple",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "The layout of the app is very ___ and clean.",
+      "answer": "simple",
+      "explanation": "Karmaşık olmayan, sade anlamında 'simple' sıfatı uygundur.",
+      "options": [
+        "simple",
+        "strange",
+        "difficult",
+        "serious"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-basic",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Water and food are ___ human needs.",
+      "answer": "basic",
+      "explanation": "En alttaki yapı taşı, temel anlamında 'basic needs' (temel ihtiyaçlar) kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-ready",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "We need to get ___ for the flight.",
+      "answer": "ready",
+      "explanation": "Hazırlanmak anlamındaki kalıp 'get ready' şeklindedir.",
+      "options": [
+        "ready",
+        "busy",
+        "free",
+        "tired"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-busy",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "She has a very ___ schedule this week.",
+      "answer": "busy",
+      "explanation": "Yoğun program anlamında 'busy schedule' ifadesi kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-free",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "What do you do in your ___ time?",
+      "answer": "free",
+      "explanation": "Boş zaman/boş vakit kalıbı 'free time' olarak söylenir.",
+      "options": [
+        "free",
+        "busy",
+        "tired",
+        "excited"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-tired",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "He went to bed because he felt ___.",
+      "answer": "tired",
+      "explanation": "Yorgun hissetmek kalıbı 'feel tired' şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-excited",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "We are very ___ about the upcoming project.",
+      "answer": "excited",
+      "explanation": "Bir konuda heyecanlı olmak 'excited about' ile söylenir.",
+      "options": [
+        "excited",
+        "worried",
+        "tired",
+        "busy"
+      ]
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-worried",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "There is no need to be ___ about the future.",
+      "answer": "worried",
+      "explanation": "Endişe duymak anlamındaki kalıp 'be worried about' şeklindedir."
+    },
+    {
+      "kind": "quiz",
+      "id": "wrd-q-surprised",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "She was deeply ___ by the birthday gift.",
+      "answer": "surprised",
+      "explanation": "Bir durum karşısında şaşırmış olmak 'surprised by/at' ile kullanılır.",
+      "options": [
+        "surprised",
+        "excited",
+        "worried",
+        "tired"
+      ]
+    }
+  ]
+}
