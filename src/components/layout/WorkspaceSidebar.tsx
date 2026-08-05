@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { themeTokens } from "@/domain";
 import type { Workspace } from "@/domain";
+import { ThemeToggle } from "./ThemeToggle";
 
 /**
  * Workspace ve kategoriler arası navigasyon — PRD 4.
@@ -85,6 +86,7 @@ export function WorkspaceSidebar({ workspaces }: { workspaces: readonly Workspac
             </ul>
           </div>
         ))}
+        <ThemeToggle />
       </div>
     </nav>
   );

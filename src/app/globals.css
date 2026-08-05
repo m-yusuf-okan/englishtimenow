@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (.dark &);
+
 :root {
   --background: #f6f7fb;
   --foreground: #14161c;
@@ -14,12 +16,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #07080c;
-    --foreground: #e8e9ee;
-    --surface-veil: rgba(255, 255, 255, 0.04);
-  }
+:root.dark {
+  --background: #07080c;
+  --foreground: #e8e9ee;
+  --surface-veil: rgba(255, 255, 255, 0.04);
 }
 
 body {
