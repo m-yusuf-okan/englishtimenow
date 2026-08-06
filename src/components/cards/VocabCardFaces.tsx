@@ -105,7 +105,7 @@ export function VocabCardBack({
         </>
       }
     >
-      <div className="flex flex-1 flex-col gap-5 overflow-y-auto">
+      <div className="flex flex-1 flex-col gap-5 overflow-y-auto scrollbar-none">
         {reversed ? (
           <div>
             <p lang="en" className="text-2xl sm:text-3xl font-bold tracking-tight">

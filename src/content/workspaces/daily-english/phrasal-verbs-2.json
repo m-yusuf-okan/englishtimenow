@@ -1,0 +1,591 @@
+{
+  "$schema": "../schema.json",
+  "slug": "phrasal-verbs-2",
+  "title": "Phrasal Verbs 2",
+  "description": "Gerçek hayatta ve iş ortamında sık karşılaşılan ek öbek fiiller (phrasal verb'ler).",
+  "theme": "sky",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "pv2-find-out",
+      "level": "A2",
+      "term": "find out",
+      "ipa": "/faɪnd aʊt/",
+      "translation": "öğrenmek, ortaya çıkarmak",
+      "example": {
+        "en": "I need to find out what happened at the meeting.",
+        "tr": "Toplantıda ne olduğunu öğrenmem gerekiyor."
+      },
+      "collocations": [
+        "find out + the truth",
+        "find out + what happened",
+        "find out + about something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-look-for",
+      "level": "A1",
+      "term": "look for",
+      "ipa": "/lʊk fɔːr/",
+      "translation": "aramak",
+      "example": {
+        "en": "She is looking for her keys everywhere.",
+        "tr": "Anahtarlarını her yerde arıyor."
+      },
+      "collocations": [
+        "look for + a job",
+        "look for + something",
+        "look for + a solution"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-deal-with",
+      "level": "B1",
+      "term": "deal with",
+      "ipa": "/diːl wɪð/",
+      "translation": "ilgilenmek, başa çıkmak",
+      "example": {
+        "en": "We need to deal with this problem right now.",
+        "tr": "Bu sorunla hemen ilgilenmemiz gerekiyor."
+      },
+      "collocations": [
+        "deal with + a problem",
+        "deal with + a customer",
+        "deal with + stress"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-work-on",
+      "level": "A2",
+      "term": "work on",
+      "ipa": "/wɜːrk ɒn/",
+      "translation": "üzerinde çalışmak",
+      "example": {
+        "en": "I'm working on a new project this week.",
+        "tr": "Bu hafta yeni bir proje üzerinde çalışıyorum."
+      },
+      "collocations": [
+        "work on + a project",
+        "work on + a skill",
+        "work on + an idea"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-give-up",
+      "level": "A2",
+      "term": "give up",
+      "ipa": "/ɡɪv ʌp/",
+      "translation": "vazgeçmek",
+      "example": {
+        "en": "Don't give up on your dreams.",
+        "tr": "Hayallerinden vazgeçme."
+      },
+      "collocations": [
+        "give up + smoking",
+        "give up + on someone",
+        "give up + a habit"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-carry-out",
+      "level": "B1",
+      "term": "carry out",
+      "ipa": "/ˈkæri aʊt/",
+      "translation": "gerçekleştirmek, yürütmek",
+      "example": {
+        "en": "The company carried out a survey last month.",
+        "tr": "Şirket geçen ay bir anket gerçekleştirdi."
+      },
+      "collocations": [
+        "carry out + a plan",
+        "carry out + a survey",
+        "carry out + an experiment"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-set-up",
+      "level": "A2",
+      "term": "set up",
+      "ipa": "/set ʌp/",
+      "translation": "kurmak, ayarlamak",
+      "example": {
+        "en": "We set up a new office in the city center.",
+        "tr": "Şehir merkezinde yeni bir ofis kurduk."
+      },
+      "collocations": [
+        "set up + a business",
+        "set up + a meeting",
+        "set up + an account"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-turn-on",
+      "level": "A1",
+      "term": "turn on",
+      "ipa": "/tɜːrn ɒn/",
+      "translation": "açmak",
+      "example": {
+        "en": "Can you turn on the lights, please?",
+        "tr": "Işıkları açar mısın lütfen?"
+      },
+      "collocations": [
+        "turn on + the light",
+        "turn on + the computer",
+        "turn on + the TV"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-turn-off",
+      "level": "A1",
+      "term": "turn off",
+      "ipa": "/tɜːrn ɒf/",
+      "translation": "kapatmak",
+      "example": {
+        "en": "Please turn off your phone during the movie.",
+        "tr": "Lütfen film sırasında telefonunu kapat."
+      },
+      "collocations": [
+        "turn off + the light",
+        "turn off + the engine",
+        "turn off + the alarm"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-log-in",
+      "level": "A1",
+      "term": "log in",
+      "ipa": "/lɒɡ ɪn/",
+      "translation": "giriş yapmak",
+      "example": {
+        "en": "You need to log in with your email address.",
+        "tr": "E-posta adresinle giriş yapman gerekiyor."
+      },
+      "collocations": [
+        "log in + to an account",
+        "log in + with a password",
+        "log in + successfully"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-log-out",
+      "level": "A1",
+      "term": "log out",
+      "ipa": "/lɒɡ aʊt/",
+      "translation": "çıkış yapmak",
+      "example": {
+        "en": "Remember to log out after using a shared computer.",
+        "tr": "Ortak bir bilgisayarı kullandıktan sonra çıkış yapmayı unutma."
+      },
+      "collocations": [
+        "log out + of an account",
+        "log out + automatically",
+        "log out + safely"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-pick-up",
+      "level": "A2",
+      "term": "pick up",
+      "ipa": "/pɪk ʌp/",
+      "translation": "almak, toplamak",
+      "example": {
+        "en": "I'll pick up some milk on my way home.",
+        "tr": "Eve giderken biraz süt alacağım."
+      },
+      "collocations": [
+        "pick up + groceries",
+        "pick up + a call",
+        "pick up + a habit"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-put-off",
+      "level": "B1",
+      "term": "put off",
+      "ipa": "/pʊt ɒf/",
+      "translation": "ertelemek",
+      "example": {
+        "en": "We had to put off the meeting until next week.",
+        "tr": "Toplantıyı gelecek haftaya ertelemek zorunda kaldık."
+      },
+      "collocations": [
+        "put off + a decision",
+        "put off + a meeting",
+        "put off + doing something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-take-over",
+      "level": "B1",
+      "term": "take over",
+      "ipa": "/teɪk ˈoʊvər/",
+      "translation": "devralmak",
+      "example": {
+        "en": "She will take over the project next month.",
+        "tr": "Önümüzdeki ay projeyi devralacak."
+      },
+      "collocations": [
+        "take over + a company",
+        "take over + a role",
+        "take over + control"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-go-on",
+      "level": "A2",
+      "term": "go on",
+      "ipa": "/ɡoʊ ɒn/",
+      "translation": "devam etmek",
+      "example": {
+        "en": "Please go on with your presentation.",
+        "tr": "Lütfen sunumuna devam et."
+      },
+      "collocations": [
+        "go on + with something",
+        "go on + talking",
+        "go on + a trip"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-come-up-with",
+      "level": "B1",
+      "term": "come up with",
+      "ipa": "/kʌm ʌp wɪð/",
+      "translation": "fikir bulmak, ortaya çıkarmak",
+      "example": {
+        "en": "He came up with a great idea for the app.",
+        "tr": "Uygulama için harika bir fikir buldu."
+      },
+      "collocations": [
+        "come up with + an idea",
+        "come up with + a solution",
+        "come up with + a plan"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-run-into",
+      "level": "B1",
+      "term": "run into",
+      "ipa": "/rʌn ˈɪntuː/",
+      "translation": "karşılaşmak, rastlamak",
+      "example": {
+        "en": "I ran into an old friend at the store.",
+        "tr": "Mağazada eski bir arkadaşımla karşılaştım."
+      },
+      "collocations": [
+        "run into + a problem",
+        "run into + someone",
+        "run into + trouble"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-figure-out",
+      "level": "A2",
+      "term": "figure out",
+      "ipa": "/ˈfɪɡjər aʊt/",
+      "translation": "çözmek, anlamak",
+      "example": {
+        "en": "We finally figured out how to fix the bug.",
+        "tr": "Sonunda hatayı nasıl düzelteceğimizi çözdük."
+      },
+      "collocations": [
+        "figure out + a problem",
+        "figure out + how to",
+        "figure out + the answer"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-look-after",
+      "level": "A2",
+      "term": "look after",
+      "ipa": "/lʊk ˈæftər/",
+      "translation": "ilgilenmek, bakmak",
+      "example": {
+        "en": "Can you look after my dog this weekend?",
+        "tr": "Bu hafta sonu köpeğime bakabilir misin?"
+      },
+      "collocations": [
+        "look after + a child",
+        "look after + a pet",
+        "look after + yourself"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "pv2-break-down",
+      "level": "B1",
+      "term": "break down",
+      "ipa": "/breɪk daʊn/",
+      "translation": "bozulmak, arızalanmak",
+      "example": {
+        "en": "My car broke down on the highway.",
+        "tr": "Arabam otoyolda bozuldu."
+      },
+      "collocations": [
+        "break down + on the way",
+        "break down + suddenly",
+        "the system + break down"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "pv2-q-find-out",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Can you ___ what time the train leaves?",
+      "answer": "find out",
+      "options": [
+        "find out",
+        "look for",
+        "deal with",
+        "carry out"
+      ],
+      "explanation": "`find out` bilinmeyen bir bilgiyi öğrenmek veya ortaya çıkarmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-look-for",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "I need to ___ a new apartment before June.",
+      "answer": "look for",
+      "explanation": "`look for` bir şeyi bulmaya çalışmak, aramak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-deal-with",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "We will ___ this issue tomorrow morning.",
+      "answer": "deal with",
+      "options": [
+        "deal with",
+        "give up",
+        "take over",
+        "go on"
+      ],
+      "explanation": "`deal with` bir sorunla ilgilenmek ve onu çözmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-work-on",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Let's ___ the report together this afternoon.",
+      "answer": "work on",
+      "explanation": "`work on` bir görev veya proje üzerinde çalışmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-give-up",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Please don't ___ on your dreams.",
+      "answer": "give up",
+      "options": [
+        "give up",
+        "put off",
+        "break down",
+        "log out"
+      ],
+      "explanation": "`give up` bir şeyden vazgeçmek, bırakmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-carry-out",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "The team will ___ the experiment next week.",
+      "answer": "carry out",
+      "explanation": "`carry out` planlanan bir işi veya görevi gerçekleştirmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-set-up",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Could you help me ___ the new printer?",
+      "answer": "set up",
+      "options": [
+        "set up",
+        "turn off",
+        "pick up",
+        "run into"
+      ],
+      "explanation": "`set up` bir şeyi kurmak veya kullanıma hazır hale getirmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-turn-on",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "Can you ___ the lights before you leave?",
+      "answer": "turn on",
+      "explanation": "`turn on` bir cihazı veya ışığı çalıştırmak, açmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-turn-off",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "You should ___ your phone during the exam.",
+      "answer": "turn off",
+      "options": [
+        "turn off",
+        "turn on",
+        "log in",
+        "log out"
+      ],
+      "explanation": "`turn off` bir cihazı veya ışığı kapatmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-log-in",
+      "level": "A1",
+      "format": "cloze",
+      "prompt": "You need to ___ before you can see your messages.",
+      "answer": "log in",
+      "explanation": "`log in` bir hesaba veya sisteme giriş yapmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-log-out",
+      "level": "A1",
+      "format": "multiple-choice",
+      "prompt": "Don't forget to ___ when you finish your shift.",
+      "answer": "log out",
+      "options": [
+        "log out",
+        "log in",
+        "turn off",
+        "put off"
+      ],
+      "explanation": "`log out` bir hesaptan veya sistemden çıkış yapmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-pick-up",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Can you ___ the kids from school today?",
+      "answer": "pick up",
+      "explanation": "`pick up` birini bir yerden alıp götürmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-put-off",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "We had to ___ the trip because of the storm.",
+      "answer": "put off",
+      "options": [
+        "put off",
+        "take over",
+        "come up with",
+        "break down"
+      ],
+      "explanation": "`put off` bir işi veya planı daha sonraya ertelemek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-take-over",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "She is ready to ___ the department next year.",
+      "answer": "take over",
+      "explanation": "`take over` bir görevi, işi veya sorumluluğu devralmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-go-on",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Please ___ with your explanation, I'm listening.",
+      "answer": "go on",
+      "options": [
+        "go on",
+        "give up",
+        "deal with",
+        "look after"
+      ],
+      "explanation": "`go on` bir eyleme veya duruma devam etmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-come-up-with",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "The team managed to ___ a creative solution.",
+      "answer": "come up with",
+      "explanation": "`come up with` bir fikir, plan veya çözüm üretmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-run-into",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "I didn't expect to ___ my teacher at the mall.",
+      "answer": "run into",
+      "options": [
+        "run into",
+        "look for",
+        "find out",
+        "set up"
+      ],
+      "explanation": "`run into` beklenmedik şekilde biriyle karşılaşmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-figure-out",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "It took us a while to ___ the correct answer.",
+      "answer": "figure out",
+      "explanation": "`figure out` düşünerek bir sonuca ulaşmak, çözmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-look-after",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Could you ___ my plants while I'm away?",
+      "answer": "look after",
+      "options": [
+        "look after",
+        "look for",
+        "run into",
+        "carry out"
+      ],
+      "explanation": "`look after` birine veya bir şeye bakmak, ilgilenmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "pv2-q-break-down",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Old machines tend to ___ more often.",
+      "answer": "break down",
+      "explanation": "`break down` bir makinenin veya sistemin çalışmayı durdurması, bozulması anlamına gelir."
+    }
+  ]
+}
