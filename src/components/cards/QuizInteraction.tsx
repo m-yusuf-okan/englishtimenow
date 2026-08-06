@@ -30,7 +30,7 @@ export function QuizInteraction({ card, theme }: { card: QuizCard; theme: ColorT
     <div
       // Kart yüzeyine ulaşmasın: seçim yapmak kartı çevirmemeli.
       onClick={(event) => event.stopPropagation()}
-      className="flex flex-1 flex-col justify-center gap-3 sm:gap-4"
+      className="flex flex-1 flex-col gap-3 sm:gap-4 overflow-y-auto scrollbar-none"
     >
       {card.format === "cloze" ? (
         <ClozeQuestion card={card} answered={answered} onSubmit={setSubmitted} />

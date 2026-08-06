@@ -1,0 +1,881 @@
+{
+  "$schema": "../../schema.json",
+  "slug": "daily-verbs-2",
+  "title": "Daily Verbs (A2-B1)",
+  "description": "Günlük konuşmalarda, okulda ve iş hayatında sık kullanılan A2–B1 düzeyindeki temel İngilizce fiiller.",
+  "theme": "violet",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "verb-achieve",
+      "level": "B1",
+      "term": "achieve",
+      "ipa": "/əˈtʃiːv/",
+      "translation": "başarmak, elde etmek",
+      "example": {
+        "en": "She worked hard to achieve her goals.",
+        "tr": "Hedeflerine ulaşmak için çok çalıştı."
+      },
+      "collocations": [
+        "achieve + a goal",
+        "achieve + success",
+        "achieve + a result"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-avoid",
+      "level": "B1",
+      "term": "avoid",
+      "ipa": "/əˈvɔɪd/",
+      "translation": "kaçınmak, uzak durmak",
+      "example": {
+        "en": "I try to avoid using my phone while studying.",
+        "tr": "Ders çalışırken telefonumu kullanmaktan kaçınmaya çalışırım."
+      },
+      "collocations": [
+        "avoid + a problem",
+        "avoid + doing something",
+        "avoid + unnecessary stress"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-suggest",
+      "level": "B1",
+      "term": "suggest",
+      "ipa": "/səˈdʒest/",
+      "translation": "önermek",
+      "example": {
+        "en": "I suggest taking a short break.",
+        "tr": "Kısa bir mola vermeyi öneriyorum."
+      },
+      "collocations": [
+        "suggest + doing something",
+        "suggest + an idea",
+        "suggest + that clause"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-recommend",
+      "level": "B1",
+      "term": "recommend",
+      "ipa": "/ˌrekəˈmend/",
+      "translation": "tavsiye etmek",
+      "example": {
+        "en": "I recommend this book to anyone learning English.",
+        "tr": "Bu kitabı İngilizce öğrenen herkese tavsiye ederim."
+      },
+      "collocations": [
+        "recommend + a book",
+        "recommend + doing something",
+        "highly recommend"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-prefer",
+      "level": "A2",
+      "term": "prefer",
+      "ipa": "/prɪˈfɜː/",
+      "translation": "tercih etmek",
+      "example": {
+        "en": "I prefer tea to coffee in the evening.",
+        "tr": "Akşamları kahve yerine çayı tercih ederim."
+      },
+      "collocations": [
+        "prefer + noun",
+        "prefer A + to B",
+        "prefer + to do something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-compare",
+      "level": "B1",
+      "term": "compare",
+      "ipa": "/kəmˈpeə/",
+      "translation": "karşılaştırmak",
+      "example": {
+        "en": "We compared the prices before buying the laptop.",
+        "tr": "Dizüstü bilgisayarı almadan önce fiyatları karşılaştırdık."
+      },
+      "collocations": [
+        "compare + prices",
+        "compare A + with B",
+        "compare + results"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-describe",
+      "level": "A2",
+      "term": "describe",
+      "ipa": "/dɪˈskraɪb/",
+      "translation": "tanımlamak, tarif etmek",
+      "example": {
+        "en": "Can you describe the person you saw?",
+        "tr": "Gördüğün kişiyi tarif edebilir misin?"
+      },
+      "collocations": [
+        "describe + a person",
+        "describe + a situation",
+        "describe something + to someone"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-mention",
+      "level": "B1",
+      "term": "mention",
+      "ipa": "/ˈmenʃən/",
+      "translation": "bahsetmek, söz etmek",
+      "example": {
+        "en": "He mentioned your name during the meeting.",
+        "tr": "Toplantı sırasında senin adından bahsetti."
+      },
+      "collocations": [
+        "mention + a name",
+        "mention + a problem",
+        "mention + that clause"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-realize",
+      "level": "B1",
+      "term": "realize",
+      "ipa": "/ˈrɪəlaɪz/",
+      "translation": "fark etmek, anlamak",
+      "example": {
+        "en": "I realized that I had left my keys at home.",
+        "tr": "Anahtarlarımı evde bıraktığımı fark ettim."
+      },
+      "collocations": [
+        "realize + that clause",
+        "suddenly realize",
+        "realize + a mistake"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-notice",
+      "level": "A2",
+      "term": "notice",
+      "ipa": "/ˈnəʊtɪs/",
+      "translation": "fark etmek, dikkatini çekmek",
+      "example": {
+        "en": "Did you notice the new picture on the wall?",
+        "tr": "Duvardaki yeni resmi fark ettin mi?"
+      },
+      "collocations": [
+        "notice + a change",
+        "notice + something",
+        "notice + that clause"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-recognize",
+      "level": "B1",
+      "term": "recognize",
+      "ipa": "/ˈrekəɡnaɪz/",
+      "translation": "tanımak, fark etmek",
+      "example": {
+        "en": "I recognized her voice immediately.",
+        "tr": "Onun sesini hemen tanıdım."
+      },
+      "collocations": [
+        "recognize + a face",
+        "recognize + a voice",
+        "easily recognize"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-solve",
+      "level": "A2",
+      "term": "solve",
+      "ipa": "/sɒlv/",
+      "translation": "çözmek",
+      "example": {
+        "en": "We need to solve this problem together.",
+        "tr": "Bu problemi birlikte çözmemiz gerekiyor."
+      },
+      "collocations": [
+        "solve + a problem",
+        "solve + a puzzle",
+        "solve + an issue"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-improve",
+      "level": "A2",
+      "term": "improve",
+      "ipa": "/ɪmˈpruːv/",
+      "translation": "geliştirmek, iyileştirmek",
+      "example": {
+        "en": "Reading every day will improve your vocabulary.",
+        "tr": "Her gün okumak kelime bilginizi geliştirecektir."
+      },
+      "collocations": [
+        "improve + your English",
+        "improve + a skill",
+        "greatly improve"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-develop",
+      "level": "B1",
+      "term": "develop",
+      "ipa": "/dɪˈveləp/",
+      "translation": "geliştirmek, geliştirilmek",
+      "example": {
+        "en": "She wants to develop her communication skills.",
+        "tr": "İletişim becerilerini geliştirmek istiyor."
+      },
+      "collocations": [
+        "develop + a skill",
+        "develop + a product",
+        "develop + a habit"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-reduce",
+      "level": "B1",
+      "term": "reduce",
+      "ipa": "/rɪˈdjuːs/",
+      "translation": "azaltmak",
+      "example": {
+        "en": "We are trying to reduce our electricity use.",
+        "tr": "Elektrik kullanımımızı azaltmaya çalışıyoruz."
+      },
+      "collocations": [
+        "reduce + costs",
+        "reduce + stress",
+        "reduce + the amount"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-increase",
+      "level": "B1",
+      "term": "increase",
+      "ipa": "/ɪnˈkriːs/",
+      "translation": "artırmak, artmak",
+      "example": {
+        "en": "The company wants to increase its sales this year.",
+        "tr": "Şirket bu yıl satışlarını artırmak istiyor."
+      },
+      "collocations": [
+        "increase + sales",
+        "increase + the price",
+        "increase + the amount"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-expand",
+      "level": "B1",
+      "term": "expand",
+      "ipa": "/ɪkˈspænd/",
+      "translation": "genişletmek, büyütmek",
+      "example": {
+        "en": "They plan to expand their business into Europe.",
+        "tr": "İşlerini Avrupa'ya genişletmeyi planlıyorlar."
+      },
+      "collocations": [
+        "expand + a business",
+        "expand + your knowledge",
+        "expand + into a market"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-depend",
+      "level": "A2",
+      "term": "depend",
+      "ipa": "/dɪˈpend/",
+      "translation": "bağlı olmak",
+      "example": {
+        "en": "The final decision depends on the weather.",
+        "tr": "Son karar hava durumuna bağlı."
+      },
+      "collocations": [
+        "depend + on someone",
+        "depend + on the situation",
+        "it depends"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-include",
+      "level": "A2",
+      "term": "include",
+      "ipa": "/ɪnˈkluːd/",
+      "translation": "içermek, dahil etmek",
+      "example": {
+        "en": "The price includes breakfast and dinner.",
+        "tr": "Fiyata kahvaltı ve akşam yemeği dahildir."
+      },
+      "collocations": [
+        "include + breakfast",
+        "include + information",
+        "include + someone in something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-contain",
+      "level": "B1",
+      "term": "contain",
+      "ipa": "/kənˈteɪn/",
+      "translation": "içermek, barındırmak",
+      "example": {
+        "en": "This drink contains a lot of sugar.",
+        "tr": "Bu içecek çok fazla şeker içeriyor."
+      },
+      "collocations": [
+        "contain + sugar",
+        "contain + information",
+        "contain + ingredients"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-require",
+      "level": "B1",
+      "term": "require",
+      "ipa": "/rɪˈkwaɪə/",
+      "translation": "gerektirmek",
+      "example": {
+        "en": "This job requires good communication skills.",
+        "tr": "Bu iş iyi iletişim becerileri gerektiriyor."
+      },
+      "collocations": [
+        "require + experience",
+        "require + attention",
+        "require someone + to do something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-support",
+      "level": "A2",
+      "term": "support",
+      "ipa": "/səˈpɔːt/",
+      "translation": "desteklemek",
+      "example": {
+        "en": "My family always supports my decisions.",
+        "tr": "Ailem kararlarımı her zaman destekler."
+      },
+      "collocations": [
+        "support + a person",
+        "support + an idea",
+        "support + a team"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-manage",
+      "level": "B1",
+      "term": "manage",
+      "ipa": "/ˈmænɪdʒ/",
+      "translation": "yönetmek, başarmak",
+      "example": {
+        "en": "I managed to finish the report before noon.",
+        "tr": "Raporu öğleden önce bitirmeyi başardım."
+      },
+      "collocations": [
+        "manage + a team",
+        "manage + your time",
+        "manage + to do something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-handle",
+      "level": "B1",
+      "term": "handle",
+      "ipa": "/ˈhændl/",
+      "translation": "ele almak, başa çıkmak",
+      "example": {
+        "en": "She handled the difficult situation calmly.",
+        "tr": "Zor durumu sakin bir şekilde ele aldı."
+      },
+      "collocations": [
+        "handle + a situation",
+        "handle + a problem",
+        "handle + pressure"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-protect",
+      "level": "A2",
+      "term": "protect",
+      "ipa": "/prəˈtekt/",
+      "translation": "korumak",
+      "example": {
+        "en": "Wear sunscreen to protect your skin from the sun.",
+        "tr": "Cildinizi güneşten korumak için güneş kremi sürün."
+      },
+      "collocations": [
+        "protect + someone",
+        "protect something + from damage",
+        "protect + against disease"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-replace",
+      "level": "B1",
+      "term": "replace",
+      "ipa": "/rɪˈpleɪs/",
+      "translation": "değiştirmek, yerine koymak",
+      "example": {
+        "en": "We need to replace the old battery with a new one.",
+        "tr": "Eski pili yenisiyle değiştirmemiz gerekiyor."
+      },
+      "collocations": [
+        "replace + an old item",
+        "replace A + with B",
+        "replace + a part"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-prevent",
+      "level": "B1",
+      "term": "prevent",
+      "ipa": "/prɪˈvent/",
+      "translation": "önlemek",
+      "example": {
+        "en": "Regular exercise can help prevent health problems.",
+        "tr": "Düzenli egzersiz sağlık sorunlarını önlemeye yardımcı olabilir."
+      },
+      "collocations": [
+        "prevent + a problem",
+        "prevent someone + from doing something",
+        "help prevent"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-participate",
+      "level": "B1",
+      "term": "participate",
+      "ipa": "/pɑːˈtɪsɪpeɪt/",
+      "translation": "katılmak",
+      "example": {
+        "en": "Everyone is welcome to participate in the discussion.",
+        "tr": "Herkes tartışmaya katılabilir."
+      },
+      "collocations": [
+        "participate + in a discussion",
+        "participate + in an event",
+        "actively participate"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-communicate",
+      "level": "B1",
+      "term": "communicate",
+      "ipa": "/kəˈmjuːnɪkeɪt/",
+      "translation": "iletişim kurmak",
+      "example": {
+        "en": "It is important to communicate clearly with your team.",
+        "tr": "Ekibinizle açık bir şekilde iletişim kurmak önemlidir."
+      },
+      "collocations": [
+        "communicate + with someone",
+        "communicate + clearly",
+        "communicate + an idea"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "verb-observe",
+      "level": "B1",
+      "term": "observe",
+      "ipa": "/əbˈzɜːv/",
+      "translation": "gözlemlemek",
+      "example": {
+        "en": "The scientist observed the animals for several hours.",
+        "tr": "Bilim insanı hayvanları birkaç saat boyunca gözlemledi."
+      },
+      "collocations": [
+        "observe + behaviour",
+        "carefully observe",
+        "observe + a change"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "verb-q-achieve",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "You need patience and practice to ___ your goals.",
+      "answer": "achieve",
+      "explanation": "`achieve a goal` bir hedefe ulaşmak veya onu başarmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-avoid",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "Try to ___ eating too much sugar.",
+      "answer": "avoid",
+      "options": [
+        "avoid",
+        "contain",
+        "mention",
+        "expand"
+      ],
+      "explanation": "`avoid doing something` bir eylemi yapmaktan kaçınmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-suggest",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Can you ___ a good place for dinner?",
+      "answer": "suggest",
+      "explanation": "`suggest a place` bir yer önermek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-recommend",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "Which restaurant would you ___ for lunch?",
+      "answer": "recommend",
+      "options": [
+        "recommend",
+        "recognize",
+        "reduce",
+        "observe"
+      ],
+      "explanation": "`recommend` bir kişiye uygun veya iyi olduğunu düşündüğümüz bir şeyi tavsiye etmek için kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-prefer",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "I ___ walking to work when the weather is nice.",
+      "answer": "prefer",
+      "explanation": "`prefer` bir seçeneği diğerinden daha çok istemek veya sevmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-compare",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "It is useful to ___ different options before deciding.",
+      "answer": "compare",
+      "options": [
+        "compare",
+        "protect",
+        "participate",
+        "contain"
+      ],
+      "explanation": "`compare` iki veya daha fazla şey arasındaki benzerlikleri ve farklılıkları incelemek demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-describe",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Please ___ what happened in your own words.",
+      "answer": "describe",
+      "explanation": "`describe` bir kişi, nesne veya olay hakkında ayrıntılı bilgi vermek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-mention",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "Did she ___ why she was late?",
+      "answer": "mention",
+      "options": [
+        "mention",
+        "manage",
+        "replace",
+        "support"
+      ],
+      "explanation": "`mention` bir konuya kısa biçimde değinmek veya ondan söz etmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-realize",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "I did not ___ how late it was.",
+      "answer": "realize",
+      "explanation": "`realize` daha önce bilinmeyen veya anlaşılmayan bir gerçeğin farkına varmak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-notice",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "I did not ___ the small mistake in the email.",
+      "answer": "notice",
+      "options": [
+        "notice",
+        "achieve",
+        "require",
+        "communicate"
+      ],
+      "explanation": "`notice` bir şeyi görerek, duyarak veya dikkat ederek fark etmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-recognize",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "I almost did not ___ him with his new haircut.",
+      "answer": "recognize",
+      "explanation": "`recognize` daha önce görülen, duyulan veya bilinen birini ya da bir şeyi tanımak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-solve",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Can you help me ___ this maths problem?",
+      "answer": "solve",
+      "options": [
+        "solve",
+        "include",
+        "prefer",
+        "observe"
+      ],
+      "explanation": "`solve a problem` bir probleme doğru cevap veya çözüm bulmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-improve",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Regular practice can ___ your speaking skills.",
+      "answer": "improve",
+      "explanation": "`improve` bir şeyi daha iyi duruma getirmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-develop",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "The company plans to ___ a new mobile application.",
+      "answer": "develop",
+      "options": [
+        "develop",
+        "avoid",
+        "contain",
+        "recognize"
+      ],
+      "explanation": "`develop a product` yeni bir ürün tasarlamak ve ortaya çıkarmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-reduce",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Walking more can help ___ stress.",
+      "answer": "reduce",
+      "explanation": "`reduce` bir şeyin miktarını, boyutunu veya etkisini azaltmak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-increase",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "Exercise can ___ your energy levels.",
+      "answer": "increase",
+      "options": [
+        "increase",
+        "prevent",
+        "describe",
+        "handle"
+      ],
+      "explanation": "`increase` bir şeyin miktarını, seviyesini veya sayısını artırmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-expand",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Reading widely helps you ___ your knowledge.",
+      "answer": "expand",
+      "explanation": "`expand your knowledge` bilgi alanını genişletmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-depend",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Our plans ___ on the weather.",
+      "answer": "depend",
+      "options": [
+        "depend",
+        "include",
+        "protect",
+        "compare"
+      ],
+      "explanation": "`depend on` bir sonucun başka bir kişiye, duruma veya koşula bağlı olduğunu anlatır."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-include",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "Does the ticket price ___ food and drinks?",
+      "answer": "include",
+      "explanation": "`include` bir bütünün parçası olarak bir şeyi kapsamak veya dahil etmek demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-contain",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "This product may ___ nuts.",
+      "answer": "contain",
+      "options": [
+        "contain",
+        "achieve",
+        "participate",
+        "prefer"
+      ],
+      "explanation": "`contain` bir şeyin içinde belirli bir madde veya unsur bulunduğunu anlatır."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-require",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Most jobs ___ some basic computer skills.",
+      "answer": "require",
+      "explanation": "`require` bir şeyin gerekli veya zorunlu olduğunu belirtir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-support",
+      "level": "A2",
+      "format": "multiple-choice",
+      "prompt": "Good friends ___ each other during difficult times.",
+      "answer": "support",
+      "options": [
+        "support",
+        "replace",
+        "observe",
+        "reduce"
+      ],
+      "explanation": "`support` bir kişiye, düşünceye veya gruba yardım etmek ya da arka çıkmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-manage",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Did you ___ to catch the last bus?",
+      "answer": "manage",
+      "explanation": "`manage to do something` zor veya belirsiz bir işi yapmayı başarmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-handle",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "He knows how to ___ customer complaints.",
+      "answer": "handle",
+      "options": [
+        "handle",
+        "realize",
+        "expand",
+        "recommend"
+      ],
+      "explanation": "`handle a problem` bir sorunla ilgilenmek ve onu kontrol altında tutmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-protect",
+      "level": "A2",
+      "format": "cloze",
+      "prompt": "A strong password helps ___ your account.",
+      "answer": "protect",
+      "explanation": "`protect` birini veya bir şeyi zarar, tehlike ya da kayıptan korumak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-replace",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "You should ___ the broken screen as soon as possible.",
+      "answer": "replace",
+      "options": [
+        "replace",
+        "suggest",
+        "notice",
+        "depend"
+      ],
+      "explanation": "`replace` eski, kırık veya uygun olmayan bir şeyin yerine yenisini koymak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-prevent",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Washing your hands can help ___ illness.",
+      "answer": "prevent",
+      "explanation": "`prevent` bir olayın veya sorunun gerçekleşmesini engellemek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-participate",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "More than fifty students will ___ in the competition.",
+      "answer": "participate",
+      "options": [
+        "participate",
+        "contain",
+        "describe",
+        "increase"
+      ],
+      "explanation": "`participate in` bir etkinliğe, yarışmaya veya çalışmaya katılmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-communicate",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Managers need to ___ clearly with their teams.",
+      "answer": "communicate",
+      "explanation": "`communicate with someone` bir kişiyle bilgi, düşünce veya duygu paylaşmak anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "verb-q-observe",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "The teacher asked us to ___ how the plants changed.",
+      "answer": "observe",
+      "options": [
+        "observe",
+        "manage",
+        "include",
+        "avoid"
+      ],
+      "explanation": "`observe` bir kişiyi, nesneyi veya süreci dikkatle izlemek ve incelemek anlamına gelir."
+    }
+  ]
+}
