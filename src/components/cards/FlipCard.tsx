@@ -83,6 +83,8 @@ export function FlipCard({
           style={{
             transformStyle: "preserve-3d",
             WebkitTransformStyle: "preserve-3d",
+            gridTemplateRows: "minmax(0, 1fr)",
+            gridTemplateColumns: "minmax(0, 1fr)",
           }}
         >
           {/* İki yüz de aynı grid hücresinde: hücre en uzun yüze göre

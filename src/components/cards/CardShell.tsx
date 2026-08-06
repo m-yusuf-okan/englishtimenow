@@ -86,7 +86,9 @@ export function CardShell({
         </div>
       </div>
 
-      {children}
+      <div className="flex-1 min-h-0 flex flex-col">
+        {children}
+      </div>
 
       {actions ? (
         <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-current/10 pt-4">
