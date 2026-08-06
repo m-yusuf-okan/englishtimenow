@@ -1,0 +1,689 @@
+{
+  "$schema": "../schema.json",
+  "slug": "b1-b2-transition-words",
+  "title": "B1 → B2 Geçiş Kelimeleri",
+  "description": "B1 seviyesinden B2 seviyesine geçişte akıcılığı ve ifade gücünü artıran en kritik 30 kelime.",
+  "theme": "indigo",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "b1b2-significant",
+      "level": "B2",
+      "term": "significant",
+      "ipa": "/sɪɡˈnɪf.ɪ.kənt/",
+      "translation": "önemli, anlamlı",
+      "example": {
+        "en": "There has been a significant increase in sales this month.",
+        "tr": "Bu ay satışlarda önemli bir artış oldu."
+      },
+      "collocations": [
+        "significant increase",
+        "significant role",
+        "significant change"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-essential",
+      "level": "B1",
+      "term": "essential",
+      "ipa": "/ɪˈsen.ʃəl/",
+      "translation": "temel, gerekli, elzem",
+      "example": {
+        "en": "Good communication is essential for effective teamwork.",
+        "tr": "İyi iletişim, etkili takım çalışması için gereklidir."
+      },
+      "collocations": [
+        "essential part",
+        "essential role",
+        "absolutely essential"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-accurate",
+      "level": "B2",
+      "term": "accurate",
+      "ipa": "/ˈæk.jə.rət/",
+      "translation": "doğru, hassas, kesin",
+      "example": {
+        "en": "The measurement must be accurate to avoid errors.",
+        "tr": "Hataları önlemek için ölçüm doğru olmalıdır."
+      },
+      "collocations": [
+        "accurate information",
+        "accurate description",
+        "highly accurate"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-efficient",
+      "level": "B2",
+      "term": "efficient",
+      "ipa": "/ɪˈfɪʃ.ənt/",
+      "translation": "verimli, etkin",
+      "example": {
+        "en": "We need to find a more efficient way to handle customer support.",
+        "tr": "Müşteri desteğini yönetmek için daha verimli bir yol bulmamız gerekiyor."
+      },
+      "collocations": [
+        "efficient use",
+        "energy efficient",
+        "highly efficient"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-reliable",
+      "level": "B1",
+      "term": "reliable",
+      "ipa": "/rɪˈlaɪ.ə.bəl/",
+      "translation": "güvenilir",
+      "example": {
+        "en": "She is a very reliable employee who always meets deadlines.",
+        "tr": "O, son teslim tarihlerine her zaman uyan çok güvenilir bir çalışandır."
+      },
+      "collocations": [
+        "reliable source",
+        "reliable partner",
+        "highly reliable"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-advanced",
+      "level": "B1",
+      "term": "advanced",
+      "ipa": "/ədˈvɑːnst/",
+      "translation": "ileri seviye, gelişmiş",
+      "example": {
+        "en": "This course is designed for students with advanced English skills.",
+        "tr": "Bu kurs, ileri seviye İngilizce becerilerine sahip öğrenciler için tasarlanmıştır."
+      },
+      "collocations": [
+        "advanced technology",
+        "advanced level",
+        "advanced degree"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-complex",
+      "level": "B2",
+      "term": "complex",
+      "ipa": "/ˈkɒm.pleks/",
+      "translation": "karmaşık",
+      "example": {
+        "en": "The system is too complex for beginners to understand quickly.",
+        "tr": "Sistem, yeni başlayanların hızlıca anlaması için çok karmaşık."
+      },
+      "collocations": [
+        "complex issue",
+        "complex system",
+        "complex process"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-comprehensive",
+      "level": "B2",
+      "term": "comprehensive",
+      "ipa": "/ˌkɒm.prɪˈhen.sɪv/",
+      "translation": "kapsamlı, detaylı",
+      "example": {
+        "en": "The report provides a comprehensive overview of the market.",
+        "tr": "Rapor, pazarın kapsamlı bir özetini sunmaktadır."
+      },
+      "collocations": [
+        "comprehensive review",
+        "comprehensive guide",
+        "comprehensive plan"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-critical",
+      "level": "B2",
+      "term": "critical",
+      "ipa": "/ˈkrɪt.ɪ.kəl/",
+      "translation": "kritik, çok önemli",
+      "example": {
+        "en": "Timing is critical to the success of this project.",
+        "tr": "Zamanlama bu projenin başarısı için kritiktir."
+      },
+      "collocations": [
+        "critical thinking",
+        "critical role",
+        "critical decision"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-aware",
+      "level": "B1",
+      "term": "aware",
+      "ipa": "/əˈweər/",
+      "translation": "farkında, bilincinde",
+      "example": {
+        "en": "Are you aware of the new security guidelines?",
+        "tr": "Yeni güvenlik kurallarının farkında mısınız?"
+      },
+      "collocations": [
+        "be aware + of",
+        "fully aware",
+        "become aware"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-conscious",
+      "level": "B2",
+      "term": "conscious",
+      "ipa": "/ˈkɒn.ʃəs/",
+      "translation": "bilinçli, farkında",
+      "example": {
+        "en": "She made a conscious effort to improve her health.",
+        "tr": "Sağlığını geliştirmek için bilinçli bir çaba gösterdi."
+      },
+      "collocations": [
+        "conscious choice",
+        "conscious effort",
+        "environmentally conscious"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-maintain",
+      "level": "B2",
+      "term": "maintain",
+      "ipa": "/meɪnˈteɪn/",
+      "translation": "sürdürmek, korumak",
+      "example": {
+        "en": "It is important to maintain a healthy work-life balance.",
+        "tr": "Sağlıklı bir iş-yaşam dengesini sürdürmek önemlidir."
+      },
+      "collocations": [
+        "maintain balance",
+        "maintain standards",
+        "maintain focus"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-obtain",
+      "level": "B2",
+      "term": "obtain",
+      "ipa": "/əbˈteɪn/",
+      "translation": "elde etmek, edinmek",
+      "example": {
+        "en": "You need to obtain permission before using the software.",
+        "tr": "Yazılımı kullanmadan önce izin almanız/elde etmeniz gerekir."
+      },
+      "collocations": [
+        "obtain permission",
+        "obtain results",
+        "obtain information"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-contribute",
+      "level": "B2",
+      "term": "contribute",
+      "ipa": "/kənˈtrɪb.juːt/",
+      "translation": "katkıda bulunmak",
+      "example": {
+        "en": "Everyone is encouraged to contribute to the discussion.",
+        "tr": "Herkesin tartışmaya katkıda bulunması teşvik edilir."
+      },
+      "collocations": [
+        "contribute to + something",
+        "contribute significantly",
+        "contribute ideas"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-establish",
+      "level": "B2",
+      "term": "establish",
+      "ipa": "/ɪˈstæb.lɪʃ/",
+      "translation": "kurmak, tesis etmek",
+      "example": {
+        "en": "The company plans to establish new offices in Europe.",
+        "tr": "Şirket, Avrupa'da yeni ofisler kurmayı planlıyor."
+      },
+      "collocations": [
+        "establish a business",
+        "establish connection",
+        "establish rules"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-determine",
+      "level": "B2",
+      "term": "determine",
+      "ipa": "/dɪˈtɜː.mɪn/",
+      "translation": "belirlemek, kararlaştırmak",
+      "example": {
+        "en": "The test results will determine the next steps in the treatment.",
+        "tr": "Test sonuçları tedavideki sonraki adımları belirleyecek."
+      },
+      "collocations": [
+        "determine the outcome",
+        "determine cause",
+        "determine factors"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-identify",
+      "level": "B1",
+      "term": "identify",
+      "ipa": "/aɪˈden.tɪ.faɪ/",
+      "translation": "tanımlamak, tespit etmek",
+      "example": {
+        "en": "Researchers are trying to identify the cause of the problem.",
+        "tr": "Araştırmacılar sorunun nedenini tespit etmeye çalışıyor."
+      },
+      "collocations": [
+        "identify key issues",
+        "identify weakness",
+        "identify problem"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-evaluate",
+      "level": "B2",
+      "term": "evaluate",
+      "ipa": "/ɪˈvæl.ju.eɪt/",
+      "translation": "değerlendirmek",
+      "example": {
+        "en": "We need to evaluate the potential risks before investing.",
+        "tr": "Yatırım yapmadan önce olası riskleri değerlendirmemiz gerekiyor."
+      },
+      "collocations": [
+        "evaluate performance",
+        "evaluate options",
+        "evaluate effectiveness"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-estimate",
+      "level": "B2",
+      "term": "estimate",
+      "ipa": "/ˈes.tɪ.meɪt/",
+      "translation": "tahmin etmek, oran biçmek",
+      "example": {
+        "en": "They estimate that the project will take three months.",
+        "tr": "Projenin üç ay süreceğini tahmin ediyorlar."
+      },
+      "collocations": [
+        "estimate cost",
+        "estimate value",
+        "roughly estimate"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-demonstrate",
+      "level": "B2",
+      "term": "demonstrate",
+      "ipa": "/ˈdem.ən.streɪt/",
+      "translation": "göstermek, kanıtlamak",
+      "example": {
+        "en": "The study demonstrates the benefits of regular exercise.",
+        "tr": "Çalışma, düzenli egzersizin faydalarını göstermektedir."
+      },
+      "collocations": [
+        "demonstrate skill",
+        "demonstrate ability",
+        "clearly demonstrate"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-clarify",
+      "level": "B2",
+      "term": "clarify",
+      "ipa": "/ˈklær.ɪ.faɪ/",
+      "translation": "açıklığa kavuşturmak, netleştirmek",
+      "example": {
+        "en": "Could you clarify what you mean by that statement?",
+        "tr": "Bu ifadenizle ne demek istediğinizi açıklığa kavuşturabilir misiniz?"
+      },
+      "collocations": [
+        "clarify position",
+        "clarify meaning",
+        "clarify situation"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-emphasize",
+      "level": "B2",
+      "term": "emphasize",
+      "ipa": "/ˈem.fə.saɪz/",
+      "translation": "vurgulamak, üzerinde durmak",
+      "example": {
+        "en": "The manager emphasized the importance of meeting deadlines.",
+        "tr": "Müdür, teslim tarihlerine uymanın önemini vurguladı."
+      },
+      "collocations": [
+        "emphasize importance",
+        "emphasize need",
+        "strongly emphasize"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-indicate",
+      "level": "B2",
+      "term": "indicate",
+      "ipa": "/ˈɪn.dɪ.keɪt/",
+      "translation": "işaret etmek, göstermek",
+      "example": {
+        "en": "Recent surveys indicate a strong demand for online learning.",
+        "tr": "Son anketler, online öğrenmeye yönelik güçlü bir talebi işaret ediyor."
+      },
+      "collocations": [
+        "indicate preference",
+        "indicate change",
+        "clearly indicate"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-represent",
+      "level": "B2",
+      "term": "represent",
+      "ipa": "/ˌrep.rɪˈzent/",
+      "translation": "temsil etmek",
+      "example": {
+        "en": "Each symbol represents a different concept in the diagram.",
+        "tr": "Diyagramdaki her bir sembol farklı bir kavramı temsil eder."
+      },
+      "collocations": [
+        "represent interests",
+        "represent client",
+        "represent value"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-interact",
+      "level": "B2",
+      "term": "interact",
+      "ipa": "/ˌɪn.tərˈækt/",
+      "translation": "etkileşim kurmak",
+      "example": {
+        "en": "Users can interact with the app using voice commands.",
+        "tr": "Kullanıcılar sesli komutlar kullanarak uygulamayla etkileşim kurabilir."
+      },
+      "collocations": [
+        "interact with + others",
+        "interact directly",
+        "interact socially"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-adapt",
+      "level": "B2",
+      "term": "adapt",
+      "ipa": "/əˈdæpt/",
+      "translation": "uyum sağlamak, adapte olmak",
+      "example": {
+        "en": "Successful companies are able to adapt quickly to change.",
+        "tr": "Başarılı şirketler değişime hızlıca uyum sağlayabilir."
+      },
+      "collocations": [
+        "adapt to + change",
+        "adapt quickly",
+        "adapt environment"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-involve",
+      "level": "B1",
+      "term": "involve",
+      "ipa": "/ɪnˈvɒlv/",
+      "translation": "içermek, dahil etmek",
+      "example": {
+        "en": "The job involves traveling to different cities each month.",
+        "tr": "İş, her ay farklı şehirlere seyahat etmeyi içeriyor."
+      },
+      "collocations": [
+        "involve risk",
+        "involve process",
+        "actively involve"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-improve",
+      "level": "A2",
+      "term": "improve",
+      "ipa": "/ɪmˈpruːv/",
+      "translation": "geliştirmek, iyileştirmek",
+      "example": {
+        "en": "I want to improve my English speaking skills.",
+        "tr": "İngilizce konuşma becerilerimi geliştirmek istiyorum."
+      },
+      "collocations": [
+        "improve quality",
+        "improve performance",
+        "dramatically improve"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-enhance",
+      "level": "B2",
+      "term": "enhance",
+      "ipa": "/ɪnˈhɑːns/",
+      "translation": "geliştirmek, artırmak, zenginleştirmek",
+      "example": {
+        "en": "Regular practice will enhance your language fluency.",
+        "tr": "Düzenli pratik yapmak dil akıcılığınızı artıracaktır."
+      },
+      "collocations": [
+        "enhance experience",
+        "enhance efficiency",
+        "further enhance"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "b1b2-achieve",
+      "level": "B1",
+      "term": "achieve",
+      "ipa": "/əˈtʃiːv/",
+      "translation": "başarmak, elde etmek",
+      "example": {
+        "en": "With hard work, you can achieve all your goals.",
+        "tr": "Sıkı çalışmayla tüm hedeflerinizi başarabilirsiniz."
+      },
+      "collocations": [
+        "achieve goals",
+        "achieve success",
+        "achieve results"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-significant",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "There was a ___ improvement in his test scores after studying.",
+      "answer": "significant",
+      "options": [
+        "significant",
+        "accurate",
+        "conscious",
+        "aware"
+      ],
+      "explanation": "`significant` kelimesi 'önemli, göze çarpan' anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-essential",
+      "level": "B1",
+      "format": "cloze",
+      "prompt": "Water is ___ for human life.",
+      "answer": "essential",
+      "explanation": "`essential` = yaşam veya başarı için zorunlu, temel olan."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-accurate",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Make sure the financial report is 100% ___.",
+      "answer": "accurate",
+      "options": [
+        "accurate",
+        "complex",
+        "efficient",
+        "critical"
+      ],
+      "explanation": "`accurate` = hatasız, doğru ve kesin anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-efficient",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Solar power is a clean and ___ source of energy.",
+      "answer": "efficient",
+      "explanation": "`efficient` = kaynakları israf etmeden verimli çalışan."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-reliable",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "We need a ___ car for long trips.",
+      "answer": "reliable",
+      "options": [
+        "reliable",
+        "conscious",
+        "comprehensive",
+        "critical"
+      ],
+      "explanation": "`reliable` = güvenilir, yolda bırakmayan demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-maintain",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "It is difficult to ___ speed on a crowded highway.",
+      "answer": "maintain",
+      "explanation": "`maintain` = mevcut durumu veya hızı korumak, sürdürmek."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-obtain",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Where can I ___ more information about this program?",
+      "answer": "obtain",
+      "options": [
+        "obtain",
+        "interact",
+        "demonstrate",
+        "indicate"
+      ],
+      "explanation": "`obtain` = elde etmek, edinmek anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-contribute",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Many factors ___ to the success of a business.",
+      "answer": "contribute",
+      "explanation": "`contribute to` = bir şeye katkıda bulunmak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-evaluate",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Teachers use exams to ___ student progress.",
+      "answer": "evaluate",
+      "options": [
+        "evaluate",
+        "clarify",
+        "adapt",
+        "involve"
+      ],
+      "explanation": "`evaluate` = bir şeyin niteliğini veya seviyesini değerlendirmek demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-enhance",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "You can add sauce to ___ the flavor of the dish.",
+      "answer": "enhance",
+      "explanation": "`enhance` = kaliteyi, lezzeti veya değeri daha da artırmak demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-advanced",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "This class is for ___ students who already speak fluent English.",
+      "answer": "advanced",
+      "options": ["advanced", "basic", "essential", "complex"],
+      "explanation": "`advanced` = ileri düzey anlamına gelen sıfattır."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-complex",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The brain is a very ___ organ that we don't fully understand.",
+      "answer": "complex",
+      "explanation": "`complex` = karmaşık, çetrefilli anlamında kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-comprehensive",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "The guide offers a ___ list of all hotels in the city.",
+      "answer": "comprehensive",
+      "options": ["comprehensive", "essential", "reliable", "accurate"],
+      "explanation": "`comprehensive` = kapsayıcı, her detayı barındıran demektir."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-critical",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Speed is ___ to the success of this delivery service.",
+      "answer": "critical",
+      "explanation": "`critical` = son derece önemli, belirleyici anlamında kullanılır."
+    },
+    {
+      "kind": "quiz",
+      "id": "b1b2-q-aware",
+      "level": "B1",
+      "format": "multiple-choice",
+      "prompt": "Were you ___ of the changes to the schedule?",
+      "answer": "aware",
+      "options": ["aware", "conscious", "accurate", "reliable"],
+      "explanation": "`be aware of` = bir şeyin farkında/bilincinde olmak anlamına gelir."
+    }
+  ]
+}

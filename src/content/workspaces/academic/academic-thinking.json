@@ -1,0 +1,851 @@
+{
+  "$schema": "../../schema.json",
+  "slug": "academic-thinking",
+  "title": "Academic & Thinking Vocabulary",
+  "description": "Akademik ve düşünsel alanlarda sıkça kullanılan B1–C1 düzeyindeki temel İngilizce isimler ve kavramlar.",
+  "theme": "indigo",
+  "vocab": [
+    {
+      "kind": "vocab",
+      "id": "noun-principle",
+      "level": "B2",
+      "term": "principle",
+      "ipa": "/ˈprɪnsəpl/",
+      "translation": "ilke, prensip",
+      "example": {
+        "en": "He is a man of principle who never lies.",
+        "tr": "O, asla yalan söylemeyen ilkeli bir insandır."
+      },
+      "collocations": [
+        "basic principle",
+        "moral principle",
+        "in principle",
+        "work on a principle"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-notion",
+      "level": "B2",
+      "term": "notion",
+      "ipa": "/ˈnəʊʃn/",
+      "translation": "kavram, fikir, düşünce",
+      "example": {
+        "en": "He challenged the traditional notion of success.",
+        "tr": "Geleneksel başarı kavramına meydan okudu."
+      },
+      "collocations": [
+        "traditional notion",
+        "abstract notion",
+        "notion of something",
+        "reject a notion"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-hypothesis",
+      "level": "B2",
+      "term": "hypothesis",
+      "ipa": "/haɪˈpɒθəsɪs/",
+      "translation": "hipotez, varsayım",
+      "example": {
+        "en": "The experiment was designed to test a hypothesis.",
+        "tr": "Deney, bir hipotezi test etmek için tasarlandı."
+      },
+      "collocations": [
+        "test a hypothesis",
+        "formulate a hypothesis",
+        "scientific hypothesis",
+        "hypothesis about something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-framework",
+      "level": "B2",
+      "term": "framework",
+      "ipa": "/ˈfreɪmwɜːk/",
+      "translation": "çerçeve, sistem, yapı",
+      "example": {
+        "en": "The report provides a framework for future research.",
+        "tr": "Rapor, gelecekteki araştırmalar için bir çerçeve sağlıyor."
+      },
+      "collocations": [
+        "theoretical framework",
+        "legal framework",
+        "provide a framework",
+        "within a framework"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-phenomenon",
+      "level": "B2",
+      "term": "phenomenon",
+      "ipa": "/fɪˈnɒmɪnən/",
+      "translation": "olgu, fenomen",
+      "example": {
+        "en": "Global warming is a well-documented phenomenon.",
+        "tr": "Küresel ısınma, iyi belgelenmiş bir olgudur."
+      },
+      "collocations": [
+        "natural phenomenon",
+        "social phenomenon",
+        "study a phenomenon",
+        "common phenomenon"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-interpretation",
+      "level": "B2",
+      "term": "interpretation",
+      "ipa": "/ɪnˌtɜːprɪˈteɪʃn/",
+      "translation": "yorum, yorumlama",
+      "example": {
+        "en": "His interpretation of the data was different from mine.",
+        "tr": "Verileri yorumlaması benimkinden farklıydı."
+      },
+      "collocations": [
+        "interpretation of something",
+        "different interpretation",
+        "literal interpretation",
+        "open to interpretation"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-implication",
+      "level": "B2",
+      "term": "implication",
+      "ipa": "/ˌɪmplɪˈkeɪʃn/",
+      "translation": "sonuç, etki, çıkarım",
+      "example": {
+        "en": "This decision has a serious economic implication for our future.",
+        "tr": "Bu kararın geleceğimiz için ciddi bir ekonomik sonucu var."
+      },
+      "collocations": [
+        "important implication",
+        "practical implication",
+        "implication for something",
+        "have implications"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-perception",
+      "level": "B2",
+      "term": "perception",
+      "ipa": "/pəˈsepʃn/",
+      "translation": "algı, idrak",
+      "example": {
+        "en": "Public perception of the issue has changed over time.",
+        "tr": "Konuyla ilgili kamu algısı zamanla değişti."
+      },
+      "collocations": [
+        "public perception",
+        "visual perception",
+        "change perception",
+        "perception of something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-awareness",
+      "level": "B2",
+      "term": "awareness",
+      "ipa": "/əˈweənəs/",
+      "translation": "farkındalık, bilinç",
+      "example": {
+        "en": "The campaign aims to raise awareness about mental health.",
+        "tr": "Kampanya, ruh sağlığı konusunda farkındalık yaratmayı amaçlıyor."
+      },
+      "collocations": [
+        "raise awareness",
+        "public awareness",
+        "awareness of something",
+        "increase awareness"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-perspective",
+      "level": "B2",
+      "term": "perspective",
+      "ipa": "/pəˈspektɪv/",
+      "translation": "bakış açısı, perspektif",
+      "example": {
+        "en": "Reading the book gave me a new perspective on life.",
+        "tr": "Kitabı okumak bana hayata yeni bir bakış açısı kazandırdı."
+      },
+      "collocations": [
+        "different perspective",
+        "global perspective",
+        "from a perspective",
+        "offer a perspective"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-judgment",
+      "level": "B2",
+      "term": "judgment",
+      "ipa": "/ˈdʒʌdʒmənt/",
+      "translation": "yargı, karar",
+      "example": {
+        "en": "You should use your own judgment in this matter.",
+        "tr": "Bu konuda kendi yargınızı kullanmalısınız."
+      },
+      "collocations": [
+        "good judgment",
+        "make a judgment",
+        "professional judgment",
+        "judgment about something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-insight",
+      "level": "B2",
+      "term": "insight",
+      "ipa": "/ˈɪnsaɪt/",
+      "translation": "içgörü, kavrayış",
+      "example": {
+        "en": "Her research provides valuable insight into the problem.",
+        "tr": "Araştırması, soruna değerli bir içgörü sağlıyor."
+      },
+      "collocations": [
+        "valuable insight",
+        "provide insight",
+        "gain an insight",
+        "insight into something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-interaction",
+      "level": "B2",
+      "term": "interaction",
+      "ipa": "/ˌɪntərˈækʃn/",
+      "translation": "etkileşim, iletişim",
+      "example": {
+        "en": "Social interaction is important for children's development.",
+        "tr": "Sosyal etkileşim, çocukların gelişimi için önemlidir."
+      },
+      "collocations": [
+        "social interaction",
+        "human interaction",
+        "interaction between/with",
+        "positive interaction"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-contribution",
+      "level": "B2",
+      "term": "contribution",
+      "ipa": "/ˌkɒntrɪˈbjuːʃn/",
+      "translation": "katkı, bağış",
+      "example": {
+        "en": "He made a significant contribution to the project.",
+        "tr": "Projeye önemli bir katkı sağladı."
+      },
+      "collocations": [
+        "significant contribution",
+        "make a contribution",
+        "contribution to something",
+        "financial contribution"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-circumstance",
+      "level": "B2",
+      "term": "circumstance",
+      "ipa": "/ˈsɜːkəmstəns/",
+      "translation": "durum, koşul",
+      "example": {
+        "en": "A specific circumstance forced us to cancel the meeting.",
+        "tr": "Belirli bir durum bizi toplantıyı iptal etmeye zorladı."
+      },
+      "collocations": [
+        "under circumstances",
+        "specific circumstance",
+        "force of circumstance",
+        "circumstance of something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-tendency",
+      "level": "B2",
+      "term": "tendency",
+      "ipa": "/ˈtendənsi/",
+      "translation": "eğilim, meyil",
+      "example": {
+        "en": "There is a tendency for prices to rise in the summer.",
+        "tr": "Yaz aylarında fiyatların yükselme eğilimi vardır."
+      },
+      "collocations": [
+        "strong tendency",
+        "natural tendency",
+        "tendency to do something",
+        "show a tendency"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-capability",
+      "level": "B2",
+      "term": "capability",
+      "ipa": "/ˌkeɪpəˈbɪləti/",
+      "translation": "kapasite, yetenek, kabiliyet",
+      "example": {
+        "en": "The machine has the capability to process large amounts of data.",
+        "tr": "Makine, büyük miktarda veriyi işleme kapasitesine sahiptir."
+      },
+      "collocations": [
+        "capability to do something",
+        "technical capability",
+        "beyond capability",
+        "demonstrate capability"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-limitation",
+      "level": "B2",
+      "term": "limitation",
+      "ipa": "/ˌlɪmɪˈteɪʃn/",
+      "translation": "sınırlama, kısıtlama",
+      "example": {
+        "en": "Every scientific study has a limitation that should be noted.",
+        "tr": "Her bilimsel çalışmanın belirtilmesi gereken bir sınırlaması vardır."
+      },
+      "collocations": [
+        "limitation of something",
+        "important limitation",
+        "impose a limitation",
+        "overcome limitations"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-capacity",
+      "level": "B2",
+      "term": "capacity",
+      "ipa": "/kəˈpæsəti/",
+      "translation": "kapasite, hacim, yetenek",
+      "example": {
+        "en": "The conference hall has a seating capacity of 500.",
+        "tr": "Konferans salonunun oturma kapasitesi 500'dür."
+      },
+      "collocations": [
+        "capacity to do something",
+        "seating capacity",
+        "full capacity",
+        "capacity for something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-priority",
+      "level": "B2",
+      "term": "priority",
+      "ipa": "/praɪˈɒrəti/",
+      "translation": "öncelik",
+      "example": {
+        "en": "Completing this project is my top priority right now.",
+        "tr": "Bu projeyi tamamlamak şu anda benim en büyük önceliğim."
+      },
+      "collocations": [
+        "top priority",
+        "set priorities",
+        "priority over something",
+        "main priority"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-intention",
+      "level": "B2",
+      "term": "intention",
+      "ipa": "/ɪnˈtenʃn/",
+      "translation": "niyet, amaç",
+      "example": {
+        "en": "She announced her intention to run for office.",
+        "tr": "Aday olma niyetini açıkladı."
+      },
+      "collocations": [
+        "intention of doing something",
+        "original intention",
+        "good intentions",
+        "announce an intention"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-expectation",
+      "level": "B2",
+      "term": "expectation",
+      "ipa": "/ˌekspekˈteɪʃn/",
+      "translation": "beklenti, umut",
+      "example": {
+        "en": "The new product did not meet my expectation.",
+        "tr": "Yeni ürün beklentimi karşılamadı."
+      },
+      "collocations": [
+        "high expectation",
+        "meet expectations",
+        "beyond expectation",
+        "expectation of something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-concern",
+      "level": "B2",
+      "term": "concern",
+      "ipa": "/kənˈsɜːn/",
+      "translation": "endişe, ilgi, konu",
+      "example": {
+        "en": "Environmental concern has increased in recent years.",
+        "tr": "Son yıllarda çevresel kaygı artmıştır."
+      },
+      "collocations": [
+        "concern about/over something",
+        "main concern",
+        "express concern",
+        "raise concern"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-assumption",
+      "level": "B2",
+      "term": "assumption",
+      "ipa": "/əˈsʌmpʃn/",
+      "translation": "varsayım, faraziye",
+      "example": {
+        "en": "Many people make the assumption that money brings happiness.",
+        "tr": "Birçok insan paranın mutluluk getirdiği varsayımını yapar."
+      },
+      "collocations": [
+        "make an assumption",
+        "basic assumption",
+        "underlying assumption",
+        "assumption about something"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-procedure",
+      "level": "B2",
+      "term": "procedure",
+      "ipa": "/prəˈsiːdʒə/",
+      "translation": "prosedür, işlem, yöntem",
+      "example": {
+        "en": "You must follow the standard safety procedure.",
+        "tr": "Her zaman standart güvenlik prosedürüne uymalısınız."
+      },
+      "collocations": [
+        "follow procedure",
+        "standard procedure",
+        "legal procedure",
+        "operating procedure"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-sequence",
+      "level": "B2",
+      "term": "sequence",
+      "ipa": "/ˈsiːkwəns/",
+      "translation": "sıra, dizi, zincir",
+      "example": {
+        "en": "The sequence of events led to a surprising outcome.",
+        "tr": "Olayların sırası şaşırtıcı bir sonuca yol açtı."
+      },
+      "collocations": [
+        "sequence of events",
+        "in sequence",
+        "chronological sequence",
+        "DNA sequence"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-category",
+      "level": "B2",
+      "term": "category",
+      "ipa": "/ˈkætəɡəri/",
+      "translation": "kategori, sınıf",
+      "example": {
+        "en": "These products fall into the same category.",
+        "tr": "Bu ürünler aynı kategoriye giriyor."
+      },
+      "collocations": [
+        "category of something",
+        "broad category",
+        "fall into a category",
+        "different category"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "id": "noun-criterion",
+      "level": "B2",
+      "term": "criterion",
+      "ipa": "/kraɪˈtɪəriən/",
+      "translation": "kriter, ölçüt",
+      "example": {
+        "en": "What is the main criterion for evaluating the results?",
+        "tr": "Sonuçları değerlendirmek için ana kriter nedir?"
+      },
+      "collocations": [
+        "main criterion",
+        "important criterion",
+        "criterion for something",
+        "meet the criteria"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "kind": "quiz",
+      "id": "noun-q-principle",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "One of the basic ___ of democracy is freedom of speech.",
+      "answer": "principles",
+      "explanation": "`principle` temel bir inanç veya kural anlamına gelir. Burada çoğul hali kullanılmıştır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-notion",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "She challenged the traditional ___ that women should stay at home.",
+      "answer": "notion",
+      "options": [
+        "notion",
+        "framework",
+        "sequence",
+        "capability"
+      ],
+      "explanation": "`notion` bir fikir, inanç veya kavram anlamına gelir. Doğru seçenek 'notion'dur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-hypothesis",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The experiment was designed to test a scientific ___.",
+      "answer": "hypothesis",
+      "explanation": "`hypothesis` test edilmek üzere öne sürülen bir varsayım veya açıklamadır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-framework",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "The report provides a legal ___ for data protection.",
+      "answer": "framework",
+      "options": [
+        "framework",
+        "interpretation",
+        "phenomenon",
+        "concern"
+      ],
+      "explanation": "`framework` bir sistem veya yapı anlamına gelir. Doğru seçenek 'framework'tür."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-phenomenon",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The aurora borealis is a beautiful natural ___.",
+      "answer": "phenomenon",
+      "explanation": "`phenomenon` gözlemlenebilir bir olay veya olgudur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-interpretation",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "His ___ of the poem was very different from mine.",
+      "answer": "interpretation",
+      "options": [
+        "interpretation",
+        "intention",
+        "judgment",
+        "awareness"
+      ],
+      "explanation": "`interpretation` bir şeyi anlama ve yorumlama biçimidir. Doğru seçenek 'interpretation'dur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-implication",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The new tax law has significant ___ for small businesses.",
+      "answer": "implications",
+      "explanation": "`implication` bir eylem veya kararın olası sonucu veya etkisidir. Burada çoğul hali kullanılmıştır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-perception",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Public ___ of the government has changed dramatically.",
+      "answer": "perception",
+      "options": [
+        "perception",
+        "perspective",
+        "contribution",
+        "insight"
+      ],
+      "explanation": "`perception` bir şeyi algılama veya görme biçimidir. Doğru seçenek 'perception'dır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-awareness",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The campaign aims to raise public ___ about climate change.",
+      "answer": "awareness",
+      "explanation": "`awareness` bir konu hakkında bilgi ve farkındalık sahibi olma durumudur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-perspective",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Traveling gives you a new ___ on life.",
+      "answer": "perspective",
+      "options": [
+        "perspective",
+        "procedure",
+        "priority",
+        "notion"
+      ],
+      "explanation": "`perspective` bir konuya bakış açısıdır. Doğru seçenek 'perspective'tir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-judgment",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "You should always use your own ___ in such matters.",
+      "answer": "judgment",
+      "explanation": "`judgment` bir karar verme veya fikir oluşturma yeteneğidir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-insight",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "The book provides valuable ___ into human behavior.",
+      "answer": "insight",
+      "options": [
+        "insight",
+        "capacity",
+        "circumstance",
+        "sequence"
+      ],
+      "explanation": "`insight` bir konunun derinlemesine ve genellikle ani bir şekilde anlaşılmasıdır. Doğru seçenek 'insight'tır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-interaction",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Social ___ is vital for a child's emotional development.",
+      "answer": "interaction",
+      "explanation": "`interaction` iki veya daha fazla kişi veya şey arasındaki karşılıklı iletişim veya etki anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-contribution",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "He made a significant ___ to the success of the project.",
+      "answer": "contribution",
+      "options": [
+        "contribution",
+        "limitation",
+        "tendency",
+        "concern"
+      ],
+      "explanation": "`contribution` bir şeyin başarısına yapılan yardım veya katkıdır. Doğru seçenek 'contribution'dur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-circumstance",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Under the ___, we had to postpone the meeting.",
+      "answer": "circumstances",
+      "explanation": "`circumstance` bir durum veya olayın içinde bulunduğu koşulları ifade eder. Burada çoğul haliyle 'under the circumstances' kalıbı kullanılmıştır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-tendency",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "There is a natural ___ to avoid difficult conversations.",
+      "answer": "tendency",
+      "options": [
+        "tendency",
+        "capacity",
+        "capability",
+        "intention"
+      ],
+      "explanation": "`tendency` belirli bir şekilde davranma eğilimi veya meyilidir. Doğru seçenek 'tendency'dir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-capability",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Our team has the ___ to finish the project on time.",
+      "answer": "capability",
+      "explanation": "`capability` bir şeyi yapmak için gereken yetenek veya güce sahip olma durumudur."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-limitation",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "Every scientific study has its ___.",
+      "answer": "limitations",
+      "options": [
+        "limitations",
+        "priorities",
+        "assumptions",
+        "criteria"
+      ],
+      "explanation": "`limitation` bir şeyin kapsamı veya etkinliğini sınırlayan kusur veya eksikliktir. Genelde çoğul kullanılır, doğru seçenek 'limitations'dır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-capacity",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "The stadium has a seating ___ of over 50,000 people.",
+      "answer": "capacity",
+      "explanation": "`capacity` bir yerin alabileceği miktar veya sayı anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-priority",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "My top ___ is to improve my English skills.",
+      "answer": "priority",
+      "options": [
+        "priority",
+        "intention",
+        "expectation",
+        "judgment"
+      ],
+      "explanation": "`priority` diğerlerinden önce yapılması veya düşünülmesi gereken en önemli şeydir. Doğru seçenek 'priority'dir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-intention",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "She announced her ___ to retire at the end of the year.",
+      "answer": "intention",
+      "explanation": "`intention` bir şeyi yapmaya yönelik plan veya amaçtır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-expectation",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "The movie didn't meet my ___.",
+      "answer": "expectations",
+      "options": [
+        "expectations",
+        "perceptions",
+        "insights",
+        "principles"
+      ],
+      "explanation": "`expectation` bir şeyin nasıl olacağına dair inanç veya umuttur. Genelde çoğul kullanılır, doğru seçenek 'expectations'dır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-concern",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "Environmental ___ is growing among young people.",
+      "answer": "concern",
+      "explanation": "`concern` bir konu hakkındaki endişe veya ilgi anlamına gelir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-assumption",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "His argument is based on the ___ that all people are equal.",
+      "answer": "assumption",
+      "options": [
+        "assumption",
+        "principle",
+        "notion",
+        "framework"
+      ],
+      "explanation": "`assumption` doğru olduğu varsayılan ancak kanıtlanmamış fikirdir. Doğru seçenek 'assumption'dır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-procedure",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "You must follow the safety ___ at all times.",
+      "answer": "procedure",
+      "explanation": "`procedure` belirli bir işi yapmak için izlenen resmi veya standart yöntemdir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-sequence",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "A strange ___ of events led to the accident.",
+      "answer": "sequence",
+      "options": [
+        "sequence",
+        "category",
+        "criterion",
+        "phenomenon"
+      ],
+      "explanation": "`sequence` olayların veya nesnelerin belirli bir sırayla birbirini takip etmesidir. Doğru seçenek 'sequence'tir."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-category",
+      "level": "B2",
+      "format": "cloze",
+      "prompt": "These products all fall into the same ___.",
+      "answer": "category",
+      "explanation": "`category` benzer özelliklere sahip şeylerin gruplandırıldığı sınıftır."
+    },
+    {
+      "kind": "quiz",
+      "id": "noun-q-criterion",
+      "level": "B2",
+      "format": "multiple-choice",
+      "prompt": "The main ___ for selecting candidates is experience.",
+      "answer": "criterion",
+      "options": [
+        "criterion",
+        "assumption",
+        "framework",
+        "procedure"
+      ],
+      "explanation": "`criterion` bir karar veya yargıya varmak için kullanılan ölçüt veya standarttır. Tekil hali doğru seçenektir."
+    }
+  ]
+}

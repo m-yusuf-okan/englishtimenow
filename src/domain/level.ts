@@ -5,7 +5,7 @@
  * içerik dosyaları hep bu diziden türer. Yeni bir seviye eklemek için tek
  * değişiklik noktası bu dosya.
  */
-export const LEVELS = ["A1", "A2", "B1"] as const;
+export const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 
 export type Level = (typeof LEVELS)[number];
 
